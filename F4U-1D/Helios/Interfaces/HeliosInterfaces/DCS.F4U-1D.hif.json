@@ -6,7 +6,8 @@
   "name": "DCS F4U-1D",
   "module": "F4U-1D",
   "vehicles": [
-    "F4U-1D"
+    "F4U-1D",
+	"F4U-1D_CW"
   ],
   "functions": [
   {
