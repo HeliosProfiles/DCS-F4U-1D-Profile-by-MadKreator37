@@ -1,5 +1,5 @@
-# Helios Profile for _aircraft by _author
-This is a profile for Helios Virtual Cockpit to support the _aircraft.
+# Helios Profile for F4U-1D by MadKreator37
+This is a profile for Helios Virtual Cockpit to support the F4U-1D.
 
 ### Creating a New Profile
 
@@ -25,14 +25,14 @@ runs after each commit.
 ```
 env:
   VEHICLE: _vehicle
-  VEHICLECOMMONNAME: _aircraft
+  VEHICLECOMMONNAME: F4U-1D
   MINHELIOSRELEASE: _minheliosrelease
-  PROFILENAME: _aircraft__author
-  AUTHOR: _author
+  PROFILENAME: F4U-1D_MadKreator37
+  AUTHOR: MadKreator37
 ```
 
-    1. _aircraft eg "F-5E"
-    2. _author eg "MadKreator37"
+    1. F4U-1D eg "F-5E"
+    2. MadKreator37 eg "MadKreator37"
     3. _minheliosrelease  eg 1.6.6090.0000
     4. _vehicle eg "F-5E-3"
 -->
