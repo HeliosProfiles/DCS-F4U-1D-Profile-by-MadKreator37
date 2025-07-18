@@ -35,7 +35,17 @@ This profile was designed and created by MadKreator37. All parts were cut and mo
 
 ### IMAGES
 
+<img width="960" height="540" alt="Screenshot 2025-07-18 091918" src="https://github.com/user-attachments/assets/d4cef416-ca19-471d-b1bb-490e8fe317f5" />
+<img width="960" height="540" alt="Screenshot 2025-07-18 091927" src="https://github.com/user-attachments/assets/57acfa25-14ce-4c41-aaf5-ceb86817e766" />
+<img width="940" height="529" alt="Screenshot 2025-07-18 091933" src="https://github.com/user-attachments/assets/1d1c0ffd-c288-4e76-84e8-288fad6fea35" />
+<img width="960" height="540" alt="Screenshot 2025-07-18 091942" src="https://github.com/user-attachments/assets/37123c9c-39bb-48bc-9270-e7de3b940648" />
+<img width="960" height="540" alt="Screenshot 2025-07-18 091952" src="https://github.com/user-attachments/assets/b4c0c94c-c67f-43af-ba73-3c31bc63fbaf" />
+<img width="957" height="251" alt="Screenshot 2025-07-18 092228" src="https://github.com/user-attachments/assets/6ccae5e7-0082-403f-973c-8b4cb8d4f412" />
+
+
+
 ### STARTUP VIDEO
+
 
 
 ### Limited Support
