@@ -1022,7 +1022,7 @@
         </Control>
         <Control TypeIdentifier="Helios.Panel" Name="ADI" SnapTarget="True" Locked="False">
           <Location>1119,476</Location>
-          <Size>324,332</Size>
+          <Size>335,332</Size>
           <Hidden>False</Hidden>
           <Background />
           <Interaction>
@@ -1076,15 +1076,6 @@
               <MaxInputRotation>180</MaxInputRotation>
               <Children />
             </Control>
-            <Control TypeIdentifier="Helios.Base.Image" Name="wings" SnapTarget="False" Locked="True">
-              <Image>MadKreator37\F4U-1D\Bezels_And_Faces\Horizon_Wings.png</Image>
-              <Alignment>Stretched</Alignment>
-              <CornerRadius>0</CornerRadius>
-              <Location>73,141</Location>
-              <Size>146,86</Size>
-              <Hidden>False</Hidden>
-              <Children />
-            </Control>
             <Control TypeIdentifier="Helios.Base.CustomTape" Name="flag" SnapTarget="True" Locked="True">
               <Location>38,45</Location>
               <Size>251,196</Size>
@@ -1117,6 +1108,42 @@
               <MaxInputHorizontal>2</MaxInputHorizontal>
               <MinInputVertical>0</MinInputVertical>
               <MaxInputVertical>2</MaxInputVertical>
+              <MinInputRotation>0</MinInputRotation>
+              <MaxInputRotation>1</MaxInputRotation>
+              <Children />
+            </Control>
+            <Control TypeIdentifier="Helios.Base.CustomTape" Name="Wings tape" SnapTarget="True" Locked="True">
+              <Location>46,41</Location>
+              <Size>200,200</Size>
+              <Hidden>False</Hidden>
+              <TapeImage>MadKreator37\F4U-1D\Needles_Tapes_Pointers\Horizon_Wings.png</TapeImage>
+              <OffFlagImage />
+              <ForegroundImage />
+              <BackgroundImage />
+              <Tape_PosX>0</Tape_PosX>
+              <Tape_PosY>0</Tape_PosY>
+              <Tape_Width>200</Tape_Width>
+              <Tape_Height>200</Tape_Height>
+              <Tape_CenterX>100</Tape_CenterX>
+              <Tape_CenterY>100</Tape_CenterY>
+              <OffFlag_PosX>30</OffFlag_PosX>
+              <OffFlag_PosY>30</OffFlag_PosY>
+              <OffFlag_Width>50</OffFlag_Width>
+              <OffFlag_Height>50</OffFlag_Height>
+              <OffFlag_IsHidden>False</OffFlag_IsHidden>
+              <MinHorizontal>0</MinHorizontal>
+              <HorizontalTravel>0</HorizontalTravel>
+              <MinVertical>115</MinVertical>
+              <VerticalTravel>81</VerticalTravel>
+              <MinRotation>0</MinRotation>
+              <RotationTravel>0</RotationTravel>
+              <InitialHorizontal>0</InitialHorizontal>
+              <InitialVertical>98</InitialVertical>
+              <InitialRotation>0</InitialRotation>
+              <MinInputHorizontal>0</MinInputHorizontal>
+              <MaxInputHorizontal>1</MaxInputHorizontal>
+              <MinInputVertical>-1</MinInputVertical>
+              <MaxInputVertical>1</MaxInputVertical>
               <MinInputRotation>0</MinInputRotation>
               <MaxInputRotation>1</MaxInputRotation>
               <Children />
@@ -1166,7 +1193,7 @@
               <MaxInputRotation>180</MaxInputRotation>
               <Children />
             </Control>
-            <Control TypeIdentifier="Helios.Base.ImageTranslucent" Name="Translucent Image" SnapTarget="False" Locked="False">
+            <Control TypeIdentifier="Helios.Base.ImageTranslucent" Name="Translucent Image" SnapTarget="False" Locked="True">
               <Image>MadKreator37\F4U-1D\glass2_2.png</Image>
               <Alignment>Stretched</Alignment>
               <CornerRadius>0</CornerRadius>
@@ -1180,7 +1207,7 @@
               <Hidden>False</Hidden>
               <Children />
             </Control>
-            <Control TypeIdentifier="Helios.Base.Image" Name="Bezel" SnapTarget="False" Locked="False">
+            <Control TypeIdentifier="Helios.Base.Image" Name="Bezel" SnapTarget="False" Locked="True">
               <Image>MadKreator37\F4U-1D\Bezels_And_Faces\Horizon_Bezel.png</Image>
               <Alignment>Stretched</Alignment>
               <CornerRadius>0</CornerRadius>
@@ -1189,24 +1216,41 @@
               <Hidden>False</Hidden>
               <Children />
             </Control>
+            <Control TypeIdentifier="Helios.Base.Potentiometer" Name="Pitch adjust knob" SnapTarget="True" Locked="True">
+              <Location>115,268</Location>
+              <Size>59,59</Size>
+              <Hidden>False</Hidden>
+              <KnobImage>MadKreator37\F4U-1D\Buttons_Switches_Knobs\Horizon_Pitch.png</KnobImage>
+              <InitialValue>0</InitialValue>
+              <StepValue>0.03</StepValue>
+              <MaxValue>1</MaxValue>
+              <MinValue>-1</MinValue>
+              <InitialRotation>0</InitialRotation>
+              <RotationTravel>360</RotationTravel>
+              <ClickType>
+                <Type>Swipe</Type>
+                <Sensitivity>1</Sensitivity>
+              </ClickType>
+              <Children />
+            </Control>
+            <Control TypeIdentifier="Helios.Base.Potentiometer" Name="Horizon Cage knob" SnapTarget="True" Locked="True">
+              <Location>237,239</Location>
+              <Size>93,93</Size>
+              <Hidden>False</Hidden>
+              <KnobImage>MadKreator37\F4U-1D\Buttons_Switches_Knobs\Horizon_Cage_Knob.png</KnobImage>
+              <InitialValue>1</InitialValue>
+              <StepValue>0.1</StepValue>
+              <MaxValue>1</MaxValue>
+              <MinValue>2</MinValue>
+              <InitialRotation>296.129032258065</InitialRotation>
+              <RotationTravel>42.8225806451613</RotationTravel>
+              <ClickType>
+                <Type>ReverseSwipe</Type>
+                <Sensitivity>1</Sensitivity>
+              </ClickType>
+              <Children />
+            </Control>
           </Children>
-        </Control>
-        <Control TypeIdentifier="Helios.Base.Potentiometer" Name="Horizon Cage knob" SnapTarget="True" Locked="False">
-          <Location>1358,719</Location>
-          <Size>93,93</Size>
-          <Hidden>False</Hidden>
-          <KnobImage>MadKreator37\F4U-1D\Buttons_Switches_Knobs\Horizon_Cage_Knob.png</KnobImage>
-          <InitialValue>1</InitialValue>
-          <StepValue>0.1</StepValue>
-          <MaxValue>1</MaxValue>
-          <MinValue>2</MinValue>
-          <InitialRotation>296.129032258065</InitialRotation>
-          <RotationTravel>42.8225806451613</RotationTravel>
-          <ClickType>
-            <Type>ReverseSwipe</Type>
-            <Sensitivity>1</Sensitivity>
-          </ClickType>
-          <Children />
         </Control>
         <Control TypeIdentifier="Helios.Panel" Name="Clock" SnapTarget="True" Locked="False">
           <Location>1440,491</Location>
@@ -4397,16 +4441,25 @@
               <PushedImage>MadKreator37\F4U-1D\Transparent_Image.png</PushedImage>
               <Children />
             </Control>
-            <Control TypeIdentifier="Helios.Base.Image" Name="mag img 4" SnapTarget="False" Locked="True">
-              <Image>MadKreator37\F4U-1D\Buttons_Switches_Knobs\Magneto_Switch_Off.png</Image>
+            <Control TypeIdentifier="Helios.Base.Image" Name="mag img both" SnapTarget="False" Locked="True">
+              <Image>MadKreator37\F4U-1D\Buttons_Switches_Knobs\Magneto_Switch_Both.png</Image>
               <Alignment>Stretched</Alignment>
               <CornerRadius>0</CornerRadius>
-              <Location>331,406</Location>
-              <Size>85,66</Size>
+              <Location>330,406</Location>
+              <Size>89,68</Size>
               <Hidden>True</Hidden>
               <Children />
             </Control>
-            <Control TypeIdentifier="Helios.Base.Image" Name="mag img 3" SnapTarget="False" Locked="True">
+            <Control TypeIdentifier="Helios.Base.Image" Name="mag img l" SnapTarget="False" Locked="True">
+              <Image>MadKreator37\F4U-1D\Buttons_Switches_Knobs\Magneto_Switch_Left.png</Image>
+              <Alignment>Stretched</Alignment>
+              <CornerRadius>0</CornerRadius>
+              <Location>330,406</Location>
+              <Size>88,68</Size>
+              <Hidden>True</Hidden>
+              <Children />
+            </Control>
+            <Control TypeIdentifier="Helios.Base.Image" Name="mag img R" SnapTarget="False" Locked="True">
               <Image>MadKreator37\F4U-1D\Buttons_Switches_Knobs\Magneto_Switch_Right.png</Image>
               <Alignment>Stretched</Alignment>
               <CornerRadius>0</CornerRadius>
@@ -4415,22 +4468,13 @@
               <Hidden>True</Hidden>
               <Children />
             </Control>
-            <Control TypeIdentifier="Helios.Base.Image" Name="mag img 2" SnapTarget="False" Locked="True">
-              <Image>MadKreator37\F4U-1D\Buttons_Switches_Knobs\Magneto_Switch_Left.png</Image>
+            <Control TypeIdentifier="Helios.Base.Image" Name="mag img Off" SnapTarget="False" Locked="True">
+              <Image>MadKreator37\F4U-1D\Buttons_Switches_Knobs\Magneto_Switch_Off.png</Image>
               <Alignment>Stretched</Alignment>
               <CornerRadius>0</CornerRadius>
-              <Location>330,406</Location>
-              <Size>88,68</Size>
+              <Location>331,406</Location>
+              <Size>85,66</Size>
               <Hidden>False</Hidden>
-              <Children />
-            </Control>
-            <Control TypeIdentifier="Helios.Base.Image" Name="mag img 1" SnapTarget="False" Locked="True">
-              <Image>MadKreator37\F4U-1D\Buttons_Switches_Knobs\Magneto_Switch_Both.png</Image>
-              <Alignment>Stretched</Alignment>
-              <CornerRadius>0</CornerRadius>
-              <Location>330,406</Location>
-              <Size>89,68</Size>
-              <Hidden>True</Hidden>
               <Children />
             </Control>
             <Control TypeIdentifier="Helios.Base.RotarySwitch" Name="magneto invis rotary sw" SnapTarget="True" Locked="True">
@@ -4444,7 +4488,7 @@
                 <Position Name="2" Rotation="181.337363052513" />
                 <Position Name="3" Rotation="233.47185493011" />
               </Positions>
-              <DefaultPosition>3</DefaultPosition>
+              <DefaultPosition>1</DefaultPosition>
               <ClickType>
                 <Type>Swipe</Type>
                 <Sensitivity>0.462783171521037</Sensitivity>
@@ -4604,59 +4648,20 @@
               <DefaultPosition>Two</DefaultPosition>
               <Children />
             </Control>
-            <Control TypeIdentifier="Helios.Base.ImageTranslucent" Name="flap img 6" SnapTarget="False" Locked="True">
-              <Image>MadKreator37\F4U-1D\Buttons_Switches_Knobs\Flap_Handle_P0.png</Image>
+            <Control TypeIdentifier="Helios.Base.ImageTranslucent" Name="flap img 50" SnapTarget="False" Locked="True">
+              <Image>MadKreator37\F4U-1D\Buttons_Switches_Knobs\Flap_Handle_P50.png</Image>
               <Alignment>Stretched</Alignment>
               <CornerRadius>0</CornerRadius>
               <DefaultOpacity>1</DefaultOpacity>
               <Interaction>
                 <AllowInteraction>True</AllowInteraction>
               </Interaction>
-              <Location>199,52</Location>
+              <Location>198,64</Location>
               <Size>368,284</Size>
               <Hidden>True</Hidden>
               <Children />
             </Control>
-            <Control TypeIdentifier="Helios.Base.ImageTranslucent" Name="flap img 5" SnapTarget="False" Locked="True">
-              <Image>MadKreator37\F4U-1D\Buttons_Switches_Knobs\Flap_Handle_P10.png</Image>
-              <Alignment>Stretched</Alignment>
-              <CornerRadius>0</CornerRadius>
-              <DefaultOpacity>1</DefaultOpacity>
-              <Interaction>
-                <AllowInteraction>True</AllowInteraction>
-              </Interaction>
-              <Location>198,52</Location>
-              <Size>368,284</Size>
-              <Hidden>False</Hidden>
-              <Children />
-            </Control>
-            <Control TypeIdentifier="Helios.Base.ImageTranslucent" Name="flap img 4" SnapTarget="False" Locked="True">
-              <Image>MadKreator37\F4U-1D\Buttons_Switches_Knobs\Flap_Handle_P20.png</Image>
-              <Alignment>Stretched</Alignment>
-              <CornerRadius>0</CornerRadius>
-              <DefaultOpacity>1</DefaultOpacity>
-              <Interaction>
-                <AllowInteraction>True</AllowInteraction>
-              </Interaction>
-              <Location>198,52</Location>
-              <Size>368,284</Size>
-              <Hidden>True</Hidden>
-              <Children />
-            </Control>
-            <Control TypeIdentifier="Helios.Base.ImageTranslucent" Name="flap img 3" SnapTarget="False" Locked="True">
-              <Image>MadKreator37\F4U-1D\Buttons_Switches_Knobs\Flap_Handle_P30.png</Image>
-              <Alignment>Stretched</Alignment>
-              <CornerRadius>0</CornerRadius>
-              <DefaultOpacity>1</DefaultOpacity>
-              <Interaction>
-                <AllowInteraction>True</AllowInteraction>
-              </Interaction>
-              <Location>198,60</Location>
-              <Size>368,284</Size>
-              <Hidden>True</Hidden>
-              <Children />
-            </Control>
-            <Control TypeIdentifier="Helios.Base.ImageTranslucent" Name="flap img 2" SnapTarget="False" Locked="True">
+            <Control TypeIdentifier="Helios.Base.ImageTranslucent" Name="flap img 40" SnapTarget="False" Locked="True">
               <Image>MadKreator37\F4U-1D\Buttons_Switches_Knobs\Flap_Handle_P40.png</Image>
               <Alignment>Stretched</Alignment>
               <CornerRadius>0</CornerRadius>
@@ -4669,15 +4674,54 @@
               <Hidden>True</Hidden>
               <Children />
             </Control>
-            <Control TypeIdentifier="Helios.Base.ImageTranslucent" Name="flap img 1" SnapTarget="False" Locked="True">
-              <Image>MadKreator37\F4U-1D\Buttons_Switches_Knobs\Flap_Handle_P50.png</Image>
+            <Control TypeIdentifier="Helios.Base.ImageTranslucent" Name="flap img 30" SnapTarget="False" Locked="True">
+              <Image>MadKreator37\F4U-1D\Buttons_Switches_Knobs\Flap_Handle_P30.png</Image>
               <Alignment>Stretched</Alignment>
               <CornerRadius>0</CornerRadius>
               <DefaultOpacity>1</DefaultOpacity>
               <Interaction>
                 <AllowInteraction>True</AllowInteraction>
               </Interaction>
-              <Location>198,64</Location>
+              <Location>198,60</Location>
+              <Size>368,284</Size>
+              <Hidden>True</Hidden>
+              <Children />
+            </Control>
+            <Control TypeIdentifier="Helios.Base.ImageTranslucent" Name="flap img 20" SnapTarget="False" Locked="True">
+              <Image>MadKreator37\F4U-1D\Buttons_Switches_Knobs\Flap_Handle_P20.png</Image>
+              <Alignment>Stretched</Alignment>
+              <CornerRadius>0</CornerRadius>
+              <DefaultOpacity>1</DefaultOpacity>
+              <Interaction>
+                <AllowInteraction>True</AllowInteraction>
+              </Interaction>
+              <Location>198,52</Location>
+              <Size>368,284</Size>
+              <Hidden>True</Hidden>
+              <Children />
+            </Control>
+            <Control TypeIdentifier="Helios.Base.ImageTranslucent" Name="flap img 10" SnapTarget="False" Locked="True">
+              <Image>MadKreator37\F4U-1D\Buttons_Switches_Knobs\Flap_Handle_P10.png</Image>
+              <Alignment>Stretched</Alignment>
+              <CornerRadius>0</CornerRadius>
+              <DefaultOpacity>1</DefaultOpacity>
+              <Interaction>
+                <AllowInteraction>True</AllowInteraction>
+              </Interaction>
+              <Location>198,52</Location>
+              <Size>368,284</Size>
+              <Hidden>False</Hidden>
+              <Children />
+            </Control>
+            <Control TypeIdentifier="Helios.Base.ImageTranslucent" Name="flap img 0" SnapTarget="False" Locked="True">
+              <Image>MadKreator37\F4U-1D\Buttons_Switches_Knobs\Flap_Handle_P0.png</Image>
+              <Alignment>Stretched</Alignment>
+              <CornerRadius>0</CornerRadius>
+              <DefaultOpacity>1</DefaultOpacity>
+              <Interaction>
+                <AllowInteraction>True</AllowInteraction>
+              </Interaction>
+              <Location>199,52</Location>
               <Size>368,284</Size>
               <Hidden>True</Hidden>
               <Children />
@@ -4696,7 +4740,7 @@
                 <Position Name="4" Rotation="291.273139403098" />
                 <Position Name="5" Rotation="360" />
               </Positions>
-              <DefaultPosition>2</DefaultPosition>
+              <DefaultPosition>1</DefaultPosition>
               <ClickType>
                 <Type>Touch</Type>
               </ClickType>
@@ -6993,11 +7037,6 @@
       <TriggerValue />
     </Binding>
     <Binding BypassCascadingTriggers="True">
-      <Trigger Source="Interface;;Helios.DCSInterfaceFile;DCS F4U-1D" Name="Nav.Gyro Horizon Cage.changed" />
-      <Action Target="Visual;Monitor 2.Horizon Cage knob;Helios.Base.Potentiometer;Horizon Cage knob" Name="set.value" />
-      <TriggerValue />
-    </Binding>
-    <Binding BypassCascadingTriggers="True">
       <Trigger Source="Interface;;Helios.DCSInterfaceFile;DCS F4U-1D" Name="Instruments.Clock Currtime Hours.changed" />
       <Action Target="Visual;Monitor 2.Clock.Curr Hour;Helios.Base.CustomGauge;Curr Hour" Name="set.value" />
       <TriggerValue />
@@ -7252,7 +7291,7 @@
       <Action Target="Visual;Monitor 2.L1 Panel.rocktet fire button;Helios.Base.PushButton;rocktet fire button" Name="set.physical state" />
       <TriggerValue />
     </Binding>
-    <Binding BypassCascadingTriggers="False">
+    <Binding BypassCascadingTriggers="True">
       <Trigger Source="Interface;;Helios.DCSInterfaceFile;DCS F4U-1D" Name="Engine.Magneto Switch.changed" />
       <Action Target="Visual;Monitor 2.L1 Panel.magneto invis rotary sw;Helios.Base.RotarySwitch;magneto invis rotary sw" Name="set.position" />
       <TriggerValue />
@@ -7267,12 +7306,12 @@
       <Action Target="Visual;Monitor 2.L1 Panel.right gun charge;Helios.Base.ToggleSwitch;right gun charge" Name="set.position" />
       <TriggerValue />
     </Binding>
-    <Binding BypassCascadingTriggers="False">
+    <Binding BypassCascadingTriggers="True">
       <Trigger Source="Interface;;Helios.DCSInterfaceFile;DCS F4U-1D" Name="Control.Landing Gear Handle.changed" />
       <Action Target="Visual;Monitor 2.L1 Panel.gear handle invis switch;Helios.Base.ThreeWayToggleSwitch;gear handle invis switch" Name="set.position" />
       <TriggerValue />
     </Binding>
-    <Binding BypassCascadingTriggers="False">
+    <Binding BypassCascadingTriggers="True">
       <Trigger Source="Interface;;Helios.DCSInterfaceFile;DCS F4U-1D" Name="Control.Flaps.changed" />
       <Action Target="Visual;Monitor 2.L1 Panel.flaps invis rotary sw;Helios.Base.RotarySwitch;flaps invis rotary sw" Name="set.position" />
       <TriggerValue />
@@ -7685,6 +7724,94 @@ else return(false) end</LuaScript>
       <Action Target="Visual;Monitor 2.Clock.Elapsed minute;Helios.Base.CustomGauge;Elapsed minute" Name="set.value" />
       <TriggerValue />
     </Binding>
+    <Binding BypassCascadingTriggers="False">
+      <Trigger Source="Interface;;Helios.DCSInterfaceFile;DCS F4U-1D" Name="Nav.Horizon Pitch Set.changed" />
+      <Action Target="Visual;Monitor 2.ADI.Pitch adjust knob;Helios.Base.Potentiometer;Pitch adjust knob" Name="set.value" />
+      <TriggerValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Interface;;Helios.DCSInterfaceFile;DCS F4U-1D" Name="Nav.Gyro Horizon Cage.changed" />
+      <Action Target="Visual;Monitor 2.ADI.Horizon Cage knob;Helios.Base.Potentiometer;Horizon Cage knob" Name="set.value" />
+      <TriggerValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Interface;;Helios.DCSInterfaceFile;DCS F4U-1D" Name="Control.Landing Gear Handle.changed" />
+      <Action Target="Visual;Monitor 2.L1 Panel.gear image 1;Helios.Base.ImageTranslucent;gear image 1" Name="set.hidden" />
+      <LuaScript>if TriggerValue == 1 then return(false)
+else return(true) end</LuaScript>
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Interface;;Helios.DCSInterfaceFile;DCS F4U-1D" Name="Control.Landing Gear Handle.changed" />
+      <Action Target="Visual;Monitor 2.L1 Panel.gear image 2;Helios.Base.ImageTranslucent;gear image 2" Name="set.hidden" />
+      <LuaScript>if TriggerValue == 2 then return(false)
+else return(true) end</LuaScript>
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Interface;;Helios.DCSInterfaceFile;DCS F4U-1D" Name="Control.Landing Gear Handle.changed" />
+      <Action Target="Visual;Monitor 2.L1 Panel.gear image 3;Helios.Base.ImageTranslucent;gear image 3" Name="set.hidden" />
+      <LuaScript>if TriggerValue == 3 then return(false)
+else return(true) end</LuaScript>
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Interface;;Helios.DCSInterfaceFile;DCS F4U-1D" Name="Engine.Magneto Switch.changed" />
+      <Action Target="Visual;Monitor 2.L1 Panel.mag img Off;Helios.Base.Image;mag img Off" Name="set.hidden" />
+      <LuaScript>if TriggerValue == 1 then return(false)
+else return(true) end</LuaScript>
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Interface;;Helios.DCSInterfaceFile;DCS F4U-1D" Name="Engine.Magneto Switch.changed" />
+      <Action Target="Visual;Monitor 2.L1 Panel.mag img l;Helios.Base.Image;mag img l" Name="set.hidden" />
+      <LuaScript>if TriggerValue == 3 then return(false)
+else return(true) end</LuaScript>
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Interface;;Helios.DCSInterfaceFile;DCS F4U-1D" Name="Engine.Magneto Switch.changed" />
+      <Action Target="Visual;Monitor 2.L1 Panel.mag img both;Helios.Base.Image;mag img both" Name="set.hidden" />
+      <LuaScript>if TriggerValue == 4 then return(false)
+else return(true) end</LuaScript>
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Interface;;Helios.DCSInterfaceFile;DCS F4U-1D" Name="Engine.Magneto Switch.changed" />
+      <Action Target="Visual;Monitor 2.L1 Panel.mag img R;Helios.Base.Image;mag img R" Name="set.hidden" />
+      <LuaScript>if TriggerValue == 2 then return(false)
+else return(true) end</LuaScript>
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Interface;;Helios.DCSInterfaceFile;DCS F4U-1D" Name="Control.Flaps.changed" />
+      <Action Target="Visual;Monitor 2.L1 Panel.flap img 0;Helios.Base.ImageTranslucent;flap img 0" Name="set.hidden" />
+      <LuaScript>if TriggerValue == 1 then return(false)
+else return(true) end</LuaScript>
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Interface;;Helios.DCSInterfaceFile;DCS F4U-1D" Name="Control.Flaps.changed" />
+      <Action Target="Visual;Monitor 2.L1 Panel.flap img 10;Helios.Base.ImageTranslucent;flap img 10" Name="set.hidden" />
+      <LuaScript>if TriggerValue == 2 then return(false)
+else return(true) end</LuaScript>
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Interface;;Helios.DCSInterfaceFile;DCS F4U-1D" Name="Control.Flaps.changed" />
+      <Action Target="Visual;Monitor 2.L1 Panel.flap img 20;Helios.Base.ImageTranslucent;flap img 20" Name="set.hidden" />
+      <LuaScript>if TriggerValue == 3 then return(false)
+else return(true) end</LuaScript>
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Interface;;Helios.DCSInterfaceFile;DCS F4U-1D" Name="Control.Flaps.changed" />
+      <Action Target="Visual;Monitor 2.L1 Panel.flap img 30;Helios.Base.ImageTranslucent;flap img 30" Name="set.hidden" />
+      <LuaScript>if TriggerValue == 4 then return(false)
+else return(true) end</LuaScript>
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Interface;;Helios.DCSInterfaceFile;DCS F4U-1D" Name="Control.Flaps.changed" />
+      <Action Target="Visual;Monitor 2.L1 Panel.flap img 40;Helios.Base.ImageTranslucent;flap img 40" Name="set.hidden" />
+      <LuaScript>if TriggerValue == 5 then return(false)
+else return(true) end</LuaScript>
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Interface;;Helios.DCSInterfaceFile;DCS F4U-1D" Name="Control.Flaps.changed" />
+      <Action Target="Visual;Monitor 2.L1 Panel.flap img 50;Helios.Base.ImageTranslucent;flap img 50" Name="set.hidden" />
+      <LuaScript>if TriggerValue == 6 then return(false)
+else return(true) end</LuaScript>
+    </Binding>
     <Binding BypassCascadingTriggers="True">
       <Trigger Source="Visual;Monitor 2.gun arm cam switch;Helios.Base.ThreeWayToggleSwitch;gun arm cam switch" Name="position.changed" />
       <Action Target="Interface;;Helios.DCSInterfaceFile;DCS F4U-1D" Name="Weapon.set.Gun Camera" />
@@ -7786,18 +7913,18 @@ else return(false) end</LuaScript>
       <TriggerValue />
     </Binding>
     <Binding BypassCascadingTriggers="True">
-      <Trigger Source="Visual;Monitor 2.Horizon Cage knob;Helios.Base.Potentiometer;Horizon Cage knob" Name="value.changed" />
+      <Trigger Source="Visual;Monitor 2.ADI.Pitch adjust knob;Helios.Base.Potentiometer;Pitch adjust knob" Name="value.changed" />
+      <Action Target="Interface;;Helios.DCSInterfaceFile;DCS F4U-1D" Name="Nav.set.Horizon Pitch Set" />
+      <TriggerValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Visual;Monitor 2.ADI.Pitch adjust knob;Helios.Base.Potentiometer;Pitch adjust knob" Name="value.changed" />
+      <Action Target="Visual;Monitor 2.ADI.Wings tape;Helios.Base.CustomTape;Wings tape" Name="set.Tape Vertical Offset" />
+      <TriggerValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Visual;Monitor 2.ADI.Horizon Cage knob;Helios.Base.Potentiometer;Horizon Cage knob" Name="value.changed" />
       <Action Target="Interface;;Helios.DCSInterfaceFile;DCS F4U-1D" Name="Nav.set.Gyro Horizon Cage" />
-      <TriggerValue />
-    </Binding>
-    <Binding BypassCascadingTriggers="True">
-      <Trigger Source="Visual;Monitor 2.Horizon Cage knob;Helios.Base.Potentiometer;Horizon Cage knob" Name="value.changed" />
-      <Action Target="Visual;Monitor 2.ADI.flag;Helios.Base.CustomTape;flag" Name="set.Tape Vertical Offset" />
-      <TriggerValue />
-    </Binding>
-    <Binding BypassCascadingTriggers="True">
-      <Trigger Source="Visual;Monitor 2.Horizon Cage knob;Helios.Base.Potentiometer;Horizon Cage knob" Name="value.changed" />
-      <Action Target="Visual;Monitor 2.ADI.flag;Helios.Base.CustomTape;flag" Name="set.Tape Horizontal Offset" />
       <TriggerValue />
     </Binding>
     <Binding BypassCascadingTriggers="True">
@@ -8546,46 +8673,6 @@ else return(false) end</LuaScript>
       <TriggerValue />
     </Binding>
     <Binding BypassCascadingTriggers="True">
-      <Trigger Source="Visual;Monitor 2.L1 Panel.magneto invis rotary sw;Helios.Base.RotarySwitch;magneto invis rotary sw" Name="position 1.entered" />
-      <Action Target="Visual;Monitor 2.L1 Panel.mag img 4;Helios.Base.Image;mag img 4" Name="set.hidden" />
-      <StaticValue>false</StaticValue>
-    </Binding>
-    <Binding BypassCascadingTriggers="True">
-      <Trigger Source="Visual;Monitor 2.L1 Panel.magneto invis rotary sw;Helios.Base.RotarySwitch;magneto invis rotary sw" Name="position 1.exited" />
-      <Action Target="Visual;Monitor 2.L1 Panel.mag img 4;Helios.Base.Image;mag img 4" Name="set.hidden" />
-      <StaticValue>true</StaticValue>
-    </Binding>
-    <Binding BypassCascadingTriggers="True">
-      <Trigger Source="Visual;Monitor 2.L1 Panel.magneto invis rotary sw;Helios.Base.RotarySwitch;magneto invis rotary sw" Name="position 2.entered" />
-      <Action Target="Visual;Monitor 2.L1 Panel.mag img 3;Helios.Base.Image;mag img 3" Name="set.hidden" />
-      <StaticValue>false</StaticValue>
-    </Binding>
-    <Binding BypassCascadingTriggers="True">
-      <Trigger Source="Visual;Monitor 2.L1 Panel.magneto invis rotary sw;Helios.Base.RotarySwitch;magneto invis rotary sw" Name="position 2.exited" />
-      <Action Target="Visual;Monitor 2.L1 Panel.mag img 3;Helios.Base.Image;mag img 3" Name="set.hidden" />
-      <StaticValue>true</StaticValue>
-    </Binding>
-    <Binding BypassCascadingTriggers="True">
-      <Trigger Source="Visual;Monitor 2.L1 Panel.magneto invis rotary sw;Helios.Base.RotarySwitch;magneto invis rotary sw" Name="position 3.entered" />
-      <Action Target="Visual;Monitor 2.L1 Panel.mag img 2;Helios.Base.Image;mag img 2" Name="set.hidden" />
-      <StaticValue>false</StaticValue>
-    </Binding>
-    <Binding BypassCascadingTriggers="True">
-      <Trigger Source="Visual;Monitor 2.L1 Panel.magneto invis rotary sw;Helios.Base.RotarySwitch;magneto invis rotary sw" Name="position 3.exited" />
-      <Action Target="Visual;Monitor 2.L1 Panel.mag img 2;Helios.Base.Image;mag img 2" Name="set.hidden" />
-      <StaticValue>true</StaticValue>
-    </Binding>
-    <Binding BypassCascadingTriggers="True">
-      <Trigger Source="Visual;Monitor 2.L1 Panel.magneto invis rotary sw;Helios.Base.RotarySwitch;magneto invis rotary sw" Name="position 4.entered" />
-      <Action Target="Visual;Monitor 2.L1 Panel.mag img 1;Helios.Base.Image;mag img 1" Name="set.hidden" />
-      <StaticValue>false</StaticValue>
-    </Binding>
-    <Binding BypassCascadingTriggers="True">
-      <Trigger Source="Visual;Monitor 2.L1 Panel.magneto invis rotary sw;Helios.Base.RotarySwitch;magneto invis rotary sw" Name="position 4.exited" />
-      <Action Target="Visual;Monitor 2.L1 Panel.mag img 1;Helios.Base.Image;mag img 1" Name="set.hidden" />
-      <StaticValue>true</StaticValue>
-    </Binding>
-    <Binding BypassCascadingTriggers="True">
       <Trigger Source="Visual;Monitor 2.L1 Panel.right gun charge;Helios.Base.ToggleSwitch;right gun charge" Name="position.changed" />
       <Action Target="Interface;;Helios.DCSInterfaceFile;DCS F4U-1D" Name="Weapon.set.Gun Right Charge - Safe" />
       <TriggerValue />
@@ -8599,66 +8686,6 @@ else return(false) end</LuaScript>
       <Trigger Source="Visual;Monitor 2.L1 Panel.pylon emerg release;Helios.Base.ToggleSwitch;pylon emerg release" Name="position.changed" />
       <Action Target="Interface;;Helios.DCSInterfaceFile;DCS F4U-1D" Name="Weapon.set.Pylon Emergency Manual Release" />
       <TriggerValue />
-    </Binding>
-    <Binding BypassCascadingTriggers="True">
-      <Trigger Source="Visual;Monitor 2.L1 Panel.flaps invis rotary sw;Helios.Base.RotarySwitch;flaps invis rotary sw" Name="position 1.entered" />
-      <Action Target="Visual;Monitor 2.L1 Panel.flap img 6;Helios.Base.ImageTranslucent;flap img 6" Name="set.hidden" />
-      <StaticValue>false</StaticValue>
-    </Binding>
-    <Binding BypassCascadingTriggers="True">
-      <Trigger Source="Visual;Monitor 2.L1 Panel.flaps invis rotary sw;Helios.Base.RotarySwitch;flaps invis rotary sw" Name="position 1.exited" />
-      <Action Target="Visual;Monitor 2.L1 Panel.flap img 6;Helios.Base.ImageTranslucent;flap img 6" Name="set.hidden" />
-      <StaticValue>true</StaticValue>
-    </Binding>
-    <Binding BypassCascadingTriggers="True">
-      <Trigger Source="Visual;Monitor 2.L1 Panel.flaps invis rotary sw;Helios.Base.RotarySwitch;flaps invis rotary sw" Name="position 2.entered" />
-      <Action Target="Visual;Monitor 2.L1 Panel.flap img 5;Helios.Base.ImageTranslucent;flap img 5" Name="set.hidden" />
-      <StaticValue>false</StaticValue>
-    </Binding>
-    <Binding BypassCascadingTriggers="True">
-      <Trigger Source="Visual;Monitor 2.L1 Panel.flaps invis rotary sw;Helios.Base.RotarySwitch;flaps invis rotary sw" Name="position 2.exited" />
-      <Action Target="Visual;Monitor 2.L1 Panel.flap img 5;Helios.Base.ImageTranslucent;flap img 5" Name="set.hidden" />
-      <StaticValue>true</StaticValue>
-    </Binding>
-    <Binding BypassCascadingTriggers="True">
-      <Trigger Source="Visual;Monitor 2.L1 Panel.flaps invis rotary sw;Helios.Base.RotarySwitch;flaps invis rotary sw" Name="position 3.entered" />
-      <Action Target="Visual;Monitor 2.L1 Panel.flap img 4;Helios.Base.ImageTranslucent;flap img 4" Name="set.hidden" />
-      <StaticValue>false</StaticValue>
-    </Binding>
-    <Binding BypassCascadingTriggers="True">
-      <Trigger Source="Visual;Monitor 2.L1 Panel.flaps invis rotary sw;Helios.Base.RotarySwitch;flaps invis rotary sw" Name="position 3.exited" />
-      <Action Target="Visual;Monitor 2.L1 Panel.flap img 4;Helios.Base.ImageTranslucent;flap img 4" Name="set.hidden" />
-      <StaticValue>true</StaticValue>
-    </Binding>
-    <Binding BypassCascadingTriggers="True">
-      <Trigger Source="Visual;Monitor 2.L1 Panel.flaps invis rotary sw;Helios.Base.RotarySwitch;flaps invis rotary sw" Name="position 4.entered" />
-      <Action Target="Visual;Monitor 2.L1 Panel.flap img 3;Helios.Base.ImageTranslucent;flap img 3" Name="set.hidden" />
-      <StaticValue>false</StaticValue>
-    </Binding>
-    <Binding BypassCascadingTriggers="True">
-      <Trigger Source="Visual;Monitor 2.L1 Panel.flaps invis rotary sw;Helios.Base.RotarySwitch;flaps invis rotary sw" Name="position 4.exited" />
-      <Action Target="Visual;Monitor 2.L1 Panel.flap img 3;Helios.Base.ImageTranslucent;flap img 3" Name="set.hidden" />
-      <StaticValue>true</StaticValue>
-    </Binding>
-    <Binding BypassCascadingTriggers="True">
-      <Trigger Source="Visual;Monitor 2.L1 Panel.flaps invis rotary sw;Helios.Base.RotarySwitch;flaps invis rotary sw" Name="position 5.entered" />
-      <Action Target="Visual;Monitor 2.L1 Panel.flap img 2;Helios.Base.ImageTranslucent;flap img 2" Name="set.hidden" />
-      <StaticValue>false</StaticValue>
-    </Binding>
-    <Binding BypassCascadingTriggers="True">
-      <Trigger Source="Visual;Monitor 2.L1 Panel.flaps invis rotary sw;Helios.Base.RotarySwitch;flaps invis rotary sw" Name="position 5.exited" />
-      <Action Target="Visual;Monitor 2.L1 Panel.flap img 2;Helios.Base.ImageTranslucent;flap img 2" Name="set.hidden" />
-      <StaticValue>true</StaticValue>
-    </Binding>
-    <Binding BypassCascadingTriggers="True">
-      <Trigger Source="Visual;Monitor 2.L1 Panel.flaps invis rotary sw;Helios.Base.RotarySwitch;flaps invis rotary sw" Name="position 6.entered" />
-      <Action Target="Visual;Monitor 2.L1 Panel.flap img 1;Helios.Base.ImageTranslucent;flap img 1" Name="set.hidden" />
-      <StaticValue>false</StaticValue>
-    </Binding>
-    <Binding BypassCascadingTriggers="True">
-      <Trigger Source="Visual;Monitor 2.L1 Panel.flaps invis rotary sw;Helios.Base.RotarySwitch;flaps invis rotary sw" Name="position 6.exited" />
-      <Action Target="Visual;Monitor 2.L1 Panel.flap img 1;Helios.Base.ImageTranslucent;flap img 1" Name="set.hidden" />
-      <StaticValue>true</StaticValue>
     </Binding>
     <Binding BypassCascadingTriggers="True">
       <Trigger Source="Visual;Monitor 2.L1 Panel.flaps invis rotary sw;Helios.Base.RotarySwitch;flaps invis rotary sw" Name="position.changed" />
@@ -8749,36 +8776,6 @@ else return(false) end</LuaScript>
       <Trigger Source="Visual;Monitor 2.L1 Panel.cb sw;Helios.Base.ToggleSwitch;cb sw" Name="position.changed" />
       <Action Target="Interface;;Helios.DCSInterfaceFile;DCS F4U-1D" Name="Breakers.set.Switch Gun Heater" />
       <TriggerValue />
-    </Binding>
-    <Binding BypassCascadingTriggers="True">
-      <Trigger Source="Visual;Monitor 2.L1 Panel.gear handle invis switch;Helios.Base.ThreeWayToggleSwitch;gear handle invis switch" Name="position three.entered" />
-      <Action Target="Visual;Monitor 2.L1 Panel.gear image 3;Helios.Base.ImageTranslucent;gear image 3" Name="set.hidden" />
-      <StaticValue>false</StaticValue>
-    </Binding>
-    <Binding BypassCascadingTriggers="True">
-      <Trigger Source="Visual;Monitor 2.L1 Panel.gear handle invis switch;Helios.Base.ThreeWayToggleSwitch;gear handle invis switch" Name="position three.exited" />
-      <Action Target="Visual;Monitor 2.L1 Panel.gear image 3;Helios.Base.ImageTranslucent;gear image 3" Name="set.hidden" />
-      <StaticValue>true</StaticValue>
-    </Binding>
-    <Binding BypassCascadingTriggers="True">
-      <Trigger Source="Visual;Monitor 2.L1 Panel.gear handle invis switch;Helios.Base.ThreeWayToggleSwitch;gear handle invis switch" Name="position two.entered" />
-      <Action Target="Visual;Monitor 2.L1 Panel.gear image 2;Helios.Base.ImageTranslucent;gear image 2" Name="set.hidden" />
-      <StaticValue>false</StaticValue>
-    </Binding>
-    <Binding BypassCascadingTriggers="True">
-      <Trigger Source="Visual;Monitor 2.L1 Panel.gear handle invis switch;Helios.Base.ThreeWayToggleSwitch;gear handle invis switch" Name="position two.exited" />
-      <Action Target="Visual;Monitor 2.L1 Panel.gear image 2;Helios.Base.ImageTranslucent;gear image 2" Name="set.hidden" />
-      <StaticValue>true</StaticValue>
-    </Binding>
-    <Binding BypassCascadingTriggers="True">
-      <Trigger Source="Visual;Monitor 2.L1 Panel.gear handle invis switch;Helios.Base.ThreeWayToggleSwitch;gear handle invis switch" Name="position one.entered" />
-      <Action Target="Visual;Monitor 2.L1 Panel.gear image 1;Helios.Base.ImageTranslucent;gear image 1" Name="set.hidden" />
-      <StaticValue>false</StaticValue>
-    </Binding>
-    <Binding BypassCascadingTriggers="True">
-      <Trigger Source="Visual;Monitor 2.L1 Panel.gear handle invis switch;Helios.Base.ThreeWayToggleSwitch;gear handle invis switch" Name="position one.exited" />
-      <Action Target="Visual;Monitor 2.L1 Panel.gear image 1;Helios.Base.ImageTranslucent;gear image 1" Name="set.hidden" />
-      <StaticValue>true</StaticValue>
     </Binding>
     <Binding BypassCascadingTriggers="True">
       <Trigger Source="Visual;Monitor 2.L1 Panel.gear handle invis switch;Helios.Base.ThreeWayToggleSwitch;gear handle invis switch" Name="position.changed" />

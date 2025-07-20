@@ -4,7 +4,7 @@
   "commit": "b1e9a6095cf3ed6354c5bcc0b745d39f831b60a5",
   "type": "DCS",
   "name": "DCS F4U-1D",
-  "module": "F4U-1D",
+  "module": "DCS F4U-1D",
   "vehicles": [
     "F4U-1D",
 	"F4U-1D_CW"
@@ -605,6 +605,28 @@
           "actionId": "3351"
         }
       ]
+    },
+	{
+      "heliosType": "DCS.Common.Axis",
+      "device": "Nav",
+      "name": "Horizon Pitch Set",
+      "description": "Current value of this potentiometer.",
+      "exports": [
+        {
+          "format": "%.3f",
+          "id": "17"
+        }
+      ],
+      "loop": false,
+      "argumentValue": 0.025,
+      "argumentMin": -1,
+      "argumentMax": 1,
+      "actions": {
+        "set": {
+          "deviceId": "5",
+          "actionId": "3359"
+        }
+      }
     },
 	{
       "heliosType": "DCS.Common.RotaryEncoder",
