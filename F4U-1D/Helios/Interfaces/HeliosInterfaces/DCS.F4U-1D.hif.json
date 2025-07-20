@@ -3624,7 +3624,7 @@
       "exports": [
         {
           "format": "%0.3f",
-          "id": "5"
+          "id": "905"
         }
       ],
       "valueDescription": "Numeric value between 0 and 1",
@@ -3633,12 +3633,82 @@
 	{
       "heliosType": "DCS.Common.NetworkValue",
       "device": "Instruments",
-      "name": "Chronometer",
+      "name": "Clock Currtime Seconds",
+      "description": "Time of Day Minutes",
+      "exports": [
+        {
+          "format": "%0.3f",
+          "id": "246"
+        }
+      ],
+      "valueDescription": "Numeric value between 0 and 1",
+      "unit": "Numeric"
+    },
+	{
+      "heliosType": "DCS.Common.NetworkValue",
+      "device": "Instruments",
+      "name": "Chronometer - Seconds",
       "description": "Timer in Seconds",
       "exports": [
         {
           "format": "%0.3f",
-          "id": "6"
+          "id": "906"
+        }
+      ],
+      "valueDescription": "Numeric value between 0 and 1",
+      "unit": "Numeric"
+    },
+	{
+      "heliosType": "DCS.Common.NetworkValue",
+      "device": "Instruments",
+      "name": "Chronometer - Minutes",
+      "description": "Timer in Seconds",
+      "exports": [
+        {
+          "format": "%0.3f",
+          "id": "345"
+        }
+      ],
+      "valueDescription": "Numeric value between 0 and 1",
+      "unit": "Numeric"
+    },
+	{
+      "heliosType": "DCS.Common.NetworkValue",
+      "device": "Instruments",
+      "name": "Elapsed Time - Hour",
+      "description": "Timer in Seconds",
+      "exports": [
+        {
+          "format": "%0.3f",
+          "id": "244"
+        }
+      ],
+      "valueDescription": "Numeric value between 0 and 1",
+      "unit": "Numeric"
+    },
+	{
+      "heliosType": "DCS.Common.NetworkValue",
+      "device": "Instruments",
+      "name": "Elapsed Time - Minutes",
+      "description": "Timer in Seconds",
+      "exports": [
+        {
+          "format": "%0.3f",
+          "id": "245"
+        }
+      ],
+      "valueDescription": "Numeric value between 0 and 1",
+      "unit": "Numeric"
+    },
+	{
+      "heliosType": "DCS.Common.NetworkValue",
+      "device": "Instruments",
+      "name": "Date Needle",
+      "description": "Timer in Seconds",
+      "exports": [
+        {
+          "format": "%0.3f",
+          "id": "247"
         }
       ],
       "valueDescription": "Numeric value between 0 and 1",
@@ -4524,6 +4594,60 @@
 	{
       "heliosType": "DCS.Common.ScaledNetworkValue",
       "device": "Lamps",
+      "name": "Stall Warning Lamp",
+      "description": "State of Lamp",
+      "exports": [
+        {
+          "format": "%.1f",
+          "id": "302"
+        }
+      ],
+      "valueDescription": "0 to 1",
+      "unit": "Numeric",
+      "calibration": {
+        "points": [
+          {
+            "value": 0,
+            "mappedValue": 0
+          },
+          {
+            "value": 1,
+            "mappedValue": 1 
+          }
+        ],
+        "precision": 5
+      }
+    },
+	{
+      "heliosType": "DCS.Common.ScaledNetworkValue",
+      "device": "Lamps",
+      "name": "Water Injection Lamp",
+      "description": "State of Lamp",
+      "exports": [
+        {
+          "format": "%.1f",
+          "id": "300"
+        }
+      ],
+      "valueDescription": "0 to 1",
+      "unit": "Numeric",
+      "calibration": {
+        "points": [
+          {
+            "value": 0,
+            "mappedValue": 0
+          },
+          {
+            "value": 1,
+            "mappedValue": 1 
+          }
+        ],
+        "precision": 5
+      }
+    },
+	{
+      "heliosType": "DCS.Common.ScaledNetworkValue",
+      "device": "Lamps",
       "name": "Rocket Box Lamp",
       "description": "State of Lamp",
       "exports": [
@@ -4557,6 +4681,60 @@
         {
           "format": "%.1f",
           "id": "814"
+        }
+      ],
+      "valueDescription": "0 to 1",
+      "unit": "Numeric",
+      "calibration": {
+        "points": [
+          {
+            "value": 0,
+            "mappedValue": 0
+          },
+          {
+            "value": 1,
+            "mappedValue": 1 
+          }
+        ],
+        "precision": 5
+      }
+    },
+	{
+      "heliosType": "DCS.Common.ScaledNetworkValue",
+      "device": "Misc",
+      "name": "Dash Layout - Warnings",
+      "description": "State of Dash Decor",
+      "exports": [
+        {
+          "format": "%.1f",
+          "id": "303"
+        }
+      ],
+      "valueDescription": "0 to 1",
+      "unit": "Numeric",
+      "calibration": {
+        "points": [
+          {
+            "value": 0,
+            "mappedValue": 0
+          },
+          {
+            "value": 1,
+            "mappedValue": 1 
+          }
+        ],
+        "precision": 5
+      }
+    },
+	{
+      "heliosType": "DCS.Common.ScaledNetworkValue",
+      "device": "Misc",
+      "name": "Dash Layout - Radar",
+      "description": "State of Radar",
+      "exports": [
+        {
+          "format": "%.1f",
+          "id": "902"
         }
       ],
       "valueDescription": "0 to 1",

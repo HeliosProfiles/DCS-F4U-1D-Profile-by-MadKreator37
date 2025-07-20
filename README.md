@@ -14,24 +14,23 @@ This profile was designed and created by MadKreator37. All parts were cut and mo
 *Special thanks to @BluefinBima for his contributions and assistance as always! And to Nonobeardunord for the lua scripting tips!*
 
 ### Known Bugs and Issues
+ 
 
-1: Cockpit warning lights( Stall, Rocket Box, BatBomb) may or may not function correctly-- lack of exposed devices in cockpit files
+1: Cockpit lighting and Gunsight Intensity knobs don't have proper graphics because they are rotary encoders, not potentiometers--- coding choice by Mag3
 
-2: Cockpit lighting and Gunsight Intensity knobs don't have proper graphics because they are rotary encoders, not potentiometers--- coding choice by Mag3
+2: No IFF panel(yet)-- not implemented in module
 
-3: No IFF panel(yet)-- not implemented in module
+3: No Oxygen controls or gauges-- not implemented in module yet
 
-4: No Oxygen controls or gauges-- not implemented in module yet
+4: Recognition light keying button does not function-- no definitions in cockpit files
 
-5: Recognition light keying button does not function-- no definitions in cockpit files
+5: Rocket Box Pylon indicator- WIP- not definitions in cockpit files, but should cycle following hotas rocket release command
 
-6: Rocket Box Pylon indicator- WIP- not definitions in cockpit files, but should cycle following hotas rocket release command
+6: !!! Position 6 on C-38 radio channel selector can cause DCS crash-- Reported to Mag3 (causes error in F4U_avionics.dll) !!!
 
-7: !!! Position 6 on C-38 radio channel selector can cause DCS crash-- Reported to Mag3 (causes error in F4U_avionics.dll) !!!
+7: Clock does not have all functions( non-functinoal time adjust)-- not implemented in module
 
-8: Clock does not have all functions-- not implemented in module, or commands not exposed in cockpit files
-
-9: Accelerometer Min Value needle does not function-- not implemented in module
+8: Accelerometer Min Value needle does not function-- not implemented in module
 
 ### IMAGES
 
