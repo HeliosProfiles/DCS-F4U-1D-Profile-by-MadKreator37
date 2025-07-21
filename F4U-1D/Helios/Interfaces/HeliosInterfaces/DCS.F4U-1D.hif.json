@@ -1822,7 +1822,7 @@
           "actionId": "3906"
         },
         {
-          "argumentValue": "-1.0",
+          "argumentValue": "0.0",
           "name": "Off",
           "actionId": "3906"
         }
@@ -1847,7 +1847,7 @@
           "actionId": "3907"
         },
         {
-          "argumentValue": "-1.0",
+          "argumentValue": "0.0",
           "name": "Off",
           "actionId": "3907"
         }
@@ -1872,7 +1872,7 @@
           "actionId": "3908"
         },
         {
-          "argumentValue": "-1.0",
+          "argumentValue": "0.0",
           "name": "Off",
           "actionId": "3908"
         }
@@ -1897,7 +1897,7 @@
           "actionId": "3909"
         },
         {
-          "argumentValue": "-1.0",
+          "argumentValue": "0.0",
           "name": "Off",
           "actionId": "3909"
         }
