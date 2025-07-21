@@ -8673,6 +8673,46 @@ else return(true) end</LuaScript>
       <TriggerValue />
     </Binding>
     <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Visual;Monitor 2.L1 Panel.magneto invis rotary sw;Helios.Base.RotarySwitch;magneto invis rotary sw" Name="position 1.entered" />
+      <Action Target="Visual;Monitor 2.L1 Panel.mag img Off;Helios.Base.Image;mag img Off" Name="set.hidden" />
+      <StaticValue>false</StaticValue>
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Visual;Monitor 2.L1 Panel.magneto invis rotary sw;Helios.Base.RotarySwitch;magneto invis rotary sw" Name="position 1.exited" />
+      <Action Target="Visual;Monitor 2.L1 Panel.mag img Off;Helios.Base.Image;mag img Off" Name="set.hidden" />
+      <StaticValue>true</StaticValue>
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Visual;Monitor 2.L1 Panel.magneto invis rotary sw;Helios.Base.RotarySwitch;magneto invis rotary sw" Name="position 2.entered" />
+      <Action Target="Visual;Monitor 2.L1 Panel.mag img R;Helios.Base.Image;mag img R" Name="set.hidden" />
+      <StaticValue>false</StaticValue>
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Visual;Monitor 2.L1 Panel.magneto invis rotary sw;Helios.Base.RotarySwitch;magneto invis rotary sw" Name="position 2.exited" />
+      <Action Target="Visual;Monitor 2.L1 Panel.mag img R;Helios.Base.Image;mag img R" Name="set.hidden" />
+      <StaticValue>true</StaticValue>
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Visual;Monitor 2.L1 Panel.magneto invis rotary sw;Helios.Base.RotarySwitch;magneto invis rotary sw" Name="position 3.entered" />
+      <Action Target="Visual;Monitor 2.L1 Panel.mag img l;Helios.Base.Image;mag img l" Name="set.hidden" />
+      <StaticValue>false</StaticValue>
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Visual;Monitor 2.L1 Panel.magneto invis rotary sw;Helios.Base.RotarySwitch;magneto invis rotary sw" Name="position 3.exited" />
+      <Action Target="Visual;Monitor 2.L1 Panel.mag img l;Helios.Base.Image;mag img l" Name="set.hidden" />
+      <StaticValue>true</StaticValue>
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Visual;Monitor 2.L1 Panel.magneto invis rotary sw;Helios.Base.RotarySwitch;magneto invis rotary sw" Name="position 4.entered" />
+      <Action Target="Visual;Monitor 2.L1 Panel.mag img both;Helios.Base.Image;mag img both" Name="set.hidden" />
+      <StaticValue>false</StaticValue>
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Visual;Monitor 2.L1 Panel.magneto invis rotary sw;Helios.Base.RotarySwitch;magneto invis rotary sw" Name="position 4.exited" />
+      <Action Target="Visual;Monitor 2.L1 Panel.mag img both;Helios.Base.Image;mag img both" Name="set.hidden" />
+      <StaticValue>true</StaticValue>
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
       <Trigger Source="Visual;Monitor 2.L1 Panel.right gun charge;Helios.Base.ToggleSwitch;right gun charge" Name="position.changed" />
       <Action Target="Interface;;Helios.DCSInterfaceFile;DCS F4U-1D" Name="Weapon.set.Gun Right Charge - Safe" />
       <TriggerValue />
@@ -8691,6 +8731,66 @@ else return(true) end</LuaScript>
       <Trigger Source="Visual;Monitor 2.L1 Panel.flaps invis rotary sw;Helios.Base.RotarySwitch;flaps invis rotary sw" Name="position.changed" />
       <Action Target="Interface;;Helios.DCSInterfaceFile;DCS F4U-1D" Name="Control.set.Flaps" />
       <TriggerValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Visual;Monitor 2.L1 Panel.flaps invis rotary sw;Helios.Base.RotarySwitch;flaps invis rotary sw" Name="position 1.entered" />
+      <Action Target="Visual;Monitor 2.L1 Panel.flap img 0;Helios.Base.ImageTranslucent;flap img 0" Name="set.hidden" />
+      <StaticValue>false</StaticValue>
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Visual;Monitor 2.L1 Panel.flaps invis rotary sw;Helios.Base.RotarySwitch;flaps invis rotary sw" Name="position 1.exited" />
+      <Action Target="Visual;Monitor 2.L1 Panel.flap img 0;Helios.Base.ImageTranslucent;flap img 0" Name="set.hidden" />
+      <StaticValue>true</StaticValue>
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Visual;Monitor 2.L1 Panel.flaps invis rotary sw;Helios.Base.RotarySwitch;flaps invis rotary sw" Name="position 2.entered" />
+      <Action Target="Visual;Monitor 2.L1 Panel.flap img 10;Helios.Base.ImageTranslucent;flap img 10" Name="set.hidden" />
+      <StaticValue>false</StaticValue>
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Visual;Monitor 2.L1 Panel.flaps invis rotary sw;Helios.Base.RotarySwitch;flaps invis rotary sw" Name="position 2.exited" />
+      <Action Target="Visual;Monitor 2.L1 Panel.flap img 10;Helios.Base.ImageTranslucent;flap img 10" Name="set.hidden" />
+      <StaticValue>true</StaticValue>
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Visual;Monitor 2.L1 Panel.flaps invis rotary sw;Helios.Base.RotarySwitch;flaps invis rotary sw" Name="position 3.entered" />
+      <Action Target="Visual;Monitor 2.L1 Panel.flap img 20;Helios.Base.ImageTranslucent;flap img 20" Name="set.hidden" />
+      <StaticValue>false</StaticValue>
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Visual;Monitor 2.L1 Panel.flaps invis rotary sw;Helios.Base.RotarySwitch;flaps invis rotary sw" Name="position 3.exited" />
+      <Action Target="Visual;Monitor 2.L1 Panel.flap img 20;Helios.Base.ImageTranslucent;flap img 20" Name="set.hidden" />
+      <StaticValue>true</StaticValue>
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Visual;Monitor 2.L1 Panel.flaps invis rotary sw;Helios.Base.RotarySwitch;flaps invis rotary sw" Name="position 4.entered" />
+      <Action Target="Visual;Monitor 2.L1 Panel.flap img 30;Helios.Base.ImageTranslucent;flap img 30" Name="set.hidden" />
+      <StaticValue>false</StaticValue>
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Visual;Monitor 2.L1 Panel.flaps invis rotary sw;Helios.Base.RotarySwitch;flaps invis rotary sw" Name="position 4.exited" />
+      <Action Target="Visual;Monitor 2.L1 Panel.flap img 30;Helios.Base.ImageTranslucent;flap img 30" Name="set.hidden" />
+      <StaticValue>true</StaticValue>
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Visual;Monitor 2.L1 Panel.flaps invis rotary sw;Helios.Base.RotarySwitch;flaps invis rotary sw" Name="position 5.entered" />
+      <Action Target="Visual;Monitor 2.L1 Panel.flap img 40;Helios.Base.ImageTranslucent;flap img 40" Name="set.hidden" />
+      <StaticValue>false</StaticValue>
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Visual;Monitor 2.L1 Panel.flaps invis rotary sw;Helios.Base.RotarySwitch;flaps invis rotary sw" Name="position 5.exited" />
+      <Action Target="Visual;Monitor 2.L1 Panel.flap img 40;Helios.Base.ImageTranslucent;flap img 40" Name="set.hidden" />
+      <StaticValue>true</StaticValue>
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Visual;Monitor 2.L1 Panel.flaps invis rotary sw;Helios.Base.RotarySwitch;flaps invis rotary sw" Name="position 6.entered" />
+      <Action Target="Visual;Monitor 2.L1 Panel.flap img 50;Helios.Base.ImageTranslucent;flap img 50" Name="set.hidden" />
+      <StaticValue>false</StaticValue>
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Visual;Monitor 2.L1 Panel.flaps invis rotary sw;Helios.Base.RotarySwitch;flaps invis rotary sw" Name="position 6.exited" />
+      <Action Target="Visual;Monitor 2.L1 Panel.flap img 50;Helios.Base.ImageTranslucent;flap img 50" Name="set.hidden" />
+      <StaticValue>true</StaticValue>
     </Binding>
     <Binding BypassCascadingTriggers="True">
       <Trigger Source="Visual;Monitor 2.L1 Panel.cb right outer gun;Helios.Base.ToggleSwitch;cb right outer gun" Name="position.changed" />
@@ -8781,6 +8881,36 @@ else return(true) end</LuaScript>
       <Trigger Source="Visual;Monitor 2.L1 Panel.gear handle invis switch;Helios.Base.ThreeWayToggleSwitch;gear handle invis switch" Name="position.changed" />
       <Action Target="Interface;;Helios.DCSInterfaceFile;DCS F4U-1D" Name="Control.set.Landing Gear Handle" />
       <TriggerValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Visual;Monitor 2.L1 Panel.gear handle invis switch;Helios.Base.ThreeWayToggleSwitch;gear handle invis switch" Name="position one.entered" />
+      <Action Target="Visual;Monitor 2.L1 Panel.gear image 1;Helios.Base.ImageTranslucent;gear image 1" Name="set.hidden" />
+      <StaticValue>false</StaticValue>
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Visual;Monitor 2.L1 Panel.gear handle invis switch;Helios.Base.ThreeWayToggleSwitch;gear handle invis switch" Name="position one.exited" />
+      <Action Target="Visual;Monitor 2.L1 Panel.gear image 1;Helios.Base.ImageTranslucent;gear image 1" Name="set.hidden" />
+      <StaticValue>true</StaticValue>
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Visual;Monitor 2.L1 Panel.gear handle invis switch;Helios.Base.ThreeWayToggleSwitch;gear handle invis switch" Name="position two.entered" />
+      <Action Target="Visual;Monitor 2.L1 Panel.gear image 2;Helios.Base.ImageTranslucent;gear image 2" Name="set.hidden" />
+      <StaticValue>false</StaticValue>
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Visual;Monitor 2.L1 Panel.gear handle invis switch;Helios.Base.ThreeWayToggleSwitch;gear handle invis switch" Name="position two.exited" />
+      <Action Target="Visual;Monitor 2.L1 Panel.gear image 2;Helios.Base.ImageTranslucent;gear image 2" Name="set.hidden" />
+      <StaticValue>true</StaticValue>
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Visual;Monitor 2.L1 Panel.gear handle invis switch;Helios.Base.ThreeWayToggleSwitch;gear handle invis switch" Name="position three.entered" />
+      <Action Target="Visual;Monitor 2.L1 Panel.gear image 3;Helios.Base.ImageTranslucent;gear image 3" Name="set.hidden" />
+      <StaticValue>true</StaticValue>
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Visual;Monitor 2.L1 Panel.gear handle invis switch;Helios.Base.ThreeWayToggleSwitch;gear handle invis switch" Name="position three.exited" />
+      <Action Target="Visual;Monitor 2.L1 Panel.gear image 3;Helios.Base.ImageTranslucent;gear image 3" Name="set.hidden" />
+      <StaticValue>false</StaticValue>
     </Binding>
     <Binding BypassCascadingTriggers="True">
       <Trigger Source="Visual;Monitor 2.L2 Panel.hand pump;Helios.Base.ToggleSwitch;hand pump" Name="position.changed" />
