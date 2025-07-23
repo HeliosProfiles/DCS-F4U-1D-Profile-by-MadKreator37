@@ -678,7 +678,7 @@
               <RotationTravel>360</RotationTravel>
               <Children />
             </Control>
-            <Control TypeIdentifier="Helios.Base.Image" Name="Image" SnapTarget="False" Locked="False">
+            <Control TypeIdentifier="Helios.Base.Image" Name="Image" SnapTarget="False" Locked="True">
               <Image>MadKreator37\F4U-1D\Bezels_And_Faces\Hsi_Bezel.png</Image>
               <Alignment>Stretched</Alignment>
               <CornerRadius>0</CornerRadius>
@@ -706,6 +706,20 @@
               <RotationTravel>360</RotationTravel>
               <Children />
             </Control>
+            <Control TypeIdentifier="Helios.Base.ImageTranslucent" Name="Translucent Image" SnapTarget="False" Locked="True">
+              <Image>MadKreator37\F4U-1D\glass2_2.png</Image>
+              <Alignment>Stretched</Alignment>
+              <CornerRadius>0</CornerRadius>
+              <DefaultOpacity>0.367125773313712</DefaultOpacity>
+              <Interaction>
+                <AllowInteraction>False</AllowInteraction>
+              </Interaction>
+              <Location>23,16</Location>
+              <Size>229,229</Size>
+              <Rotation>CW</Rotation>
+              <Hidden>False</Hidden>
+              <Children />
+            </Control>
             <Control TypeIdentifier="Helios.Base.RotaryEncoder" Name="Rotary Encoder" SnapTarget="True" Locked="True">
               <Location>9,207</Location>
               <Size>55,55</Size>
@@ -718,20 +732,6 @@
                 <Type>Swipe</Type>
                 <Sensitivity>1</Sensitivity>
               </ClickType>
-              <Children />
-            </Control>
-            <Control TypeIdentifier="Helios.Base.ImageTranslucent" Name="Translucent Image" SnapTarget="False" Locked="False">
-              <Image>MadKreator37\F4U-1D\glass2_2.png</Image>
-              <Alignment>Stretched</Alignment>
-              <CornerRadius>0</CornerRadius>
-              <DefaultOpacity>0.367125773313712</DefaultOpacity>
-              <Interaction>
-                <AllowInteraction>False</AllowInteraction>
-              </Interaction>
-              <Location>23,16</Location>
-              <Size>229,229</Size>
-              <Rotation>CW</Rotation>
-              <Hidden>False</Hidden>
               <Children />
             </Control>
           </Children>
@@ -1619,7 +1619,7 @@
             <AllowInteractionLegacy>False</AllowInteractionLegacy>
           </Interaction>
           <Children>
-            <Control TypeIdentifier="Helios.Base.CustomTape" Name="cage flag" SnapTarget="True" Locked="True">
+            <Control TypeIdentifier="Helios.Base.CustomTape" Name="cage flag" SnapTarget="True" Locked="False">
               <Location>60,156</Location>
               <Size>159,57</Size>
               <Hidden>False</Hidden>
@@ -2981,8 +2981,8 @@
               <Children />
             </Control>
             <Control TypeIdentifier="Helios.Base.ToggleSwitch" Name="tank air pressure vAlve" SnapTarget="True" Locked="True">
-              <Location>15,317</Location>
-              <Size>106,104</Size>
+              <Location>21,319</Location>
+              <Size>99,98</Size>
               <Hidden>False</Hidden>
               <SwitchType>OnOn</SwitchType>
               <Orientation>Vertical</Orientation>
@@ -4483,10 +4483,10 @@
               <Hidden>False</Hidden>
               <KnobImage>MadKreator37\F4U-1D\Transparent_Image.png</KnobImage>
               <Positions>
-                <Position Name="0" Rotation="112.202493388742" />
-                <Position Name="1" Rotation="138.734416320363" />
-                <Position Name="2" Rotation="181.337363052513" />
-                <Position Name="3" Rotation="233.47185493011" />
+                <Position Name="0" Rotation="121.908239806859" />
+                <Position Name="1" Rotation="159.532444359187" />
+                <Position Name="2" Rotation="186.883503862866" />
+                <Position Name="3" Rotation="225.152643714581" />
               </Positions>
               <DefaultPosition>1</DefaultPosition>
               <ClickType>
@@ -4961,7 +4961,7 @@
               </Interaction>
               <Location>160,620</Location>
               <Size>420,420</Size>
-              <Hidden>False</Hidden>
+              <Hidden>True</Hidden>
               <Children />
             </Control>
             <Control TypeIdentifier="Helios.Base.ImageTranslucent" Name="gear image 2" SnapTarget="False" Locked="True">
@@ -4974,7 +4974,7 @@
               </Interaction>
               <Location>160,620</Location>
               <Size>420,420</Size>
-              <Hidden>True</Hidden>
+              <Hidden>False</Hidden>
               <Children />
             </Control>
             <Control TypeIdentifier="Helios.Base.ImageTranslucent" Name="gear image 1" SnapTarget="False" Locked="True">
@@ -4992,7 +4992,7 @@
             </Control>
             <Control TypeIdentifier="Helios.Base.ThreeWayToggleSwitch" Name="gear handle invis switch" SnapTarget="True" Locked="True">
               <Location>366,782</Location>
-              <Size>152,272</Size>
+              <Size>234,272</Size>
               <Hidden>False</Hidden>
               <SwitchType>OnOnOn</SwitchType>
               <Orientation>Vertical</Orientation>
@@ -5000,7 +5000,7 @@
               <PositionOneImage>MadKreator37\F4U-1D\Transparent_Image.png</PositionOneImage>
               <PositionTwoImage>MadKreator37\F4U-1D\Transparent_Image.png</PositionTwoImage>
               <PositionThreeImage>MadKreator37\F4U-1D\Transparent_Image.png</PositionThreeImage>
-              <DefaultPosition>Three</DefaultPosition>
+              <DefaultPosition>Two</DefaultPosition>
               <Children />
             </Control>
           </Children>
@@ -5082,18 +5082,6 @@
               <Hidden>False</Hidden>
               <Children />
             </Control>
-            <Control TypeIdentifier="Helios.Base.ToggleSwitch" Name="hand pump" SnapTarget="True" Locked="True">
-              <Location>630,36</Location>
-              <Size>109,389</Size>
-              <Hidden>False</Hidden>
-              <SwitchType>OnOn</SwitchType>
-              <Orientation>Vertical</Orientation>
-              <ClickType>Swipe</ClickType>
-              <PositionOneImage>MadKreator37\F4U-1D\Buttons_Switches_Knobs\Hand_Pump_Fore.png</PositionOneImage>
-              <PositionTwoImage>MadKreator37\F4U-1D\Buttons_Switches_Knobs\Hand_Pump_Aft.png</PositionTwoImage>
-              <DefaultPosition>Two</DefaultPosition>
-              <Children />
-            </Control>
             <Control TypeIdentifier="Helios.Base.RotarySwitch" Name="fuel selector" SnapTarget="True" Locked="True">
               <Location>403,32</Location>
               <Size>267,267</Size>
@@ -5111,6 +5099,18 @@
               <ClickType>
                 <Type>Touch</Type>
               </ClickType>
+              <Children />
+            </Control>
+            <Control TypeIdentifier="Helios.Base.ToggleSwitch" Name="hand pump" SnapTarget="True" Locked="True">
+              <Location>630,36</Location>
+              <Size>109,389</Size>
+              <Hidden>False</Hidden>
+              <SwitchType>OnOn</SwitchType>
+              <Orientation>Vertical</Orientation>
+              <ClickType>Swipe</ClickType>
+              <PositionOneImage>MadKreator37\F4U-1D\Buttons_Switches_Knobs\Hand_Pump_Fore.png</PositionOneImage>
+              <PositionTwoImage>MadKreator37\F4U-1D\Buttons_Switches_Knobs\Hand_Pump_Aft.png</PositionTwoImage>
+              <DefaultPosition>Two</DefaultPosition>
               <Children />
             </Control>
             <Control TypeIdentifier="Helios.Base.ToggleSwitch" Name="tail wheel lock" SnapTarget="True" Locked="True">
@@ -5790,21 +5790,6 @@
               </ClickType>
               <Children />
             </Control>
-            <Control TypeIdentifier="Helios.Base.RotarySwitch" Name="c26 cw voicw" SnapTarget="True" Locked="True">
-              <Location>1266,78</Location>
-              <Size>61,61</Size>
-              <Hidden>False</Hidden>
-              <KnobImage>MadKreator37\F4U-1D\Buttons_Switches_Knobs\C26_CW_Voice.png</KnobImage>
-              <Positions>
-                <Position Name="0" Rotation="0" />
-                <Position Name="1" Rotation="33.4495758718191" />
-              </Positions>
-              <DefaultPosition>1</DefaultPosition>
-              <ClickType>
-                <Type>Touch</Type>
-              </ClickType>
-              <Children />
-            </Control>
             <Control TypeIdentifier="Helios.Base.Potentiometer" Name="c26 freq dial" SnapTarget="True" Locked="True">
               <Location>1157,103</Location>
               <Size>145,145</Size>
@@ -5832,6 +5817,21 @@
               <ClickType>
                 <Type>Swipe</Type>
                 <Sensitivity>1</Sensitivity>
+              </ClickType>
+              <Children />
+            </Control>
+            <Control TypeIdentifier="Helios.Base.RotarySwitch" Name="c26 cw voicw" SnapTarget="True" Locked="True">
+              <Location>1266,78</Location>
+              <Size>61,61</Size>
+              <Hidden>False</Hidden>
+              <KnobImage>MadKreator37\F4U-1D\Buttons_Switches_Knobs\C26_CW_Voice.png</KnobImage>
+              <Positions>
+                <Position Name="0" Rotation="0" />
+                <Position Name="1" Rotation="33.4495758718191" />
+              </Positions>
+              <DefaultPosition>1</DefaultPosition>
+              <ClickType>
+                <Type>Touch</Type>
               </ClickType>
               <Children />
             </Control>
@@ -7928,6 +7928,16 @@ else return(true) end</LuaScript>
       <TriggerValue />
     </Binding>
     <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Visual;Monitor 2.ADI.Horizon Cage knob;Helios.Base.Potentiometer;Horizon Cage knob" Name="value.changed" />
+      <Action Target="Visual;Monitor 2.ADI.flag;Helios.Base.CustomTape;flag" Name="set.Tape Vertical Offset" />
+      <TriggerValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Visual;Monitor 2.ADI.Horizon Cage knob;Helios.Base.Potentiometer;Horizon Cage knob" Name="value.changed" />
+      <Action Target="Visual;Monitor 2.ADI.flag;Helios.Base.CustomTape;flag" Name="set.Tape Horizontal Offset" />
+      <TriggerValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
       <Trigger Source="Visual;Monitor 2.Clock.set date;Helios.Base.PushButton;set date" Name="closed" />
       <Action Target="Interface;;Helios.DCSInterfaceFile;DCS F4U-1D" Name="Clock.push.Set Date" />
       <StaticValue />
@@ -8905,21 +8915,21 @@ else return(true) end</LuaScript>
     <Binding BypassCascadingTriggers="True">
       <Trigger Source="Visual;Monitor 2.L1 Panel.gear handle invis switch;Helios.Base.ThreeWayToggleSwitch;gear handle invis switch" Name="position three.entered" />
       <Action Target="Visual;Monitor 2.L1 Panel.gear image 3;Helios.Base.ImageTranslucent;gear image 3" Name="set.hidden" />
-      <StaticValue>true</StaticValue>
+      <StaticValue>false</StaticValue>
     </Binding>
     <Binding BypassCascadingTriggers="True">
       <Trigger Source="Visual;Monitor 2.L1 Panel.gear handle invis switch;Helios.Base.ThreeWayToggleSwitch;gear handle invis switch" Name="position three.exited" />
       <Action Target="Visual;Monitor 2.L1 Panel.gear image 3;Helios.Base.ImageTranslucent;gear image 3" Name="set.hidden" />
-      <StaticValue>false</StaticValue>
-    </Binding>
-    <Binding BypassCascadingTriggers="True">
-      <Trigger Source="Visual;Monitor 2.L2 Panel.hand pump;Helios.Base.ToggleSwitch;hand pump" Name="position.changed" />
-      <Action Target="Interface;;Helios.DCSInterfaceFile;DCS F4U-1D" Name="Hydro.set.Hand Pump" />
-      <TriggerValue />
+      <StaticValue>true</StaticValue>
     </Binding>
     <Binding BypassCascadingTriggers="True">
       <Trigger Source="Visual;Monitor 2.L2 Panel.fuel selector;Helios.Base.RotarySwitch;fuel selector" Name="position.changed" />
       <Action Target="Interface;;Helios.DCSInterfaceFile;DCS F4U-1D" Name="Engine.set.Fuel Tank Selector" />
+      <TriggerValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Visual;Monitor 2.L2 Panel.hand pump;Helios.Base.ToggleSwitch;hand pump" Name="position.changed" />
+      <Action Target="Interface;;Helios.DCSInterfaceFile;DCS F4U-1D" Name="Hydro.set.Hand Pump" />
       <TriggerValue />
     </Binding>
     <Binding BypassCascadingTriggers="True">
@@ -9083,11 +9093,6 @@ else return(true) end</LuaScript>
       <TriggerValue />
     </Binding>
     <Binding BypassCascadingTriggers="True">
-      <Trigger Source="Visual;Monitor 2.Radio Panel.c26 cw voicw;Helios.Base.RotarySwitch;c26 cw voicw" Name="position.changed" />
-      <Action Target="Interface;;Helios.DCSInterfaceFile;DCS F4U-1D" Name="Radio.set.C-26 CW/Voice Switch" />
-      <TriggerValue />
-    </Binding>
-    <Binding BypassCascadingTriggers="True">
       <Trigger Source="Visual;Monitor 2.Radio Panel.c26 freq handle;Helios.Base.Potentiometer;c26 freq handle" Name="value.changed" />
       <Action Target="Visual;Monitor 2.Radio Panel.c26 freq dial;Helios.Base.Potentiometer;c26 freq dial" Name="set.value" />
       <TriggerValue />
@@ -9095,6 +9100,11 @@ else return(true) end</LuaScript>
     <Binding BypassCascadingTriggers="True">
       <Trigger Source="Visual;Monitor 2.Radio Panel.c26 freq handle;Helios.Base.Potentiometer;c26 freq handle" Name="value.changed" />
       <Action Target="Interface;;Helios.DCSInterfaceFile;DCS F4U-1D" Name="RadioNav.set.C-26 Frequency" />
+      <TriggerValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Visual;Monitor 2.Radio Panel.c26 cw voicw;Helios.Base.RotarySwitch;c26 cw voicw" Name="position.changed" />
+      <Action Target="Interface;;Helios.DCSInterfaceFile;DCS F4U-1D" Name="Radio.set.C-26 CW/Voice Switch" />
       <TriggerValue />
     </Binding>
     <Binding BypassCascadingTriggers="True">
