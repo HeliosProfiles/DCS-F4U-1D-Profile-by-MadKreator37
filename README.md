@@ -11,7 +11,7 @@ You *MUST* be running Helios 1.6.6140 minimum. Please visit the link above to do
 This profile was designed and created by MadKreator37. All parts were cut and modified from the 3D model of the F4U-1D cockpit. Every piece used is specific to the F4U.  
  *NOTE* The added functions: Keys panel( f-Keys, Briefing, ReArm etc), Kneeboard, and Markpoint functions are made with an English Keyboard format and require the default DCS keybindings for them to work properly. If you have altered any of these or are using a non-english keyboard, then some functions may not work as intended. You may have to bind them to the correct actions in the Keyboard Interface.
 
-*Special thanks to @BluefinBima for his contributions and assistance as always! And to Nonobeardunord for the lua scripting tips!*
+*Special thanks to @BluefinBima for his contributions and assistance as always! And to Discord user Nonobeardunord for the lua scripting tips and rigorous testing!*
 
 ### Known Bugs and Issues
  
