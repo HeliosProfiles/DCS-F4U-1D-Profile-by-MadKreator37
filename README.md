@@ -24,7 +24,7 @@ This profile was designed and created by MadKreator37. All parts were cut and mo
 
 4: Recognition light keying button does not function-- no definitions in cockpit files
 
-5: Rocket Box Pylon indicator- WIP- not definitions in cockpit files, but should cycle following hotas rocket release command
+5: Rocket Box Pylon indicator- WIP- no definitions in cockpit files, but should cycle following hotas rocket release command
 
 6: !!! Position 6 on C-38 radio channel selector can cause DCS crash-- Reported to Mag3 (causes error in F4U_avionics.dll) !!!
 

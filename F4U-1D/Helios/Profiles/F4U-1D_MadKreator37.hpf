@@ -1619,7 +1619,7 @@
             <AllowInteractionLegacy>False</AllowInteractionLegacy>
           </Interaction>
           <Children>
-            <Control TypeIdentifier="Helios.Base.CustomTape" Name="cage flag" SnapTarget="True" Locked="False">
+            <Control TypeIdentifier="Helios.Base.CustomTape" Name="cage flag" SnapTarget="True" Locked="True">
               <Location>60,156</Location>
               <Size>159,57</Size>
               <Hidden>False</Hidden>
@@ -1709,7 +1709,7 @@
               <Hidden>False</Hidden>
               <Children />
             </Control>
-            <Control TypeIdentifier="Helios.Base.ImageTranslucent" Name="Translucent Image" SnapTarget="False" Locked="False">
+            <Control TypeIdentifier="Helios.Base.ImageTranslucent" Name="Translucent Image" SnapTarget="False" Locked="True">
               <Image>MadKreator37\F4U-1D\glass2_2.png</Image>
               <Alignment>Stretched</Alignment>
               <CornerRadius>0</CornerRadius>
@@ -5695,19 +5695,6 @@
               <DefaultPosition>Two</DefaultPosition>
               <Children />
             </Control>
-            <Control TypeIdentifier="Helios.Base.Potentiometer" Name="c38 pitch" SnapTarget="True" Locked="True">
-              <Location>677,82</Location>
-              <Size>52,52</Size>
-              <Hidden>False</Hidden>
-              <KnobImage>MadKreator37\F4U-1D\Buttons_Switches_Knobs\Radio_Pitch.png</KnobImage>
-              <InitialValue>0</InitialValue>
-              <StepValue>0.1</StepValue>
-              <MaxValue>1</MaxValue>
-              <MinValue>0</MinValue>
-              <InitialRotation>225</InitialRotation>
-              <RotationTravel>270</RotationTravel>
-              <Children />
-            </Control>
             <Control TypeIdentifier="Helios.Base.Potentiometer" Name="c38 sensitivity" SnapTarget="True" Locked="True">
               <Location>538,267</Location>
               <Size>54,54</Size>
@@ -5883,6 +5870,20 @@
               <ClickType>
                 <Type>Swipe</Type>
                 <Sensitivity>0.959093220954734</Sensitivity>
+              </ClickType>
+              <Children />
+            </Control>
+            <Control TypeIdentifier="Helios.Base.RotaryEncoder" Name="Rotary Encoder" SnapTarget="True" Locked="True">
+              <Location>675,82</Location>
+              <Size>52,52</Size>
+              <Hidden>False</Hidden>
+              <KnobImage>MadKreator37\F4U-1D\Buttons_Switches_Knobs\Radio_Pitch.png</KnobImage>
+              <RotationStep>3</RotationStep>
+              <StepValue>0.02</StepValue>
+              <InitialRotation>0</InitialRotation>
+              <ClickType>
+                <Type>Swipe</Type>
+                <Sensitivity>1</Sensitivity>
               </ClickType>
               <Children />
             </Control>
@@ -7202,11 +7203,6 @@
       <TriggerValue />
     </Binding>
     <Binding BypassCascadingTriggers="True">
-      <Trigger Source="Interface;;Helios.DCSInterfaceFile;DCS F4U-1D" Name="RadioNav.C-38 Pitch.changed" />
-      <Action Target="Visual;Monitor 2.Radio Panel.c38 pitch;Helios.Base.Potentiometer;c38 pitch" Name="set.value" />
-      <TriggerValue />
-    </Binding>
-    <Binding BypassCascadingTriggers="True">
       <Trigger Source="Interface;;Helios.DCSInterfaceFile;DCS F4U-1D" Name="Radio.C-30 A Voice Switch.changed" />
       <Action Target="Visual;Monitor 2.Radio Panel.c30 voice;Helios.Base.RotarySwitch;c30 voice" Name="set.position" />
       <TriggerValue />
@@ -7811,6 +7807,41 @@ else return(true) end</LuaScript>
       <Action Target="Visual;Monitor 2.L1 Panel.flap img 50;Helios.Base.ImageTranslucent;flap img 50" Name="set.hidden" />
       <LuaScript>if TriggerValue == 6 then return(false)
 else return(true) end</LuaScript>
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Interface;;Helios.DCSInterfaceFile;DCS F4U-1D" Name="Nav.Directional Gyro Cage.changed" />
+      <Action Target="Visual;Monitor 2.Gyro Cage knob;Helios.Base.RotaryEncoderClickable;Gyro Cage knob" Name="set.physical state" />
+      <TriggerValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Interface;;Helios.DCSInterfaceFile;DCS F4U-1D" Name="Lights.Chartboard Lights.changed" />
+      <Action Target="Visual;Monitor 2.R2 Panel.chartboard light;Helios.Base.RotaryEncoder;chartboard light" Name="set.value" />
+      <TriggerValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Interface;;Helios.DCSInterfaceFile;DCS F4U-1D" Name="Lights.Left Panel Lights.changed" />
+      <Action Target="Visual;Monitor 2.R2 Panel.left panel light;Helios.Base.RotaryEncoder;left panel light" Name="set.value" />
+      <TriggerValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Interface;;Helios.DCSInterfaceFile;DCS F4U-1D" Name="Lights.Right Panel Lights.changed" />
+      <Action Target="Visual;Monitor 2.R2 Panel.right panel light;Helios.Base.RotaryEncoder;right panel light" Name="set.value" />
+      <TriggerValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Interface;;Helios.DCSInterfaceFile;DCS F4U-1D" Name="Lights.Left Instrument Board Lights.changed" />
+      <Action Target="Visual;Monitor 2.R2 Panel.left instr light;Helios.Base.RotaryEncoder;left instr light" Name="set.value" />
+      <TriggerValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Interface;;Helios.DCSInterfaceFile;DCS F4U-1D" Name="Lights.Right Instrument Board Lights.changed" />
+      <Action Target="Visual;Monitor 2.R2 Panel.rt instr light;Helios.Base.RotaryEncoder;rt instr light" Name="set.value" />
+      <TriggerValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Interface;;Helios.DCSInterfaceFile;DCS F4U-1D" Name="RadioNav.C-38 Pitch.changed" />
+      <Action Target="Visual;Monitor 2.Radio Panel.Rotary Encoder;Helios.Base.RotaryEncoder;Rotary Encoder" Name="set.value" />
+      <TriggerValue />
     </Binding>
     <Binding BypassCascadingTriggers="True">
       <Trigger Source="Visual;Monitor 2.gun arm cam switch;Helios.Base.ThreeWayToggleSwitch;gun arm cam switch" Name="position.changed" />
@@ -9120,6 +9151,16 @@ else return(true) end</LuaScript>
     <Binding BypassCascadingTriggers="True">
       <Trigger Source="Visual;Monitor 2.Radio Panel.noise invis linear pot;Helios.Base.PotentiometerWithTranslate;noise invis linear pot" Name="value Translation X.changed" />
       <Action Target="Visual;Monitor 2.Radio Panel.c38 noise animation tape;Helios.Base.CustomTape;c38 noise animation tape" Name="set.Tape Horizontal Offset" />
+      <TriggerValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Visual;Monitor 2.Radio Panel.Rotary Encoder;Helios.Base.RotaryEncoder;Rotary Encoder" Name="encoder.incremented" />
+      <Action Target="Interface;;Helios.DCSInterfaceFile;DCS F4U-1D" Name="RadioNav.increment.C-38 Pitch" />
+      <TriggerValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Visual;Monitor 2.Radio Panel.Rotary Encoder;Helios.Base.RotaryEncoder;Rotary Encoder" Name="encoder.decremented" />
+      <Action Target="Interface;;Helios.DCSInterfaceFile;DCS F4U-1D" Name="RadioNav.decrement.C-38 Pitch" />
       <TriggerValue />
     </Binding>
     <Binding BypassCascadingTriggers="True">

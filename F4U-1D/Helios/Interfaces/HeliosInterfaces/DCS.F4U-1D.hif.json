@@ -1118,24 +1118,26 @@
       ]
     }, 
 	{
-      "heliosType": "DCS.Common.Axis",
+      "heliosType": "DCS.Common.RotaryEncoder",
       "device": "RadioNav",
       "name": "C-38 Pitch",
-      "description": "Current value of this potentiometer.",
+      "description": "Current position of this rotary encoder.",
       "exports": [
         {
           "format": "%.3f",
           "id": "85"
         }
       ],
-      "loop": false,
+      "unit": "Numeric",
       "argumentValue": 0.025,
-      "argumentMin": 0,
-      "argumentMax": 1,
       "actions": {
-        "set": {
+        "increment": {
           "deviceId": "9",
-          "actionId": "3606"
+          "actionId": "3622"
+        },
+        "decrement": {
+          "deviceId": "9",
+          "actionId": "3622"
         }
       }
     },
