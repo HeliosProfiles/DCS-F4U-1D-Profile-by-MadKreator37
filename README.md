@@ -50,7 +50,7 @@ This profile was designed and created by MadKreator37. All parts were cut and mo
 
 ### STARTUP VIDEO
 
-
+https://youtu.be/iNOFO3YUNrU?si=uxDk70T7DYVJ40t9
 
 ### Limited Support
 
