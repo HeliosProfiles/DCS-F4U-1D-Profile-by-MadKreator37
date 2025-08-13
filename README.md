@@ -12,6 +12,11 @@ This profile was designed and created by MadKreator37. All parts were cut and mo
  *NOTE* The added functions: Keys panel( f-Keys, Briefing, ReArm etc), Kneeboard, and Markpoint functions are made with an English Keyboard format and require the default DCS keybindings for them to work properly. If you have altered any of these or are using a non-english keyboard, then some functions may not work as intended. You may have to bind them to the correct actions in the Keyboard Interface.
 
 *Special thanks to @BluefinBima for his contributions and assistance as always! And to Discord user Nonobeardunord for the lua scripting tips and rigorous testing!*
+### CHANGELOG 
+1.0.1
+1. Added Water Injection Switch to L1 panel.
+2. Added Water Pressure Tag to panel R1.
+3. Updated Interface with new switch and gauge info.
 
 ### Known Bugs and Issues
  
