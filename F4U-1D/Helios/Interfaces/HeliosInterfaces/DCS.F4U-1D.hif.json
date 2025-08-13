@@ -488,6 +488,31 @@
     },
 	{
       "heliosType": "DCS.Common.Switch",
+      "device": "Engine",
+      "name": "Water Injection",
+      "description": "Current position of this switch.",
+      "exports": [
+        {
+          "format": "%0.1f",
+          "id": "42"
+        }
+      ],
+      "deviceId": "3",
+      "positions": [
+        {
+          "argumentValue": "1.0",
+          "name": "On",
+          "actionId": "3244"
+        },
+        {
+          "argumentValue": "0.0",
+          "name": "Off",
+          "actionId": "3244"
+        }
+      ]
+    },
+	{
+      "heliosType": "DCS.Common.Switch",
       "device": "Pitot",
       "name": "Pitot Heat",
       "description": "Current position of this switch.",
@@ -4583,6 +4608,33 @@
           {
             "value": 1,
             "mappedValue": 6000
+          }
+        ],
+        "precision": 5
+      }
+    },
+	{
+      "heliosType": "DCS.Common.ScaledNetworkValue",
+      "device": "Instruments",
+      "name": "Water Pressure",
+      "description": "WEP Pressure",
+      "exports": [
+        {
+          "format": "%.3f",
+          "id": "242"
+        }
+      ],
+      "valueDescription": "0 to 1",
+      "unit": "Numeric",
+      "calibration": {
+        "points": [
+          {
+            "value": 0,
+            "mappedValue": 0
+          },
+          {
+            "value": 1,
+            "mappedValue": 1
           }
         ],
         "precision": 5
