@@ -42,6 +42,9 @@ This profile was designed and created by MadKreator37. All parts were cut and mo
 
 8: Accelerometer Min Value needle does not function-- not implemented in module
 
+### 9: Version 1.0.2 : Helios will show warnings about missing images for the Animated Linear Pot Controls. Helios fix needed to address. This does NOT affect the profile operation.
+###     9a: see Helios issues #885 https://github.com/HeliosVirtualCockpit/Helios/issues/885
+
 ### IMAGES
 
 <img width="960" height="540" alt="Screenshot 2025-07-18 091918" src="https://github.com/user-attachments/assets/d4cef416-ca19-471d-b1bb-490e8fe317f5" />
@@ -56,7 +59,11 @@ This profile was designed and created by MadKreator37. All parts were cut and mo
 
 <img width="957" height="251" alt="Screenshot 2025-07-18 092228" src="https://github.com/user-attachments/assets/6ccae5e7-0082-403f-973c-8b4cb8d4f412" />
 
+<img width="408" height="540" alt="Screenshot 2025-08-18 222626" src="https://github.com/user-attachments/assets/1536bca0-8c77-4e99-8b46-a0f17390e2be" />
 
+<img width="386" height="335" alt="Screenshot 2025-08-18 222613" src="https://github.com/user-attachments/assets/f04d3cc9-dc40-4fdf-ba20-be10e46fec0d" />
+
+<img width="425" height="278" alt="Screenshot 2025-08-18 222640" src="https://github.com/user-attachments/assets/3a0c162d-1ded-4438-be3a-1994bea146bb" />
 
 ### STARTUP VIDEO
 
