@@ -13,10 +13,15 @@ This profile was designed and created by MadKreator37. All parts were cut and mo
 
 *Special thanks to @BluefinBima for his contributions and assistance as always! And to Discord user Nonobeardunord for the lua scripting tips and rigorous testing!*
 ### CHANGELOG 
+
 1.0.1
 1. Added Water Injection Switch to L1 panel.
 2. Added Water Pressure Tag to panel R1.
 3. Updated Interface with new switch and gauge info.
+
+1.0.2
+1. Added Throttle Quadrant panels to main screen and L1.
+2. Added Throttle Quadrant indicators to Indicators Panel.
 
 ### Known Bugs and Issues
  

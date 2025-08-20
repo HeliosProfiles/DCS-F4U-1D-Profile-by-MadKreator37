@@ -156,40 +156,27 @@
         }
       ]
     },
-	{
-      "heliosType": "DCS.Common.Switch",
+		{
+      "heliosType": "DCS.Common.Axis",
       "device": "Engine",
-      "name": "Mixture Lever",
-      "description": "Current position of this switch.",
+      "name": "Mixure Axis",
+      "description": "Current value of this potentiometer.",
       "exports": [
         {
-          "format": "%0.1f",
+          "format": "%.3f",
           "id": "46"
         }
       ],
-      "deviceId": "3",
-      "positions": [
-        {
-          "argumentValue": "1.0",
-          "name": "Full Rich",
-          "actionId": "3203"
-        },
-        {
-          "argumentValue": "0.66",
-          "name": "Auto Rich",
-          "actionId": "3203"
-        },
-        {
-          "argumentValue": "0.33",
-          "name": "Auto Lean",
-          "actionId": "3203"
-        },
-		{
-          "argumentValue": "0.0",
-          "name": "Cutoff",
+      "loop": false,
+      "argumentValue": 0.025,
+      "argumentMin": 0,
+      "argumentMax": 1.0,
+      "actions": {
+        "set": {
+          "deviceId": "3",
           "actionId": "3203"
         }
-      ]
+      }
     },
 	{
       "heliosType": "DCS.Common.Switch",
