@@ -22,7 +22,7 @@ This profile was designed and created by MadKreator37. All parts were cut and mo
 1.0.2
 1. Added Throttle Quadrant panels to main screen and L1.
 2. Added Throttle Quadrant indicators to Indicators Panel.
-3. To use Controls: Prop and Throttle= drag up and down while holding. Supercharger= a regular toggle switch= swipe up and down quickly. Mixture= tap near top of quadrant (over the handle area) to increment, tap near bottom to decrement.
+3. To use Controls: Prop and Throttle= drag up and down while holding. Supercharger= Tap near the top and bottom in the handle area to increment and decrement. . Mixture= tap near top and bottom of the handle area to increment and decrement.
 
 ### Known Bugs and Issues
  
