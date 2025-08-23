@@ -24,6 +24,9 @@ This profile was designed and created by MadKreator37. All parts were cut and mo
 2. Added Throttle Quadrant indicators to Indicators Panel.
 3. To use Controls: Prop and Throttle= drag up and down while holding. Supercharger= Tap near the top and bottom in the handle area to increment and decrement. . Mixture= tap near top and bottom of the handle area to increment and decrement.
 
+1.0.3
+1. Changed the Mixture Lever animation so Helios doesn't show warnings about missing images.
+
 ### Known Bugs and Issues
  
 
