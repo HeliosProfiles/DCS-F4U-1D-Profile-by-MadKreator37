@@ -2393,7 +2393,7 @@
           <PushedImage>MadKreator37\F4U-1D\Buttons_Switches_Knobs\Rocket_Panel_Button_Pressed.png</PushedImage>
           <Children />
         </Control>
-        <Control TypeIdentifier="Helios.Panel" Name="Indicator panel" SnapTarget="True" Locked="True">
+        <Control TypeIdentifier="Helios.Panel" Name="Indicator panel" SnapTarget="True" Locked="False">
           <Location>1069,0</Location>
           <Size>850,400</Size>
           <Hidden>True</Hidden>
@@ -2927,22 +2927,6 @@
               <Hidden>False</Hidden>
               <Children />
             </Control>
-            <Control TypeIdentifier="Helios.Base.LinearPotentiometerAnimated" Name="mixture animation" SnapTarget="True" Locked="True">
-              <Location>793,139</Location>
-              <Size>53,251</Size>
-              <Hidden>False</Hidden>
-              <AnimationFrameImageNamePattern>MadKreator37\F4U-1D\Buttons_Switches_Knobs\Mixture_0.png</AnimationFrameImageNamePattern>
-              <InitialValue>0</InitialValue>
-              <StepValue>0.333</StepValue>
-              <MaxValue>1</MaxValue>
-              <MinValue>0</MinValue>
-              <InitialPosition>0</InitialPosition>
-              <ClickType>
-                <Type>Swipe</Type>
-                <Sensitivity>0</Sensitivity>
-              </ClickType>
-              <Children />
-            </Control>
             <Control TypeIdentifier="Helios.Base.CustomTape" Name="throttle animation" SnapTarget="True" Locked="True">
               <Location>697,121</Location>
               <Size>50,263</Size>
@@ -3009,6 +2993,58 @@
               <PositionTwoImage>MadKreator37\F4U-1D\Buttons_Switches_Knobs\Super_Lever_Mid.png</PositionTwoImage>
               <PositionThreeImage>MadKreator37\F4U-1D\Buttons_Switches_Knobs\Super_Lever_Dn.png</PositionThreeImage>
               <DefaultPosition>Two</DefaultPosition>
+              <Children />
+            </Control>
+            <Control TypeIdentifier="Helios.Base.ImageTranslucent" Name="M Off image" SnapTarget="False" Locked="True">
+              <Image>MadKreator37\F4U-1D\Buttons_Switches_Knobs\Mixture_0.png</Image>
+              <Alignment>Stretched</Alignment>
+              <CornerRadius>0</CornerRadius>
+              <DefaultOpacity>1</DefaultOpacity>
+              <Interaction>
+                <AllowInteraction>True</AllowInteraction>
+              </Interaction>
+              <Location>789,136</Location>
+              <Size>55,251</Size>
+              <Hidden>True</Hidden>
+              <Children />
+            </Control>
+            <Control TypeIdentifier="Helios.Base.ImageTranslucent" Name="M auto lean image" SnapTarget="False" Locked="True">
+              <Image>MadKreator37\F4U-1D\Buttons_Switches_Knobs\Mixture_1.png</Image>
+              <Alignment>Stretched</Alignment>
+              <CornerRadius>0</CornerRadius>
+              <DefaultOpacity>1</DefaultOpacity>
+              <Interaction>
+                <AllowInteraction>True</AllowInteraction>
+              </Interaction>
+              <Location>789,136</Location>
+              <Size>55,251</Size>
+              <Hidden>True</Hidden>
+              <Children />
+            </Control>
+            <Control TypeIdentifier="Helios.Base.ImageTranslucent" Name="M auto rich image " SnapTarget="False" Locked="True">
+              <Image>MadKreator37\F4U-1D\Buttons_Switches_Knobs\Mixture_2.png</Image>
+              <Alignment>Stretched</Alignment>
+              <CornerRadius>0</CornerRadius>
+              <DefaultOpacity>1</DefaultOpacity>
+              <Interaction>
+                <AllowInteraction>True</AllowInteraction>
+              </Interaction>
+              <Location>789,136</Location>
+              <Size>55,251</Size>
+              <Hidden>True</Hidden>
+              <Children />
+            </Control>
+            <Control TypeIdentifier="Helios.Base.ImageTranslucent" Name="M full rich image" SnapTarget="False" Locked="True">
+              <Image>MadKreator37\F4U-1D\Buttons_Switches_Knobs\Mixture_3.png</Image>
+              <Alignment>Stretched</Alignment>
+              <CornerRadius>0</CornerRadius>
+              <DefaultOpacity>1</DefaultOpacity>
+              <Interaction>
+                <AllowInteraction>True</AllowInteraction>
+              </Interaction>
+              <Location>789,136</Location>
+              <Size>55,251</Size>
+              <Hidden>False</Hidden>
               <Children />
             </Control>
           </Children>
@@ -4548,7 +4584,7 @@
             </Control>
           </Children>
         </Control>
-        <Control TypeIdentifier="Helios.Panel" Name="L1 Panel" SnapTarget="False" Locked="True">
+        <Control TypeIdentifier="Helios.Panel" Name="L1 Panel" SnapTarget="False" Locked="False">
           <Location>7,0</Location>
           <Size>740,1076</Size>
           <Hidden>True</Hidden>
@@ -5196,22 +5232,6 @@
                   <Hidden>False</Hidden>
                   <Children />
                 </Control>
-                <Control TypeIdentifier="Helios.Base.LinearPotentiometerAnimated" Name="mixture animation" SnapTarget="True" Locked="True">
-                  <Location>384,14</Location>
-                  <Size>96,441</Size>
-                  <Hidden>False</Hidden>
-                  <AnimationFrameImageNamePattern>MadKreator37\F4U-1D\Buttons_Switches_Knobs\Mixture_0.png</AnimationFrameImageNamePattern>
-                  <InitialValue>0</InitialValue>
-                  <StepValue>0.333</StepValue>
-                  <MaxValue>1</MaxValue>
-                  <MinValue>0</MinValue>
-                  <InitialPosition>0</InitialPosition>
-                  <ClickType>
-                    <Type>Swipe</Type>
-                    <Sensitivity>0</Sensitivity>
-                  </ClickType>
-                  <Children />
-                </Control>
                 <Control TypeIdentifier="Helios.Base.CustomTape" Name="throttle animation" SnapTarget="True" Locked="True">
                   <Location>209,16</Location>
                   <Size>79,428</Size>
@@ -5277,7 +5297,7 @@
                   <PositionOneImage>MadKreator37\F4U-1D\Buttons_Switches_Knobs\Super_Lever_Up.png</PositionOneImage>
                   <PositionTwoImage>MadKreator37\F4U-1D\Buttons_Switches_Knobs\Super_Lever_Mid.png</PositionTwoImage>
                   <PositionThreeImage>MadKreator37\F4U-1D\Buttons_Switches_Knobs\Super_Lever_Dn.png</PositionThreeImage>
-                  <DefaultPosition>Two</DefaultPosition>
+                  <DefaultPosition>One</DefaultPosition>
                   <Children />
                 </Control>
                 <Control TypeIdentifier="Helios.Base.PotentiometerWithTranslate" Name="mixture linear tap" SnapTarget="True" Locked="True">
@@ -5379,6 +5399,58 @@
                     <Type>Swipe</Type>
                     <Sensitivity>1</Sensitivity>
                   </ClickType>
+                  <Children />
+                </Control>
+                <Control TypeIdentifier="Helios.Base.ImageTranslucent" Name="M Off image" SnapTarget="False" Locked="True">
+                  <Image>MadKreator37\F4U-1D\Buttons_Switches_Knobs\Mixture_0.png</Image>
+                  <Alignment>Stretched</Alignment>
+                  <CornerRadius>0</CornerRadius>
+                  <DefaultOpacity>1</DefaultOpacity>
+                  <Interaction>
+                    <AllowInteraction>True</AllowInteraction>
+                  </Interaction>
+                  <Location>383,0</Location>
+                  <Size>91,441</Size>
+                  <Hidden>True</Hidden>
+                  <Children />
+                </Control>
+                <Control TypeIdentifier="Helios.Base.ImageTranslucent" Name="M auto lean image" SnapTarget="False" Locked="True">
+                  <Image>MadKreator37\F4U-1D\Buttons_Switches_Knobs\Mixture_1.png</Image>
+                  <Alignment>Stretched</Alignment>
+                  <CornerRadius>0</CornerRadius>
+                  <DefaultOpacity>1</DefaultOpacity>
+                  <Interaction>
+                    <AllowInteraction>True</AllowInteraction>
+                  </Interaction>
+                  <Location>383,18</Location>
+                  <Size>91,441</Size>
+                  <Hidden>True</Hidden>
+                  <Children />
+                </Control>
+                <Control TypeIdentifier="Helios.Base.ImageTranslucent" Name="M auto rich image " SnapTarget="False" Locked="True">
+                  <Image>MadKreator37\F4U-1D\Buttons_Switches_Knobs\Mixture_2.png</Image>
+                  <Alignment>Stretched</Alignment>
+                  <CornerRadius>0</CornerRadius>
+                  <DefaultOpacity>1</DefaultOpacity>
+                  <Interaction>
+                    <AllowInteraction>True</AllowInteraction>
+                  </Interaction>
+                  <Location>383,21</Location>
+                  <Size>91,441</Size>
+                  <Hidden>True</Hidden>
+                  <Children />
+                </Control>
+                <Control TypeIdentifier="Helios.Base.ImageTranslucent" Name="M full rich image" SnapTarget="False" Locked="True">
+                  <Image>MadKreator37\F4U-1D\Buttons_Switches_Knobs\Mixture_3.png</Image>
+                  <Alignment>Stretched</Alignment>
+                  <CornerRadius>0</CornerRadius>
+                  <DefaultOpacity>1</DefaultOpacity>
+                  <Interaction>
+                    <AllowInteraction>True</AllowInteraction>
+                  </Interaction>
+                  <Location>383,33</Location>
+                  <Size>91,441</Size>
+                  <Hidden>False</Hidden>
                   <Children />
                 </Control>
               </Children>
@@ -6979,7 +7051,7 @@
             </Control>
           </Children>
         </Control>
-        <Control TypeIdentifier="Helios.Panel" Name="Throttle Panel" SnapTarget="False" Locked="True">
+        <Control TypeIdentifier="Helios.Panel" Name="Throttle Panel" SnapTarget="False" Locked="False">
           <Location>0,0</Location>
           <Size>527,474</Size>
           <Hidden>True</Hidden>
@@ -7009,22 +7081,6 @@
               <Location>19,16</Location>
               <Size>488,437</Size>
               <Hidden>False</Hidden>
-              <Children />
-            </Control>
-            <Control TypeIdentifier="Helios.Base.LinearPotentiometerAnimated" Name="mixture animation" SnapTarget="True" Locked="True">
-              <Location>384,14</Location>
-              <Size>96,441</Size>
-              <Hidden>False</Hidden>
-              <AnimationFrameImageNamePattern>MadKreator37\F4U-1D\Buttons_Switches_Knobs\Mixture_0.png</AnimationFrameImageNamePattern>
-              <InitialValue>0</InitialValue>
-              <StepValue>0.333</StepValue>
-              <MaxValue>1</MaxValue>
-              <MinValue>0</MinValue>
-              <InitialPosition>0</InitialPosition>
-              <ClickType>
-                <Type>Swipe</Type>
-                <Sensitivity>0</Sensitivity>
-              </ClickType>
               <Children />
             </Control>
             <Control TypeIdentifier="Helios.Base.CustomTape" Name="throttle animation" SnapTarget="True" Locked="True">
@@ -7092,7 +7148,7 @@
               <PositionOneImage>MadKreator37\F4U-1D\Buttons_Switches_Knobs\Super_Lever_Up.png</PositionOneImage>
               <PositionTwoImage>MadKreator37\F4U-1D\Buttons_Switches_Knobs\Super_Lever_Mid.png</PositionTwoImage>
               <PositionThreeImage>MadKreator37\F4U-1D\Buttons_Switches_Knobs\Super_Lever_Dn.png</PositionThreeImage>
-              <DefaultPosition>Two</DefaultPosition>
+              <DefaultPosition>One</DefaultPosition>
               <Children />
             </Control>
             <Control TypeIdentifier="Helios.Base.PotentiometerWithTranslate" Name="mixture linear tap" SnapTarget="True" Locked="True">
@@ -7194,6 +7250,58 @@
                 <Type>Swipe</Type>
                 <Sensitivity>1</Sensitivity>
               </ClickType>
+              <Children />
+            </Control>
+            <Control TypeIdentifier="Helios.Base.ImageTranslucent" Name="M Off image" SnapTarget="False" Locked="True">
+              <Image>MadKreator37\F4U-1D\Buttons_Switches_Knobs\Mixture_0.png</Image>
+              <Alignment>Stretched</Alignment>
+              <CornerRadius>0</CornerRadius>
+              <DefaultOpacity>1</DefaultOpacity>
+              <Interaction>
+                <AllowInteraction>True</AllowInteraction>
+              </Interaction>
+              <Location>383,0</Location>
+              <Size>91,441</Size>
+              <Hidden>True</Hidden>
+              <Children />
+            </Control>
+            <Control TypeIdentifier="Helios.Base.ImageTranslucent" Name="M auto lean image" SnapTarget="False" Locked="True">
+              <Image>MadKreator37\F4U-1D\Buttons_Switches_Knobs\Mixture_1.png</Image>
+              <Alignment>Stretched</Alignment>
+              <CornerRadius>0</CornerRadius>
+              <DefaultOpacity>1</DefaultOpacity>
+              <Interaction>
+                <AllowInteraction>True</AllowInteraction>
+              </Interaction>
+              <Location>383,18</Location>
+              <Size>91,441</Size>
+              <Hidden>True</Hidden>
+              <Children />
+            </Control>
+            <Control TypeIdentifier="Helios.Base.ImageTranslucent" Name="M auto rich image " SnapTarget="False" Locked="True">
+              <Image>MadKreator37\F4U-1D\Buttons_Switches_Knobs\Mixture_2.png</Image>
+              <Alignment>Stretched</Alignment>
+              <CornerRadius>0</CornerRadius>
+              <DefaultOpacity>1</DefaultOpacity>
+              <Interaction>
+                <AllowInteraction>True</AllowInteraction>
+              </Interaction>
+              <Location>383,21</Location>
+              <Size>91,441</Size>
+              <Hidden>True</Hidden>
+              <Children />
+            </Control>
+            <Control TypeIdentifier="Helios.Base.ImageTranslucent" Name="M full rich image" SnapTarget="False" Locked="True">
+              <Image>MadKreator37\F4U-1D\Buttons_Switches_Knobs\Mixture_3.png</Image>
+              <Alignment>Stretched</Alignment>
+              <CornerRadius>0</CornerRadius>
+              <DefaultOpacity>1</DefaultOpacity>
+              <Interaction>
+                <AllowInteraction>True</AllowInteraction>
+              </Interaction>
+              <Location>383,33</Location>
+              <Size>91,441</Size>
+              <Hidden>False</Hidden>
               <Children />
             </Control>
           </Children>
@@ -8561,18 +8669,75 @@ else return(true) end</LuaScript>
     </Binding>
     <Binding BypassCascadingTriggers="True">
       <Trigger Source="Interface;;Helios.DCSInterfaceFile;DCS F4U-1D" Name="Engine.Mixure Axis.changed" />
-      <Action Target="Visual;Monitor 2.Throttle Panel.mixture animation;Helios.Base.LinearPotentiometerAnimated;mixture animation" Name="set.value" />
-      <TriggerValue />
+      <Action Target="Visual;Monitor 2.Throttle Panel.M Off image;Helios.Base.ImageTranslucent;M Off image" Name="set.hidden" />
+      <LuaScript>if TriggerValue == 0 then return(false)
+else return(true) end</LuaScript>
     </Binding>
     <Binding BypassCascadingTriggers="True">
       <Trigger Source="Interface;;Helios.DCSInterfaceFile;DCS F4U-1D" Name="Engine.Mixure Axis.changed" />
-      <Action Target="Visual;Monitor 2.Indicator panel.mixture animation;Helios.Base.LinearPotentiometerAnimated;mixture animation" Name="set.value" />
-      <TriggerValue />
+      <Action Target="Visual;Monitor 2.Throttle Panel.M auto lean image;Helios.Base.ImageTranslucent;M auto lean image" Name="set.hidden" />
+      <LuaScript>if TriggerValue == 0.333 then return(false)
+else return(true) end</LuaScript>
     </Binding>
     <Binding BypassCascadingTriggers="True">
       <Trigger Source="Interface;;Helios.DCSInterfaceFile;DCS F4U-1D" Name="Engine.Mixure Axis.changed" />
-      <Action Target="Visual;Monitor 2.L1 Panel.Throttle Panel.mixture animation;Helios.Base.LinearPotentiometerAnimated;mixture animation" Name="set.value" />
-      <TriggerValue />
+      <Action Target="Visual;Monitor 2.Throttle Panel.M auto rich image ;Helios.Base.ImageTranslucent;M auto rich image " Name="set.hidden" />
+      <LuaScript>if TriggerValue == 0.666 then return(false)
+else return(true) end</LuaScript>
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Interface;;Helios.DCSInterfaceFile;DCS F4U-1D" Name="Engine.Mixure Axis.changed" />
+      <Action Target="Visual;Monitor 2.Throttle Panel.M full rich image;Helios.Base.ImageTranslucent;M full rich image" Name="set.hidden" />
+      <LuaScript>if TriggerValue &gt; 0.666 then return(false)
+else return(true) end</LuaScript>
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Interface;;Helios.DCSInterfaceFile;DCS F4U-1D" Name="Engine.Mixure Axis.changed" />
+      <Action Target="Visual;Monitor 2.L1 Panel.Throttle Panel.M Off image;Helios.Base.ImageTranslucent;M Off image" Name="set.hidden" />
+      <LuaScript>if TriggerValue == 0 then return(false)
+else return(true) end</LuaScript>
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Interface;;Helios.DCSInterfaceFile;DCS F4U-1D" Name="Engine.Mixure Axis.changed" />
+      <Action Target="Visual;Monitor 2.L1 Panel.Throttle Panel.M auto lean image;Helios.Base.ImageTranslucent;M auto lean image" Name="set.hidden" />
+      <LuaScript>if TriggerValue == 0.333 then return(false)
+else return(true) end</LuaScript>
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Interface;;Helios.DCSInterfaceFile;DCS F4U-1D" Name="Engine.Mixure Axis.changed" />
+      <Action Target="Visual;Monitor 2.L1 Panel.Throttle Panel.M auto rich image ;Helios.Base.ImageTranslucent;M auto rich image " Name="set.hidden" />
+      <LuaScript>if TriggerValue == 0.666 then return(false)
+else return(true) end</LuaScript>
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Interface;;Helios.DCSInterfaceFile;DCS F4U-1D" Name="Engine.Mixure Axis.changed" />
+      <Action Target="Visual;Monitor 2.L1 Panel.Throttle Panel.M full rich image;Helios.Base.ImageTranslucent;M full rich image" Name="set.hidden" />
+      <LuaScript>if TriggerValue &gt; 0.666 then return(false)
+else return(true) end</LuaScript>
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Interface;;Helios.DCSInterfaceFile;DCS F4U-1D" Name="Engine.Mixure Axis.changed" />
+      <Action Target="Visual;Monitor 2.Indicator panel.M Off image;Helios.Base.ImageTranslucent;M Off image" Name="set.hidden" />
+      <LuaScript>if TriggerValue == 0 then return(false)
+else return(true) end</LuaScript>
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Interface;;Helios.DCSInterfaceFile;DCS F4U-1D" Name="Engine.Mixure Axis.changed" />
+      <Action Target="Visual;Monitor 2.Indicator panel.M auto lean image;Helios.Base.ImageTranslucent;M auto lean image" Name="set.hidden" />
+      <LuaScript>if TriggerValue == 0.333 then return(false)
+else return(true) end</LuaScript>
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Interface;;Helios.DCSInterfaceFile;DCS F4U-1D" Name="Engine.Mixure Axis.changed" />
+      <Action Target="Visual;Monitor 2.Indicator panel.M auto rich image ;Helios.Base.ImageTranslucent;M auto rich image " Name="set.hidden" />
+      <LuaScript>if TriggerValue == 0.666 then return(false)
+else return(true) end</LuaScript>
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Interface;;Helios.DCSInterfaceFile;DCS F4U-1D" Name="Engine.Mixure Axis.changed" />
+      <Action Target="Visual;Monitor 2.Indicator panel.M full rich image;Helios.Base.ImageTranslucent;M full rich image" Name="set.hidden" />
+      <LuaScript>if TriggerValue &gt; 0.666 then return(false)
+else return(true) end</LuaScript>
     </Binding>
     <Binding BypassCascadingTriggers="True">
       <Trigger Source="Visual;Monitor 2.gun arm cam switch;Helios.Base.ThreeWayToggleSwitch;gun arm cam switch" Name="position.changed" />
