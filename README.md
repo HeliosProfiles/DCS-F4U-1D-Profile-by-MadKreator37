@@ -27,6 +27,11 @@ This profile was designed and created by MadKreator37. All parts were cut and mo
 1.0.3
 1. Changed the Mixture Lever animation so Helios doesn't show warnings about missing images.
 
+1.0.4
+1. Changed Mixture lever to 3-pos switch so it works as it should (actions like in-cockpit lever... Idle, Auto Lean, Auto Rich).
+    I had it setup in case they added "Full-Rich" but haven't. Will change if they ever do.
+2. Fixed-  Radio Preset channel 6 crashing DCS.	Courtesy of @mphillippi7804.
+
 ### Known Bugs and Issues
  
 

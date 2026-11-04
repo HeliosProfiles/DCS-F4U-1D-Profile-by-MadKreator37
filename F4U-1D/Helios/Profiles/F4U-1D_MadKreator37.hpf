@@ -51,6 +51,7 @@
           <Location>443,28</Location>
           <Size>615,620</Size>
           <Hidden>False</Hidden>
+          <EffectsExclusion>True</EffectsExclusion>
           <ViewportName>RIGHT_MFCD</ViewportName>
           <Children />
         </Control>
@@ -360,6 +361,7 @@
               <Location>0,0</Location>
               <Size>51,51</Size>
               <Hidden>False</Hidden>
+              <EffectsExclusion>True</EffectsExclusion>
               <PointCount>3</PointCount>
               <CalibrationPoints>
                 <Point>
@@ -2663,6 +2665,7 @@
               <Location>803,0</Location>
               <Size>46,46</Size>
               <Hidden>False</Hidden>
+              <EffectsExclusion>True</EffectsExclusion>
               <PointCount>2</PointCount>
               <CalibrationPoints>
                 <Point>
@@ -2680,6 +2683,7 @@
               <Location>805,0</Location>
               <Size>45,45</Size>
               <Hidden>False</Hidden>
+              <EffectsExclusion>True</EffectsExclusion>
               <PointCount>2</PointCount>
               <CalibrationPoints>
                 <Point>
@@ -2995,56 +2999,17 @@
               <DefaultPosition>Two</DefaultPosition>
               <Children />
             </Control>
-            <Control TypeIdentifier="Helios.Base.ImageTranslucent" Name="M Off image" SnapTarget="False" Locked="True">
-              <Image>MadKreator37\F4U-1D\Buttons_Switches_Knobs\Mixture_0.png</Image>
-              <Alignment>Stretched</Alignment>
-              <CornerRadius>0</CornerRadius>
-              <DefaultOpacity>1</DefaultOpacity>
-              <Interaction>
-                <AllowInteraction>True</AllowInteraction>
-              </Interaction>
-              <Location>789,136</Location>
-              <Size>55,251</Size>
-              <Hidden>True</Hidden>
-              <Children />
-            </Control>
-            <Control TypeIdentifier="Helios.Base.ImageTranslucent" Name="M auto lean image" SnapTarget="False" Locked="True">
-              <Image>MadKreator37\F4U-1D\Buttons_Switches_Knobs\Mixture_1.png</Image>
-              <Alignment>Stretched</Alignment>
-              <CornerRadius>0</CornerRadius>
-              <DefaultOpacity>1</DefaultOpacity>
-              <Interaction>
-                <AllowInteraction>True</AllowInteraction>
-              </Interaction>
-              <Location>789,136</Location>
-              <Size>55,251</Size>
-              <Hidden>True</Hidden>
-              <Children />
-            </Control>
-            <Control TypeIdentifier="Helios.Base.ImageTranslucent" Name="M auto rich image " SnapTarget="False" Locked="True">
-              <Image>MadKreator37\F4U-1D\Buttons_Switches_Knobs\Mixture_2.png</Image>
-              <Alignment>Stretched</Alignment>
-              <CornerRadius>0</CornerRadius>
-              <DefaultOpacity>1</DefaultOpacity>
-              <Interaction>
-                <AllowInteraction>True</AllowInteraction>
-              </Interaction>
-              <Location>789,136</Location>
-              <Size>55,251</Size>
-              <Hidden>True</Hidden>
-              <Children />
-            </Control>
-            <Control TypeIdentifier="Helios.Base.ImageTranslucent" Name="M full rich image" SnapTarget="False" Locked="True">
-              <Image>MadKreator37\F4U-1D\Buttons_Switches_Knobs\Mixture_3.png</Image>
-              <Alignment>Stretched</Alignment>
-              <CornerRadius>0</CornerRadius>
-              <DefaultOpacity>1</DefaultOpacity>
-              <Interaction>
-                <AllowInteraction>True</AllowInteraction>
-              </Interaction>
-              <Location>789,136</Location>
-              <Size>55,251</Size>
+            <Control TypeIdentifier="Helios.Base.ThreeWayToggleSwitch" Name="Mixture Animation" SnapTarget="True" Locked="True">
+              <Location>789,125</Location>
+              <Size>53,260</Size>
               <Hidden>False</Hidden>
+              <SwitchType>OnOnOn</SwitchType>
+              <Orientation>Vertical</Orientation>
+              <ClickType>Touch</ClickType>
+              <PositionOneImage>MadKreator37\F4U-1D\Buttons_Switches_Knobs\Mixture_2.png</PositionOneImage>
+              <PositionTwoImage>MadKreator37\F4U-1D\Buttons_Switches_Knobs\Mixture_1.png</PositionTwoImage>
+              <PositionThreeImage>MadKreator37\F4U-1D\Buttons_Switches_Knobs\Mixture_0.png</PositionThreeImage>
+              <DefaultPosition>Three</DefaultPosition>
               <Children />
             </Control>
           </Children>
@@ -3960,6 +3925,7 @@
               <Location>0,2</Location>
               <Size>77,72</Size>
               <Hidden>False</Hidden>
+              <EffectsExclusion>True</EffectsExclusion>
               <Thresholds>
                 <UseThresholdValues>True</UseThresholdValues>
                 <InitialValue>0</InitialValue>
@@ -4529,9 +4495,9 @@
               <Hidden>False</Hidden>
               <KnobImage>MadKreator37\F4U-1D\Buttons_Switches_Knobs\BatBomb_Knob.png</KnobImage>
               <Positions>
-                <Position Name="0" Rotation="269.633043786562" />
-                <Position Name="1" Rotation="30.9679134905159" />
-                <Position Name="2" Rotation="149.97340897004" />
+                <Position Name="0" Rotation="269.63" />
+                <Position Name="1" Rotation="30.97" />
+                <Position Name="2" Rotation="149.97" />
               </Positions>
               <DefaultPosition>1</DefaultPosition>
               <ClickType>
@@ -4667,10 +4633,10 @@
               <Hidden>False</Hidden>
               <KnobImage>MadKreator37\F4U-1D\Transparent_Image.png</KnobImage>
               <Positions>
-                <Position Name="0" Rotation="121.908239806859" />
-                <Position Name="1" Rotation="159.532444359187" />
-                <Position Name="2" Rotation="186.883503862866" />
-                <Position Name="3" Rotation="225.152643714581" />
+                <Position Name="0" Rotation="121.91" />
+                <Position Name="1" Rotation="159.53" />
+                <Position Name="2" Rotation="186.88" />
+                <Position Name="3" Rotation="225.15" />
               </Positions>
               <DefaultPosition>1</DefaultPosition>
               <ClickType>
@@ -4917,12 +4883,12 @@
               <Hidden>False</Hidden>
               <KnobImage>MadKreator37\F4U-1D\Transparent_Image.png</KnobImage>
               <Positions>
-                <Position Name="0" Rotation="0" />
-                <Position Name="1" Rotation="83.1998488855308" />
-                <Position Name="2" Rotation="160.936909709105" />
-                <Position Name="3" Rotation="224.404986777484" />
-                <Position Name="4" Rotation="291.273139403098" />
-                <Position Name="5" Rotation="360" />
+                <Position Name="0" Rotation="0.00" />
+                <Position Name="1" Rotation="83.20" />
+                <Position Name="2" Rotation="160.94" />
+                <Position Name="3" Rotation="224.40" />
+                <Position Name="4" Rotation="291.27" />
+                <Position Name="5" Rotation="360.00" />
               </Positions>
               <DefaultPosition>1</DefaultPosition>
               <ClickType>
@@ -5577,12 +5543,12 @@
               <Hidden>False</Hidden>
               <KnobImage>MadKreator37\F4U-1D\Buttons_Switches_Knobs\Fuel_Selector.png</KnobImage>
               <Positions>
-                <Position Name="0" Rotation="240.272006044579" />
-                <Position Name="1" Rotation="300.804684548545" />
-                <Position Name="2" Rotation="0" />
-                <Position Name="3" Rotation="58.9346429920664" />
-                <Position Name="4" Rotation="116.735927465055" />
-                <Position Name="5" Rotation="179.070646014356" />
+                <Position Name="0" Rotation="240.27" />
+                <Position Name="1" Rotation="300.80" />
+                <Position Name="2" Rotation="0.00" />
+                <Position Name="3" Rotation="58.93" />
+                <Position Name="4" Rotation="116.74" />
+                <Position Name="5" Rotation="179.07" />
               </Positions>
               <DefaultPosition>1</DefaultPosition>
               <ClickType>
@@ -5880,6 +5846,7 @@
               <Location>484,448</Location>
               <Size>128,128</Size>
               <Hidden>False</Hidden>
+              <EffectsExclusion>True</EffectsExclusion>
               <PointCount>2</PointCount>
               <CalibrationPoints>
                 <Point>
@@ -5897,6 +5864,7 @@
               <Location>443,311</Location>
               <Size>128,128</Size>
               <Hidden>False</Hidden>
+              <EffectsExclusion>True</EffectsExclusion>
               <PointCount>2</PointCount>
               <CalibrationPoints>
                 <Point>
@@ -6163,8 +6131,8 @@
               <Hidden>False</Hidden>
               <KnobImage>MadKreator37\F4U-1D\Buttons_Switches_Knobs\C38_CW_Voice.png</KnobImage>
               <Positions>
-                <Position Name="0" Rotation="0" />
-                <Position Name="1" Rotation="43.694187752793" />
+                <Position Name="0" Rotation="0.00" />
+                <Position Name="1" Rotation="43.69" />
               </Positions>
               <DefaultPosition>1</DefaultPosition>
               <ClickType>
@@ -6207,10 +6175,10 @@
               <Hidden>False</Hidden>
               <KnobImage>MadKreator37\F4U-1D\Buttons_Switches_Knobs\VHF_Channel.png</KnobImage>
               <Positions>
-                <Position Name="0" Rotation="285.779641847314" />
-                <Position Name="1" Rotation="337.208105560792" />
-                <Position Name="2" Rotation="26.8614514608859" />
-                <Position Name="3" Rotation="73.5155513666352" />
+                <Position Name="0" Rotation="285.78" />
+                <Position Name="1" Rotation="337.21" />
+                <Position Name="2" Rotation="26.86" />
+                <Position Name="3" Rotation="73.52" />
               </Positions>
               <DefaultPosition>1</DefaultPosition>
               <ClickType>
@@ -6224,10 +6192,10 @@
               <Hidden>False</Hidden>
               <KnobImage>MadKreator37\F4U-1D\Buttons_Switches_Knobs\VHF_Channel.png</KnobImage>
               <Positions>
-                <Position Name="0" Rotation="288.407163053723" />
-                <Position Name="1" Rotation="334.580584354384" />
-                <Position Name="2" Rotation="26.8614514608859" />
-                <Position Name="3" Rotation="72.1017907634307" />
+                <Position Name="0" Rotation="288.41" />
+                <Position Name="1" Rotation="334.58" />
+                <Position Name="2" Rotation="26.86" />
+                <Position Name="3" Rotation="72.10" />
               </Positions>
               <DefaultPosition>1</DefaultPosition>
               <ClickType>
@@ -6253,12 +6221,12 @@
               <Hidden>False</Hidden>
               <KnobImage>MadKreator37\F4U-1D\Buttons_Switches_Knobs\C38_Channel_Handle.png</KnobImage>
               <Positions>
-                <Position Name="0" Rotation="262.959472196042" />
-                <Position Name="1" Rotation="0" />
-                <Position Name="2" Rotation="89.066918001885" />
-                <Position Name="3" Rotation="137.134778510839" />
-                <Position Name="4" Rotation="180.96135721018" />
-                <Position Name="5" Rotation="224.78793590952" />
+                <Position Name="0" Rotation="262.96" />
+                <Position Name="1" Rotation="0.00" />
+                <Position Name="2" Rotation="89.07" />
+                <Position Name="3" Rotation="137.13" />
+                <Position Name="4" Rotation="180.96" />
+                <Position Name="5" Rotation="224.79" />
               </Positions>
               <DefaultPosition>2</DefaultPosition>
               <ClickType>
@@ -6302,8 +6270,8 @@
               <Hidden>False</Hidden>
               <KnobImage>MadKreator37\F4U-1D\Buttons_Switches_Knobs\C26_CW_Voice.png</KnobImage>
               <Positions>
-                <Position Name="0" Rotation="0" />
-                <Position Name="1" Rotation="33.4495758718191" />
+                <Position Name="0" Rotation="0.00" />
+                <Position Name="1" Rotation="33.45" />
               </Positions>
               <DefaultPosition>1</DefaultPosition>
               <ClickType>
@@ -7151,39 +7119,6 @@
               <DefaultPosition>One</DefaultPosition>
               <Children />
             </Control>
-            <Control TypeIdentifier="Helios.Base.PotentiometerWithTranslate" Name="mixture linear tap" SnapTarget="True" Locked="True">
-              <Location>392,52</Location>
-              <Size>90,366</Size>
-              <Hidden>False</Hidden>
-              <MetricImage>MadKreator37\F4U-1D\Transparent_Image.png</MetricImage>
-              <InitialValueRotation>0</InitialValueRotation>
-              <StepValueRotation>0.1</StepValueRotation>
-              <MaxValueRotation>1</MaxValueRotation>
-              <MinValueRotation>0</MinValueRotation>
-              <InitialRotation>0</InitialRotation>
-              <RotationTravel>360</RotationTravel>
-              <InitialValueTranslationX>0</InitialValueTranslationX>
-              <StepValueTranslationX>0.1</StepValueTranslationX>
-              <MaxValueTranslationX>0</MaxValueTranslationX>
-              <MinValueTranslationX>0</MinValueTranslationX>
-              <InitialTranslationX>0</InitialTranslationX>
-              <TranslationTravelX>1</TranslationTravelX>
-              <InitialValueTranslationY>0</InitialValueTranslationY>
-              <StepValueTranslationY>0.333</StepValueTranslationY>
-              <MaxValueTranslationY>1</MaxValueTranslationY>
-              <MinValueTranslationY>0</MinValueTranslationY>
-              <InitialTranslationY>0</InitialTranslationY>
-              <TranslationTravelY>1</TranslationTravelY>
-              <ClickableVertical>True</ClickableVertical>
-              <ClickableHorizontal>False</ClickableHorizontal>
-              <InvertedHorizontal>False</InvertedHorizontal>
-              <InvertedVertical>True</InvertedVertical>
-              <DragOneOnOne>False</DragOneOnOne>
-              <ClickType>
-                <Type>Touch</Type>
-              </ClickType>
-              <Children />
-            </Control>
             <Control TypeIdentifier="Helios.Base.PotentiometerWithTranslate" Name="throttle linear pot" SnapTarget="True" Locked="True">
               <Location>209,42</Location>
               <Size>81,400</Size>
@@ -7252,56 +7187,17 @@
               </ClickType>
               <Children />
             </Control>
-            <Control TypeIdentifier="Helios.Base.ImageTranslucent" Name="M Off image" SnapTarget="False" Locked="True">
-              <Image>MadKreator37\F4U-1D\Buttons_Switches_Knobs\Mixture_0.png</Image>
-              <Alignment>Stretched</Alignment>
-              <CornerRadius>0</CornerRadius>
-              <DefaultOpacity>1</DefaultOpacity>
-              <Interaction>
-                <AllowInteraction>True</AllowInteraction>
-              </Interaction>
-              <Location>383,0</Location>
-              <Size>91,441</Size>
-              <Hidden>True</Hidden>
-              <Children />
-            </Control>
-            <Control TypeIdentifier="Helios.Base.ImageTranslucent" Name="M auto lean image" SnapTarget="False" Locked="True">
-              <Image>MadKreator37\F4U-1D\Buttons_Switches_Knobs\Mixture_1.png</Image>
-              <Alignment>Stretched</Alignment>
-              <CornerRadius>0</CornerRadius>
-              <DefaultOpacity>1</DefaultOpacity>
-              <Interaction>
-                <AllowInteraction>True</AllowInteraction>
-              </Interaction>
-              <Location>383,18</Location>
-              <Size>91,441</Size>
-              <Hidden>True</Hidden>
-              <Children />
-            </Control>
-            <Control TypeIdentifier="Helios.Base.ImageTranslucent" Name="M auto rich image " SnapTarget="False" Locked="True">
-              <Image>MadKreator37\F4U-1D\Buttons_Switches_Knobs\Mixture_2.png</Image>
-              <Alignment>Stretched</Alignment>
-              <CornerRadius>0</CornerRadius>
-              <DefaultOpacity>1</DefaultOpacity>
-              <Interaction>
-                <AllowInteraction>True</AllowInteraction>
-              </Interaction>
-              <Location>383,21</Location>
-              <Size>91,441</Size>
-              <Hidden>True</Hidden>
-              <Children />
-            </Control>
-            <Control TypeIdentifier="Helios.Base.ImageTranslucent" Name="M full rich image" SnapTarget="False" Locked="True">
-              <Image>MadKreator37\F4U-1D\Buttons_Switches_Knobs\Mixture_3.png</Image>
-              <Alignment>Stretched</Alignment>
-              <CornerRadius>0</CornerRadius>
-              <DefaultOpacity>1</DefaultOpacity>
-              <Interaction>
-                <AllowInteraction>True</AllowInteraction>
-              </Interaction>
-              <Location>383,33</Location>
+            <Control TypeIdentifier="Helios.Base.ThreeWayToggleSwitch" Name="Mixture Lever" SnapTarget="True" Locked="True">
+              <Location>375,8</Location>
               <Size>91,441</Size>
               <Hidden>False</Hidden>
+              <SwitchType>OnOnOn</SwitchType>
+              <Orientation>Vertical</Orientation>
+              <ClickType>Touch</ClickType>
+              <PositionOneImage>MadKreator37\F4U-1D\Buttons_Switches_Knobs\Mixture_2.png</PositionOneImage>
+              <PositionTwoImage>MadKreator37\F4U-1D\Buttons_Switches_Knobs\Mixture_1.png</PositionTwoImage>
+              <PositionThreeImage>MadKreator37\F4U-1D\Buttons_Switches_Knobs\Mixture_0.png</PositionThreeImage>
+              <DefaultPosition>Three</DefaultPosition>
               <Children />
             </Control>
           </Children>
@@ -7336,6 +7232,7 @@
               <Location>70,0</Location>
               <Size>24,15</Size>
               <Hidden>False</Hidden>
+              <EffectsExclusion>True</EffectsExclusion>
               <MetronomeEnabled>False</MetronomeEnabled>
               <TickInterval>0.5</TickInterval>
               <Children />
@@ -7344,6 +7241,7 @@
               <Location>100,0</Location>
               <Size>24,15</Size>
               <Hidden>False</Hidden>
+              <EffectsExclusion>True</EffectsExclusion>
               <Thresholds>
                 <UseThresholdValues>True</UseThresholdValues>
                 <InitialValue>0</InitialValue>
@@ -7395,6 +7293,7 @@
               <Location>137,0</Location>
               <Size>24,15</Size>
               <Hidden>False</Hidden>
+              <EffectsExclusion>True</EffectsExclusion>
               <MetronomeEnabled>False</MetronomeEnabled>
               <TickInterval>0.5</TickInterval>
               <Children />
@@ -7403,6 +7302,7 @@
               <Location>164,0</Location>
               <Size>24,15</Size>
               <Hidden>False</Hidden>
+              <EffectsExclusion>True</EffectsExclusion>
               <Thresholds>
                 <UseThresholdValues>True</UseThresholdValues>
                 <InitialValue>0</InitialValue>
@@ -7440,6 +7340,7 @@
               <Location>295,0</Location>
               <Size>22,22</Size>
               <Hidden>False</Hidden>
+              <EffectsExclusion>True</EffectsExclusion>
               <MetronomeEnabled>False</MetronomeEnabled>
               <TickInterval>0.01</TickInterval>
               <Children />
@@ -7448,6 +7349,7 @@
               <Location>327,0</Location>
               <Size>28,24</Size>
               <Hidden>False</Hidden>
+              <EffectsExclusion>True</EffectsExclusion>
               <Thresholds>
                 <UseThresholdValues>True</UseThresholdValues>
                 <InitialValue>0</InitialValue>
@@ -8598,11 +8500,6 @@ else return(true) end</LuaScript>
       <TriggerValue />
     </Binding>
     <Binding BypassCascadingTriggers="True">
-      <Trigger Source="Interface;;Helios.DCSInterfaceFile;DCS F4U-1D" Name="Engine.Mixure Axis.changed" />
-      <Action Target="Visual;Monitor 2.L1 Panel.Throttle Panel.mixture linear tap;Helios.Base.PotentiometerWithTranslate;mixture linear tap" Name="set.value Translation Y" />
-      <TriggerValue />
-    </Binding>
-    <Binding BypassCascadingTriggers="True">
       <Trigger Source="Interface;;Helios.DCSInterfaceFile;DCS F4U-1D" Name="Engine.Throttle.changed" />
       <Action Target="Visual;Monitor 2.L1 Panel.Throttle Panel.throttle linear pot;Helios.Base.PotentiometerWithTranslate;throttle linear pot" Name="set.value Translation Y" />
       <TriggerValue />
@@ -8653,11 +8550,6 @@ else return(true) end</LuaScript>
       <TriggerValue />
     </Binding>
     <Binding BypassCascadingTriggers="True">
-      <Trigger Source="Interface;;Helios.DCSInterfaceFile;DCS F4U-1D" Name="Engine.Mixure Axis.changed" />
-      <Action Target="Visual;Monitor 2.Throttle Panel.mixture linear tap;Helios.Base.PotentiometerWithTranslate;mixture linear tap" Name="set.value Translation Y" />
-      <TriggerValue />
-    </Binding>
-    <Binding BypassCascadingTriggers="True">
       <Trigger Source="Interface;;Helios.DCSInterfaceFile;DCS F4U-1D" Name="Engine.Throttle.changed" />
       <Action Target="Visual;Monitor 2.Throttle Panel.throttle linear pot;Helios.Base.PotentiometerWithTranslate;throttle linear pot" Name="set.value Translation Y" />
       <TriggerValue />
@@ -8668,76 +8560,14 @@ else return(true) end</LuaScript>
       <TriggerValue />
     </Binding>
     <Binding BypassCascadingTriggers="True">
-      <Trigger Source="Interface;;Helios.DCSInterfaceFile;DCS F4U-1D" Name="Engine.Mixure Axis.changed" />
-      <Action Target="Visual;Monitor 2.Throttle Panel.M Off image;Helios.Base.ImageTranslucent;M Off image" Name="set.hidden" />
-      <LuaScript>if TriggerValue == 0 then return(false)
-else return(true) end</LuaScript>
+      <Trigger Source="Interface;;Helios.DCSInterfaceFile;DCS F4U-1D" Name="Engine.Mixure Lever.changed" />
+      <Action Target="Visual;Monitor 2.Throttle Panel.Mixture Lever;Helios.Base.ThreeWayToggleSwitch;Mixture Lever" Name="set.position" />
+      <TriggerValue />
     </Binding>
     <Binding BypassCascadingTriggers="True">
-      <Trigger Source="Interface;;Helios.DCSInterfaceFile;DCS F4U-1D" Name="Engine.Mixure Axis.changed" />
-      <Action Target="Visual;Monitor 2.Throttle Panel.M auto lean image;Helios.Base.ImageTranslucent;M auto lean image" Name="set.hidden" />
-      <LuaScript>if TriggerValue == 0.333 then return(false)
-else return(true) end</LuaScript>
-    </Binding>
-    <Binding BypassCascadingTriggers="True">
-      <Trigger Source="Interface;;Helios.DCSInterfaceFile;DCS F4U-1D" Name="Engine.Mixure Axis.changed" />
-      <Action Target="Visual;Monitor 2.Throttle Panel.M auto rich image ;Helios.Base.ImageTranslucent;M auto rich image " Name="set.hidden" />
-      <LuaScript>if TriggerValue == 0.666 then return(false)
-else return(true) end</LuaScript>
-    </Binding>
-    <Binding BypassCascadingTriggers="True">
-      <Trigger Source="Interface;;Helios.DCSInterfaceFile;DCS F4U-1D" Name="Engine.Mixure Axis.changed" />
-      <Action Target="Visual;Monitor 2.Throttle Panel.M full rich image;Helios.Base.ImageTranslucent;M full rich image" Name="set.hidden" />
-      <LuaScript>if TriggerValue &gt; 0.666 then return(false)
-else return(true) end</LuaScript>
-    </Binding>
-    <Binding BypassCascadingTriggers="True">
-      <Trigger Source="Interface;;Helios.DCSInterfaceFile;DCS F4U-1D" Name="Engine.Mixure Axis.changed" />
-      <Action Target="Visual;Monitor 2.L1 Panel.Throttle Panel.M Off image;Helios.Base.ImageTranslucent;M Off image" Name="set.hidden" />
-      <LuaScript>if TriggerValue == 0 then return(false)
-else return(true) end</LuaScript>
-    </Binding>
-    <Binding BypassCascadingTriggers="True">
-      <Trigger Source="Interface;;Helios.DCSInterfaceFile;DCS F4U-1D" Name="Engine.Mixure Axis.changed" />
-      <Action Target="Visual;Monitor 2.L1 Panel.Throttle Panel.M auto lean image;Helios.Base.ImageTranslucent;M auto lean image" Name="set.hidden" />
-      <LuaScript>if TriggerValue == 0.333 then return(false)
-else return(true) end</LuaScript>
-    </Binding>
-    <Binding BypassCascadingTriggers="True">
-      <Trigger Source="Interface;;Helios.DCSInterfaceFile;DCS F4U-1D" Name="Engine.Mixure Axis.changed" />
-      <Action Target="Visual;Monitor 2.L1 Panel.Throttle Panel.M auto rich image ;Helios.Base.ImageTranslucent;M auto rich image " Name="set.hidden" />
-      <LuaScript>if TriggerValue == 0.666 then return(false)
-else return(true) end</LuaScript>
-    </Binding>
-    <Binding BypassCascadingTriggers="True">
-      <Trigger Source="Interface;;Helios.DCSInterfaceFile;DCS F4U-1D" Name="Engine.Mixure Axis.changed" />
-      <Action Target="Visual;Monitor 2.L1 Panel.Throttle Panel.M full rich image;Helios.Base.ImageTranslucent;M full rich image" Name="set.hidden" />
-      <LuaScript>if TriggerValue &gt; 0.666 then return(false)
-else return(true) end</LuaScript>
-    </Binding>
-    <Binding BypassCascadingTriggers="True">
-      <Trigger Source="Interface;;Helios.DCSInterfaceFile;DCS F4U-1D" Name="Engine.Mixure Axis.changed" />
-      <Action Target="Visual;Monitor 2.Indicator panel.M Off image;Helios.Base.ImageTranslucent;M Off image" Name="set.hidden" />
-      <LuaScript>if TriggerValue == 0 then return(false)
-else return(true) end</LuaScript>
-    </Binding>
-    <Binding BypassCascadingTriggers="True">
-      <Trigger Source="Interface;;Helios.DCSInterfaceFile;DCS F4U-1D" Name="Engine.Mixure Axis.changed" />
-      <Action Target="Visual;Monitor 2.Indicator panel.M auto lean image;Helios.Base.ImageTranslucent;M auto lean image" Name="set.hidden" />
-      <LuaScript>if TriggerValue == 0.333 then return(false)
-else return(true) end</LuaScript>
-    </Binding>
-    <Binding BypassCascadingTriggers="True">
-      <Trigger Source="Interface;;Helios.DCSInterfaceFile;DCS F4U-1D" Name="Engine.Mixure Axis.changed" />
-      <Action Target="Visual;Monitor 2.Indicator panel.M auto rich image ;Helios.Base.ImageTranslucent;M auto rich image " Name="set.hidden" />
-      <LuaScript>if TriggerValue == 0.666 then return(false)
-else return(true) end</LuaScript>
-    </Binding>
-    <Binding BypassCascadingTriggers="True">
-      <Trigger Source="Interface;;Helios.DCSInterfaceFile;DCS F4U-1D" Name="Engine.Mixure Axis.changed" />
-      <Action Target="Visual;Monitor 2.Indicator panel.M full rich image;Helios.Base.ImageTranslucent;M full rich image" Name="set.hidden" />
-      <LuaScript>if TriggerValue &gt; 0.666 then return(false)
-else return(true) end</LuaScript>
+      <Trigger Source="Interface;;Helios.DCSInterfaceFile;DCS F4U-1D" Name="Engine.Mixure Lever.changed" />
+      <Action Target="Visual;Monitor 2.Indicator panel.Mixture Animation;Helios.Base.ThreeWayToggleSwitch;Mixture Animation" Name="set.position" />
+      <TriggerValue />
     </Binding>
     <Binding BypassCascadingTriggers="True">
       <Trigger Source="Visual;Monitor 2.gun arm cam switch;Helios.Base.ThreeWayToggleSwitch;gun arm cam switch" Name="position.changed" />
@@ -9339,6 +9169,11 @@ else return(true) end</LuaScript>
       <Action Target="Interface;;Helios.DCSInterfaceFile;DCS F4U-1D" Name="Engine.set.Supercharger Lever" />
       <TriggerValue />
     </Binding>
+    <Binding BypassCascadingTriggers="False">
+      <Trigger Source="Visual;Monitor 2.Indicator panel.Mixture Animation;Helios.Base.ThreeWayToggleSwitch;Mixture Animation" Name="position.changed" />
+      <Action Target="Interface;;Helios.DCSInterfaceFile;DCS F4U-1D" Name="Engine.set.Mixure Lever" />
+      <TriggerValue />
+    </Binding>
     <Binding BypassCascadingTriggers="True">
       <Trigger Source="Visual;Monitor 2.R1 Panel.Lever panel button;Helios.Base.PushButton;Lever panel button" Name="closed" />
       <Action Target="Visual;Monitor 2.R1 Panel.Lever panel;Helios.Panel;Lever panel" Name="toggle.hidden" />
@@ -9915,11 +9750,6 @@ else return(true) end</LuaScript>
       <TriggerValue />
     </Binding>
     <Binding BypassCascadingTriggers="False">
-      <Trigger Source="Visual;Monitor 2.L1 Panel.Throttle Panel.mixture linear tap;Helios.Base.PotentiometerWithTranslate;mixture linear tap" Name="value Translation Y.changed" />
-      <Action Target="Interface;;Helios.DCSInterfaceFile;DCS F4U-1D" Name="Engine.set.Mixure Axis" />
-      <TriggerValue />
-    </Binding>
-    <Binding BypassCascadingTriggers="False">
       <Trigger Source="Visual;Monitor 2.L1 Panel.Throttle Panel.throttle linear pot;Helios.Base.PotentiometerWithTranslate;throttle linear pot" Name="value Translation Y.changed" />
       <Action Target="Interface;;Helios.DCSInterfaceFile;DCS F4U-1D" Name="Engine.set.Throttle" />
       <TriggerValue />
@@ -10240,11 +10070,6 @@ else return(true) end</LuaScript>
       <TriggerValue />
     </Binding>
     <Binding BypassCascadingTriggers="False">
-      <Trigger Source="Visual;Monitor 2.Throttle Panel.mixture linear tap;Helios.Base.PotentiometerWithTranslate;mixture linear tap" Name="value Translation Y.changed" />
-      <Action Target="Interface;;Helios.DCSInterfaceFile;DCS F4U-1D" Name="Engine.set.Mixure Axis" />
-      <TriggerValue />
-    </Binding>
-    <Binding BypassCascadingTriggers="False">
       <Trigger Source="Visual;Monitor 2.Throttle Panel.throttle linear pot;Helios.Base.PotentiometerWithTranslate;throttle linear pot" Name="value Translation Y.changed" />
       <Action Target="Interface;;Helios.DCSInterfaceFile;DCS F4U-1D" Name="Engine.set.Throttle" />
       <TriggerValue />
@@ -10252,6 +10077,11 @@ else return(true) end</LuaScript>
     <Binding BypassCascadingTriggers="False">
       <Trigger Source="Visual;Monitor 2.Throttle Panel.prop linear pot;Helios.Base.PotentiometerWithTranslate;prop linear pot" Name="value Translation Y.changed" />
       <Action Target="Interface;;Helios.DCSInterfaceFile;DCS F4U-1D" Name="Engine.set.Prop Governor Handle" />
+      <TriggerValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="False">
+      <Trigger Source="Visual;Monitor 2.Throttle Panel.Mixture Lever;Helios.Base.ThreeWayToggleSwitch;Mixture Lever" Name="position.changed" />
+      <Action Target="Interface;;Helios.DCSInterfaceFile;DCS F4U-1D" Name="Engine.set.Mixure Lever" />
       <TriggerValue />
     </Binding>
     <Binding BypassCascadingTriggers="True">
