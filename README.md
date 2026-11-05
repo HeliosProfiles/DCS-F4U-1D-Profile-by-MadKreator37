@@ -45,11 +45,9 @@ This profile was designed and created by MadKreator37. All parts were cut and mo
 
 5: Rocket Box Pylon indicator- WIP- no definitions in cockpit files, but should cycle following hotas rocket release command
 
-6: !!! Position 6 on C-38 radio channel selector can cause DCS crash-- Reported to Mag3 (causes error in F4U_avionics.dll) !!!
+6: Clock does not have all functions( non-functinoal time adjust)-- not implemented in module
 
-7: Clock does not have all functions( non-functinoal time adjust)-- not implemented in module
-
-8: Accelerometer Min Value needle does not function-- not implemented in module
+7: Accelerometer Min Value needle does not function-- not implemented in module
 
 
 
