@@ -8561,6 +8561,11 @@ else return(true) end</LuaScript>
       <TriggerValue />
     </Binding>
     <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Interface;;Helios.DCSInterfaceFile;DCS F4U-1D" Name="Radio.C-38 Receiver C On/Off.changed" />
+      <Action Target="Visual;Monitor 2.Radio Panel.c38 rec c sw;Helios.Base.ToggleSwitch;c38 rec c sw" Name="set.position" />
+      <TriggerValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
       <Trigger Source="Visual;Monitor 2.gun arm cam switch;Helios.Base.ThreeWayToggleSwitch;gun arm cam switch" Name="position.changed" />
       <Action Target="Interface;;Helios.DCSInterfaceFile;DCS F4U-1D" Name="Weapon.set.Gun Camera" />
       <TriggerValue />
@@ -9888,6 +9893,11 @@ else return(true) end</LuaScript>
     <Binding BypassCascadingTriggers="True">
       <Trigger Source="Visual;Monitor 2.Radio Panel.c38 cw voice;Helios.Base.RotarySwitch;c38 cw voice" Name="position.changed" />
       <Action Target="Interface;;Helios.DCSInterfaceFile;DCS F4U-1D" Name="Radio.set.C-38 CW/Voice Switch" />
+      <TriggerValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Visual;Monitor 2.Radio Panel.c38 rec c sw;Helios.Base.ToggleSwitch;c38 rec c sw" Name="position.changed" />
+      <Action Target="Interface;;Helios.DCSInterfaceFile;DCS F4U-1D" Name="Radio.set.C-38 Receiver C On/Off" />
       <TriggerValue />
     </Binding>
     <Binding BypassCascadingTriggers="True">

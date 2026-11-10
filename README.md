@@ -39,6 +39,8 @@ This profile was designed and created by MadKreator37. All parts were cut and mo
 
 5. Changed lighting control knobs to correct control type and images.
 
+6. Fix C-38C on/off switch.
+
 ### Known Bugs and Issues
  
 
