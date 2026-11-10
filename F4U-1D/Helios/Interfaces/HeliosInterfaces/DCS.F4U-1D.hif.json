@@ -752,24 +752,25 @@
       ]
     },
     {
-      "heliosType": "DCS.Common.Axis",
+      "heliosType": "DCS.Common.RotaryEncoder",
       "device": "Clock",
       "name": "Clock Adjust Knob",
-      "description": "Current value of this potentiometer.",
+      "description": "Current Position of This Rotary Encoder",
       "exports": [
         {
-          "format0": "%.3f",
-          "id": "249",
           "format": "%0.3f",
-          "isExportedEveryFrame": false
+          "isExportedEveryFrame": false,
+          "id": "249"
         }
       ],
-      "loop": false,
+      "unit": "Numeric",
       "argumentValue": "0.025",
-      "argumentMin": "0.0",
-      "argumentMax": "1.0",
       "actions": {
-        "set": {
+        "increment": {
+          "deviceId": "17",
+          "actionId": "3650"
+        },
+        "decrement": {
           "deviceId": "17",
           "actionId": "3650"
         }
@@ -778,20 +779,20 @@
     {
       "heliosType": "DCS.Common.Switch",
       "device": "Clock",
-      "name": "clock Adjust Switch",
+      "name": "Clock Adjust Switch",
       "description": "Current position of this switch.",
       "exports": [
         {
           "format": "%0.1f",
-          "id": "250",
-          "isExportedEveryFrame": false
+          "isExportedEveryFrame": false,
+          "id": "250"
         }
       ],
       "deviceId": "17",
       "positions": [
         {
           "argumentValue": "1.0",
-          "name": "Adjust",
+          "name": "Reset",
           "actionId": "3651"
         },
         {
@@ -801,7 +802,7 @@
         },
         {
           "argumentValue": "-1.0",
-          "name": "Reset",
+          "name": "Adjust",
           "actionId": "3651"
         }
       ]
@@ -3092,27 +3093,25 @@
       ]
     },
     {
-      "heliosType": "DCS.Common.RotaryEncoder",
+      "heliosType": "DCS.Common.Axis",
       "device": "Lights",
       "name": "Chartboard Lights",
-      "description": "Current position of this rotary encoder.",
+      "description": "Current Value of This Potentiometer",
       "exports": [
         {
-          "format": "%.3f",
-          "id": "137",
-          "isExportedEveryFrame": false
+          "format": "%0.3f",
+          "isExportedEveryFrame": false,
+          "id": "137"
         }
       ],
-      "unit": "Numeric",
+      "loop": false,
       "argumentValue": "0.025",
+      "argumentMin": "0.0",
+      "argumentMax": "1.0",
       "actions": {
-        "increment": {
+        "set": {
           "deviceId": "11",
-          "actionId": "3739"
-        },
-        "decrement": {
-          "deviceId": "11",
-          "actionId": "3739"
+          "actionId": "3749"
         }
       }
     },
@@ -3205,27 +3204,25 @@
       ]
     },
     {
-      "heliosType": "DCS.Common.RotaryEncoder",
+      "heliosType": "DCS.Common.Axis",
       "device": "Lights",
       "name": "Left Instrument Board Lights",
-      "description": "Current position of this rotary encoder.",
+      "description": "Current Value of This Potentiometer",
       "exports": [
         {
-          "format": "%.3f",
-          "id": "140",
-          "isExportedEveryFrame": false
+          "format": "%0.3f",
+          "isExportedEveryFrame": false,
+          "id": "140"
         }
       ],
-      "unit": "Numeric",
+      "loop": false,
       "argumentValue": "0.025",
+      "argumentMin": "0.0",
+      "argumentMax": "1.0",
       "actions": {
-        "increment": {
+        "set": {
           "deviceId": "11",
-          "actionId": "3742"
-        },
-        "decrement": {
-          "deviceId": "11",
-          "actionId": "3742"
+          "actionId": "3709"
         }
       }
     },
@@ -3253,27 +3250,25 @@
       }
     },
     {
-      "heliosType": "DCS.Common.RotaryEncoder",
+      "heliosType": "DCS.Common.Axis",
       "device": "Lights",
       "name": "Left Panel Lights",
-      "description": "Current position of this rotary encoder.",
+      "description": "Current Value of This Potentiometer",
       "exports": [
         {
-          "format": "%.3f",
-          "id": "138",
-          "isExportedEveryFrame": false
+          "format": "%0.3f",
+          "isExportedEveryFrame": false,
+          "id": "138"
         }
       ],
-      "unit": "Numeric",
+      "loop": false,
       "argumentValue": "0.025",
+      "argumentMin": "0.0",
+      "argumentMax": "1.0",
       "actions": {
-        "increment": {
+        "set": {
           "deviceId": "11",
-          "actionId": "3740"
-        },
-        "decrement": {
-          "deviceId": "11",
-          "actionId": "3740"
+          "actionId": "3707"
         }
       }
     },
@@ -3394,27 +3389,25 @@
       ]
     },
     {
-      "heliosType": "DCS.Common.RotaryEncoder",
+      "heliosType": "DCS.Common.Axis",
       "device": "Lights",
       "name": "Right Instrument Board Lights",
-      "description": "Current position of this rotary encoder.",
+      "description": "Current Value of This Potentiometer",
       "exports": [
         {
-          "format": "%.3f",
-          "id": "141",
-          "isExportedEveryFrame": false
+          "format": "%0.3f",
+          "isExportedEveryFrame": false,
+          "id": "141"
         }
       ],
-      "unit": "Numeric",
+      "loop": false,
       "argumentValue": "0.025",
+      "argumentMin": "0.0",
+      "argumentMax": "1.0",
       "actions": {
-        "increment": {
+        "set": {
           "deviceId": "11",
-          "actionId": "3743"
-        },
-        "decrement": {
-          "deviceId": "11",
-          "actionId": "3743"
+          "actionId": "3710"
         }
       }
     },
@@ -3442,27 +3435,25 @@
       }
     },
     {
-      "heliosType": "DCS.Common.RotaryEncoder",
+      "heliosType": "DCS.Common.Axis",
       "device": "Lights",
       "name": "Right Panel Lights",
-      "description": "Current position of this rotary encoder.",
+      "description": "Current Value of This Potentiometer",
       "exports": [
         {
-          "format": "%.3f",
-          "id": "139",
-          "isExportedEveryFrame": false
+          "format": "%0.3f",
+          "isExportedEveryFrame": false,
+          "id": "139"
         }
       ],
-      "unit": "Numeric",
+      "loop": false,
       "argumentValue": "0.025",
+      "argumentMin": "0.0",
+      "argumentMax": "1.0",
       "actions": {
-        "increment": {
+        "set": {
           "deviceId": "11",
-          "actionId": "3741"
-        },
-        "decrement": {
-          "deviceId": "11",
-          "actionId": "3741"
+          "actionId": "3708"
         }
       }
     },
@@ -3496,9 +3487,9 @@
       "description": "Current position of this switch.",
       "exports": [
         {
-          "format": "%0.1f",
-          "id": "1314",
-          "isExportedEveryFrame": false
+          "format": "%0.3f",
+          "isExportedEveryFrame": false,
+          "id": "134"
         }
       ],
       "deviceId": "11",
@@ -3989,13 +3980,13 @@
     {
       "heliosType": "DCS.Common.Switch",
       "device": "Radio",
-      "name": "C-38 Receiver C On/Off Switch",
+      "name": "C-38 Receiver C On/Off",
       "description": "Current position of this switch.",
       "exports": [
         {
           "format": "%0.1f",
-          "id": "83",
-          "isExportedEveryFrame": false
+          "isExportedEveryFrame": false,
+          "id": "83"
         }
       ],
       "deviceId": "9",
@@ -4088,9 +4079,9 @@
       "description": "Current position of this switch.",
       "exports": [
         {
-          "format": "%0.1f",
-          "id": "86",
-          "isExportedEveryFrame": false
+          "format": "%0.3f",
+          "isExportedEveryFrame": false,
+          "id": "86"
         }
       ],
       "deviceId": "9",

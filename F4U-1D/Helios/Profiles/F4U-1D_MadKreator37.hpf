@@ -12,7 +12,7 @@
       <Children />
     </Monitor>
     <Monitor>
-      <Location>958,2160</Location>
+      <Location>0,2160</Location>
       <Size>1920,1080</Size>
       <Hidden>False</Hidden>
       <Orientation>DMDO_DEFAULT</Orientation>
@@ -1465,6 +1465,23 @@
               <Type>Momentary</Type>
               <Image>MadKreator37\F4U-1D\Buttons_Switches_Knobs\Chrono_Start.png</Image>
               <PushedImage>MadKreator37\F4U-1D\Buttons_Switches_Knobs\Chrono_Start_Pressed.png</PushedImage>
+              <Children />
+            </Control>
+            <Control TypeIdentifier="Helios.Base.RotaryEncoderClickable" Name="Clickable Rotary Encoder" SnapTarget="True" Locked="True">
+              <ButtonClickType>Toggle</ButtonClickType>
+              <PushedImage>MadKreator37\F4U-1D\Buttons_Switches_Knobs\VA_Norm.png</PushedImage>
+              <UnpushedImage>MadKreator37\F4U-1D\Buttons_Switches_Knobs\VA_Pressed.png</UnpushedImage>
+              <Location>28,233</Location>
+              <Size>47,47</Size>
+              <Hidden>False</Hidden>
+              <KnobImage>MadKreator37\F4U-1D\Buttons_Switches_Knobs\VA_Pressed.png</KnobImage>
+              <RotationStep>5</RotationStep>
+              <StepValue>0.025</StepValue>
+              <InitialRotation>0</InitialRotation>
+              <ClickType>
+                <Type>Swipe</Type>
+                <Sensitivity>1</Sensitivity>
+              </ClickType>
               <Children />
             </Control>
           </Children>
@@ -4260,64 +4277,6 @@
               <DefaultGuardPosition>Down</DefaultGuardPosition>
               <Children />
             </Control>
-            <Control TypeIdentifier="Helios.Base.RotaryEncoder" Name="chartboard light" SnapTarget="True" Locked="True">
-              <Location>134,390</Location>
-              <Size>58,58</Size>
-              <Hidden>False</Hidden>
-              <KnobImage>MadKreator37\F4U-1D\Buttons_Switches_Knobs\Altimeter_Knob.png</KnobImage>
-              <RotationStep>5</RotationStep>
-              <StepValue>0.1</StepValue>
-              <InitialRotation>312.748859769782</InitialRotation>
-              <ClickType>
-                <Type>Swipe</Type>
-                <Sensitivity>-0.0117647058823523</Sensitivity>
-              </ClickType>
-              <Children />
-            </Control>
-            <Control TypeIdentifier="Helios.Base.RotaryEncoder" Name="left panel light" SnapTarget="True" Locked="True">
-              <Location>255,390</Location>
-              <Size>58,58</Size>
-              <Hidden>False</Hidden>
-              <KnobImage>MadKreator37\F4U-1D\Buttons_Switches_Knobs\Altimeter_Knob.png</KnobImage>
-              <RotationStep>5</RotationStep>
-              <StepValue>0.1</StepValue>
-              <InitialRotation>317.961340765945</InitialRotation>
-              <Children />
-            </Control>
-            <Control TypeIdentifier="Helios.Base.RotaryEncoder" Name="right panel light" SnapTarget="True" Locked="True">
-              <Location>374,390</Location>
-              <Size>58,58</Size>
-              <Hidden>False</Hidden>
-              <KnobImage>MadKreator37\F4U-1D\Buttons_Switches_Knobs\Altimeter_Knob.png</KnobImage>
-              <RotationStep>5</RotationStep>
-              <StepValue>0.1</StepValue>
-              <InitialRotation>316.006660392384</InitialRotation>
-              <Children />
-            </Control>
-            <Control TypeIdentifier="Helios.Base.RotaryEncoder" Name="left instr light" SnapTarget="True" Locked="True">
-              <Location>134,542</Location>
-              <Size>58,58</Size>
-              <Hidden>False</Hidden>
-              <KnobImage>MadKreator37\F4U-1D\Buttons_Switches_Knobs\Altimeter_Knob.png</KnobImage>
-              <RotationStep>5</RotationStep>
-              <StepValue>0.1</StepValue>
-              <InitialRotation>314.703540143343</InitialRotation>
-              <ClickType>
-                <Type>Swipe</Type>
-                <Sensitivity>5.55111512312578E-16</Sensitivity>
-              </ClickType>
-              <Children />
-            </Control>
-            <Control TypeIdentifier="Helios.Base.RotaryEncoder" Name="rt instr light" SnapTarget="True" Locked="True">
-              <Location>256,542</Location>
-              <Size>58,58</Size>
-              <Hidden>False</Hidden>
-              <KnobImage>MadKreator37\F4U-1D\Buttons_Switches_Knobs\Altimeter_Knob.png</KnobImage>
-              <RotationStep>5</RotationStep>
-              <StepValue>0.1</StepValue>
-              <InitialRotation>314.051980018823</InitialRotation>
-              <Children />
-            </Control>
             <Control TypeIdentifier="Helios.Base.ToggleSwitch" Name="cb instrument" SnapTarget="True" Locked="True">
               <Location>358,740</Location>
               <Size>34,34</Size>
@@ -4436,6 +4395,91 @@
                   <Children />
                 </Control>
               </Children>
+            </Control>
+            <Control TypeIdentifier="Helios.Base.Potentiometer" Name="Potentiometer" SnapTarget="True" Locked="True">
+              <Location>114,362</Location>
+              <Size>100,100</Size>
+              <Hidden>False</Hidden>
+              <KnobImage>MadKreator37\F4U-1D\Buttons_Switches_Knobs\Lighting_Knob.png</KnobImage>
+              <InitialValue>0</InitialValue>
+              <StepValue>0.03</StepValue>
+              <MaxValue>1</MaxValue>
+              <MinValue>0</MinValue>
+              <InitialRotation>309.565217391305</InitialRotation>
+              <RotationTravel>95.6521739130426</RotationTravel>
+              <ClickType>
+                <Type>Swipe</Type>
+                <Sensitivity>1</Sensitivity>
+              </ClickType>
+              <Children />
+            </Control>
+            <Control TypeIdentifier="Helios.Base.Potentiometer" Name="Potentiometer 1" SnapTarget="True" Locked="True">
+              <Location>233,362</Location>
+              <Size>100,100</Size>
+              <Hidden>False</Hidden>
+              <KnobImage>MadKreator37\F4U-1D\Buttons_Switches_Knobs\Lighting_Knob.png</KnobImage>
+              <InitialValue>0</InitialValue>
+              <StepValue>0.03</StepValue>
+              <MaxValue>1</MaxValue>
+              <MinValue>0</MinValue>
+              <InitialRotation>309.565217391305</InitialRotation>
+              <RotationTravel>95.6521739130426</RotationTravel>
+              <ClickType>
+                <Type>Swipe</Type>
+                <Sensitivity>1</Sensitivity>
+              </ClickType>
+              <Children />
+            </Control>
+            <Control TypeIdentifier="Helios.Base.Potentiometer" Name="Potentiometer 1 1" SnapTarget="True" Locked="True">
+              <Location>353,362</Location>
+              <Size>100,100</Size>
+              <Hidden>False</Hidden>
+              <KnobImage>MadKreator37\F4U-1D\Buttons_Switches_Knobs\Lighting_Knob.png</KnobImage>
+              <InitialValue>0</InitialValue>
+              <StepValue>0.03</StepValue>
+              <MaxValue>1</MaxValue>
+              <MinValue>0</MinValue>
+              <InitialRotation>309.565217391305</InitialRotation>
+              <RotationTravel>95.6521739130426</RotationTravel>
+              <ClickType>
+                <Type>Swipe</Type>
+                <Sensitivity>1</Sensitivity>
+              </ClickType>
+              <Children />
+            </Control>
+            <Control TypeIdentifier="Helios.Base.Potentiometer" Name="Potentiometer 2" SnapTarget="True" Locked="True">
+              <Location>113,516</Location>
+              <Size>100,100</Size>
+              <Hidden>False</Hidden>
+              <KnobImage>MadKreator37\F4U-1D\Buttons_Switches_Knobs\Lighting_Knob.png</KnobImage>
+              <InitialValue>0</InitialValue>
+              <StepValue>0.03</StepValue>
+              <MaxValue>1</MaxValue>
+              <MinValue>0</MinValue>
+              <InitialRotation>309.565217391305</InitialRotation>
+              <RotationTravel>95.6521739130426</RotationTravel>
+              <ClickType>
+                <Type>Swipe</Type>
+                <Sensitivity>1</Sensitivity>
+              </ClickType>
+              <Children />
+            </Control>
+            <Control TypeIdentifier="Helios.Base.Potentiometer" Name="Potentiometer 2 1" SnapTarget="True" Locked="True">
+              <Location>234,516</Location>
+              <Size>100,100</Size>
+              <Hidden>False</Hidden>
+              <KnobImage>MadKreator37\F4U-1D\Buttons_Switches_Knobs\Lighting_Knob.png</KnobImage>
+              <InitialValue>0</InitialValue>
+              <StepValue>0.03</StepValue>
+              <MaxValue>1</MaxValue>
+              <MinValue>0</MinValue>
+              <InitialRotation>309.565217391305</InitialRotation>
+              <RotationTravel>95.6521739130426</RotationTravel>
+              <ClickType>
+                <Type>Swipe</Type>
+                <Sensitivity>1</Sensitivity>
+              </ClickType>
+              <Children />
             </Control>
           </Children>
         </Control>
@@ -5952,7 +5996,7 @@
             <AllowInteractionLegacy>False</AllowInteractionLegacy>
           </Interaction>
           <Children>
-            <Control TypeIdentifier="Helios.Base.CustomTape" Name="c38 noise animation tape" SnapTarget="True" Locked="True">
+            <Control TypeIdentifier="Helios.Base.CustomTape" Name="c38 noise animation tape" SnapTarget="True" Locked="False">
               <Location>406,77</Location>
               <Size>121,22</Size>
               <Hidden>False</Hidden>
@@ -5988,7 +6032,7 @@
               <MaxInputRotation>1</MaxInputRotation>
               <Children />
             </Control>
-            <Control TypeIdentifier="Helios.Base.TextDisplay" Name="c38 channel" SnapTarget="True" Locked="True">
+            <Control TypeIdentifier="Helios.Base.TextDisplay" Name="c38 channel" SnapTarget="True" Locked="False">
               <Font>
                 <FontFamily>MS 33558 Regular</FontFamily>
                 <FontStyle>Normal</FontStyle>
@@ -6015,7 +6059,7 @@
               <Hidden>False</Hidden>
               <Children />
             </Control>
-            <Control TypeIdentifier="Helios.Base.Image" Name="background" SnapTarget="False" Locked="True">
+            <Control TypeIdentifier="Helios.Base.Image" Name="background" SnapTarget="False" Locked="False">
               <Image>MadKreator37\F4U-1D\Bezels_And_Faces\Radio_Panel.png</Image>
               <Alignment>Stretched</Alignment>
               <CornerRadius>0</CornerRadius>
@@ -6024,7 +6068,7 @@
               <Hidden>False</Hidden>
               <Children />
             </Control>
-            <Control TypeIdentifier="Helios.Base.ToggleSwitch" Name="c38 rec a sw" SnapTarget="True" Locked="True">
+            <Control TypeIdentifier="Helios.Base.ToggleSwitch" Name="c38 rec a sw" SnapTarget="True" Locked="False">
               <Location>235,198</Location>
               <Size>26,68</Size>
               <Hidden>False</Hidden>
@@ -6036,7 +6080,7 @@
               <DefaultPosition>Two</DefaultPosition>
               <Children />
             </Control>
-            <Control TypeIdentifier="Helios.Base.Potentiometer" Name="c38 vol" SnapTarget="True" Locked="True">
+            <Control TypeIdentifier="Helios.Base.Potentiometer" Name="c38 vol" SnapTarget="True" Locked="False">
               <Location>109,266</Location>
               <Size>62,62</Size>
               <Hidden>False</Hidden>
@@ -6053,7 +6097,7 @@
               </ClickType>
               <Children />
             </Control>
-            <Control TypeIdentifier="Helios.Base.RotarySwitch" Name="c38 cw voice" SnapTarget="True" Locked="True">
+            <Control TypeIdentifier="Helios.Base.RotarySwitch" Name="c38 cw voice" SnapTarget="True" Locked="False">
               <Location>525,97</Location>
               <Size>83,83</Size>
               <Hidden>False</Hidden>
@@ -6068,7 +6112,7 @@
               </ClickType>
               <Children />
             </Control>
-            <Control TypeIdentifier="Helios.Base.ToggleSwitch" Name="c38 rec c sw" SnapTarget="True" Locked="True">
+            <Control TypeIdentifier="Helios.Base.ToggleSwitch" Name="c38 rec c sw" SnapTarget="True" Locked="False">
               <Location>452,198</Location>
               <Size>26,68</Size>
               <Hidden>False</Hidden>
@@ -6080,7 +6124,7 @@
               <DefaultPosition>Two</DefaultPosition>
               <Children />
             </Control>
-            <Control TypeIdentifier="Helios.Base.Potentiometer" Name="c38 sensitivity" SnapTarget="True" Locked="True">
+            <Control TypeIdentifier="Helios.Base.Potentiometer" Name="c38 sensitivity" SnapTarget="True" Locked="False">
               <Location>538,267</Location>
               <Size>54,54</Size>
               <Hidden>False</Hidden>
@@ -6097,7 +6141,7 @@
               </ClickType>
               <Children />
             </Control>
-            <Control TypeIdentifier="Helios.Base.RotarySwitch" Name="c30 voice" SnapTarget="True" Locked="True">
+            <Control TypeIdentifier="Helios.Base.RotarySwitch" Name="c30 voice" SnapTarget="True" Locked="False">
               <Location>794,57</Location>
               <Size>135,135</Size>
               <Hidden>False</Hidden>
@@ -6114,7 +6158,7 @@
               </ClickType>
               <Children />
             </Control>
-            <Control TypeIdentifier="Helios.Base.RotarySwitch" Name="c30 channel" SnapTarget="True" Locked="True">
+            <Control TypeIdentifier="Helios.Base.RotarySwitch" Name="c30 channel" SnapTarget="True" Locked="False">
               <Location>947,57</Location>
               <Size>135,135</Size>
               <Hidden>False</Hidden>
@@ -6131,7 +6175,7 @@
               </ClickType>
               <Children />
             </Control>
-            <Control TypeIdentifier="Helios.Base.ToggleSwitch" Name="c30 on off" SnapTarget="True" Locked="True">
+            <Control TypeIdentifier="Helios.Base.ToggleSwitch" Name="c30 on off" SnapTarget="True" Locked="False">
               <Location>930,180</Location>
               <Size>17,55</Size>
               <Hidden>False</Hidden>
@@ -6143,7 +6187,7 @@
               <DefaultPosition>Two</DefaultPosition>
               <Children />
             </Control>
-            <Control TypeIdentifier="Helios.Base.RotarySwitch" Name="c38 freq handle" SnapTarget="True" Locked="True">
+            <Control TypeIdentifier="Helios.Base.RotarySwitch" Name="c38 freq handle" SnapTarget="True" Locked="False">
               <Location>597,156</Location>
               <Size>212,212</Size>
               <Hidden>False</Hidden>
@@ -6162,7 +6206,7 @@
               </ClickType>
               <Children />
             </Control>
-            <Control TypeIdentifier="Helios.Base.Potentiometer" Name="c26 freq dial" SnapTarget="True" Locked="True">
+            <Control TypeIdentifier="Helios.Base.Potentiometer" Name="c26 freq dial" SnapTarget="True" Locked="False">
               <Location>1157,103</Location>
               <Size>145,145</Size>
               <Hidden>False</Hidden>
@@ -6175,7 +6219,7 @@
               <RotationTravel>305.938566552901</RotationTravel>
               <Children />
             </Control>
-            <Control TypeIdentifier="Helios.Base.Potentiometer" Name="c26 freq handle" SnapTarget="True" Locked="True">
+            <Control TypeIdentifier="Helios.Base.Potentiometer" Name="c26 freq handle" SnapTarget="True" Locked="False">
               <Location>1207,166</Location>
               <Size>164,164</Size>
               <Hidden>False</Hidden>
@@ -6192,7 +6236,7 @@
               </ClickType>
               <Children />
             </Control>
-            <Control TypeIdentifier="Helios.Base.RotarySwitch" Name="c26 cw voicw" SnapTarget="True" Locked="True">
+            <Control TypeIdentifier="Helios.Base.RotarySwitch" Name="c26 cw voicw" SnapTarget="True" Locked="False">
               <Location>1266,78</Location>
               <Size>61,61</Size>
               <Hidden>False</Hidden>
@@ -6207,7 +6251,7 @@
               </ClickType>
               <Children />
             </Control>
-            <Control TypeIdentifier="Helios.Base.Potentiometer" Name="c26 sense" SnapTarget="True" Locked="True">
+            <Control TypeIdentifier="Helios.Base.Potentiometer" Name="c26 sense" SnapTarget="True" Locked="False">
               <Location>1151,250</Location>
               <Size>54,54</Size>
               <Hidden>False</Hidden>
@@ -6224,7 +6268,7 @@
               </ClickType>
               <Children />
             </Control>
-            <Control TypeIdentifier="Helios.Base.PotentiometerWithTranslate" Name="noise invis linear pot" SnapTarget="True" Locked="True">
+            <Control TypeIdentifier="Helios.Base.PotentiometerWithTranslate" Name="noise invis linear pot" SnapTarget="True" Locked="False">
               <Location>403,70</Location>
               <Size>121,37</Size>
               <Hidden>False</Hidden>
@@ -6258,7 +6302,7 @@
               </ClickType>
               <Children />
             </Control>
-            <Control TypeIdentifier="Helios.Base.RotaryEncoder" Name="Rotary Encoder" SnapTarget="True" Locked="True">
+            <Control TypeIdentifier="Helios.Base.RotaryEncoder" Name="Rotary Encoder" SnapTarget="True" Locked="False">
               <Location>675,82</Location>
               <Size>52,52</Size>
               <Hidden>False</Hidden>
@@ -7305,11 +7349,20 @@
       </Children>
     </Monitor>
     <Monitor>
-      <Location>3840,731</Location>
-      <Size>5120,1440</Size>
+      <Location>1920,2160</Location>
+      <Size>1920,1080</Size>
       <Hidden>False</Hidden>
       <Orientation>DMDO_DEFAULT</Orientation>
       <AlwaysOnTop>False</AlwaysOnTop>
+      <Background />
+      <Children />
+    </Monitor>
+    <Monitor>
+      <Location>3840,644</Location>
+      <Size>5120,1440</Size>
+      <Hidden>False</Hidden>
+      <Orientation>DMDO_DEFAULT</Orientation>
+      <AlwaysOnTop>True</AlwaysOnTop>
       <Background />
       <Children />
     </Monitor>
@@ -7352,38 +7405,13 @@
       <TriggerValue />
     </Binding>
     <Binding BypassCascadingTriggers="True">
-      <Trigger Source="Interface;;Helios.DCSInterfaceFile;DCS F4U-1D" Name="Weapon.Rocket Box Switch Cover.changed" />
-      <Action Target="Visual;Monitor 2.Rocket Panel.rocket box guard;Helios.Base.GuardedSwitch;rocket box guard" Name="set.guard position" />
-      <TriggerValue />
-    </Binding>
-    <Binding BypassCascadingTriggers="True">
-      <Trigger Source="Interface;;Helios.DCSInterfaceFile;DCS F4U-1D" Name="Weapon.Rocket Box Switch.changed" />
-      <Action Target="Visual;Monitor 2.Rocket Panel.Rocket box switch;Helios.Base.ToggleSwitch;Rocket box switch" Name="set.position" />
-      <TriggerValue />
-    </Binding>
-    <Binding BypassCascadingTriggers="True">
-      <Trigger Source="Interface;;Helios.DCSInterfaceFile;DCS F4U-1D" Name="Weapon.Rocket Box Arm - Safe.changed" />
-      <Action Target="Visual;Monitor 2.Rocket Panel.rocket arm switch;Helios.Base.ToggleSwitch;rocket arm switch" Name="set.position" />
-      <TriggerValue />
-    </Binding>
-    <Binding BypassCascadingTriggers="True">
-      <Trigger Source="Interface;;Helios.DCSInterfaceFile;DCS F4U-1D" Name="Weapon.Rocket Box Single - Auto.changed" />
-      <Action Target="Visual;Monitor 2.Rocket Panel.single auto sw;Helios.Base.ToggleSwitch;single auto sw" Name="set.position" />
-      <TriggerValue />
-    </Binding>
-    <Binding BypassCascadingTriggers="True">
-      <Trigger Source="Interface;;Helios.DCSInterfaceFile;DCS F4U-1D" Name="Weapon.Rocket Selector Pull.changed" />
-      <Action Target="Visual;Monitor 2.Rocket Panel.reset knob;Helios.Base.PotentiometerClickable;reset knob" Name="set.physical state" />
-      <TriggerValue />
-    </Binding>
-    <Binding BypassCascadingTriggers="True">
-      <Trigger Source="Interface;;Helios.DCSInterfaceFile;DCS F4U-1D" Name="Weapon.Rocket Selector Turn.changed" />
-      <Action Target="Visual;Monitor 2.Rocket Panel.reset knob;Helios.Base.PotentiometerClickable;reset knob" Name="set.value" />
-      <TriggerValue />
-    </Binding>
-    <Binding BypassCascadingTriggers="True">
       <Trigger Source="Interface;;Helios.DCSInterfaceFile;DCS F4U-1D" Name="Weapon.Gun Camera.changed" />
       <Action Target="Visual;Monitor 2.gun arm cam switch;Helios.Base.ThreeWayToggleSwitch;gun arm cam switch" Name="set.position" />
+      <TriggerValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Interface;;Helios.DCSInterfaceFile;DCS F4U-1D" Name="Weapon.Gunsight Light Switch.changed" />
+      <Action Target="Visual;Monitor 2.gunsight sw;Helios.Base.ThreeWayToggleSwitch;gunsight sw" Name="set.position" />
       <TriggerValue />
     </Binding>
     <Binding BypassCascadingTriggers="True">
@@ -7407,11 +7435,6 @@
       <TriggerValue />
     </Binding>
     <Binding BypassCascadingTriggers="True">
-      <Trigger Source="Interface;;Helios.DCSInterfaceFile;DCS F4U-1D" Name="Weapon.Gunsight Light Switch.changed" />
-      <Action Target="Visual;Monitor 2.gunsight sw;Helios.Base.ThreeWayToggleSwitch;gunsight sw" Name="set.position" />
-      <TriggerValue />
-    </Binding>
-    <Binding BypassCascadingTriggers="True">
       <Trigger Source="Interface;;Helios.DCSInterfaceFile;DCS F4U-1D" Name="Weapon.Left Wing Release.changed" />
       <Action Target="Visual;Monitor 2.LH Release;Helios.Base.ToggleSwitch;LH Release" Name="set.position" />
       <TriggerValue />
@@ -7422,13 +7445,13 @@
       <TriggerValue />
     </Binding>
     <Binding BypassCascadingTriggers="True">
-      <Trigger Source="Interface;;Helios.DCSInterfaceFile;DCS F4U-1D" Name="Weapon.Bomb Arming.changed" />
-      <Action Target="Visual;Monitor 2.bomb arm ;Helios.Base.ThreeWayToggleSwitch;bomb arm " Name="set.position" />
+      <Trigger Source="Interface;;Helios.DCSInterfaceFile;DCS F4U-1D" Name="Weapon.Pylon Release.changed" />
+      <Action Target="Visual;Monitor 2.Pylon release;Helios.Base.ToggleSwitch;Pylon release" Name="set.position" />
       <TriggerValue />
     </Binding>
     <Binding BypassCascadingTriggers="True">
-      <Trigger Source="Interface;;Helios.DCSInterfaceFile;DCS F4U-1D" Name="Weapon.Pylon Release.changed" />
-      <Action Target="Visual;Monitor 2.Pylon release;Helios.Base.ToggleSwitch;Pylon release" Name="set.position" />
+      <Trigger Source="Interface;;Helios.DCSInterfaceFile;DCS F4U-1D" Name="Weapon.Bomb Arming.changed" />
+      <Action Target="Visual;Monitor 2.bomb arm ;Helios.Base.ThreeWayToggleSwitch;bomb arm " Name="set.position" />
       <TriggerValue />
     </Binding>
     <Binding BypassCascadingTriggers="True">
@@ -7437,38 +7460,18 @@
       <TriggerValue />
     </Binding>
     <Binding BypassCascadingTriggers="True">
-      <Trigger Source="Interface;;Helios.DCSInterfaceFile;DCS F4U-1D" Name="Engine.Oil Cooler Lever.changed" />
-      <Action Target="Visual;Monitor 2.R1 Panel.Lever panel.Three Way Toggle Switch;Helios.Base.ThreeWayToggleSwitch;Three Way Toggle Switch" Name="set.position" />
+      <Trigger Source="Interface;;Helios.DCSInterfaceFile;DCS F4U-1D" Name="Instruments.RPM Dial.changed" />
+      <Action Target="Visual;Monitor 2.RPM Panel.dial;Helios.Base.CustomGauge;dial" Name="set.value" />
       <TriggerValue />
     </Binding>
     <Binding BypassCascadingTriggers="True">
-      <Trigger Source="Interface;;Helios.DCSInterfaceFile;DCS F4U-1D" Name="Engine.Intercooler Lever.changed" />
-      <Action Target="Visual;Monitor 2.R1 Panel.Lever panel.Three Way Toggle Switch 2;Helios.Base.ThreeWayToggleSwitch;Three Way Toggle Switch 2" Name="set.position" />
+      <Trigger Source="Interface;;Helios.DCSInterfaceFile;DCS F4U-1D" Name="Instruments.RPM Needle.changed" />
+      <Action Target="Visual;Monitor 2.RPM Panel.needle;Helios.Base.CustomGauge;needle" Name="set.value" />
       <TriggerValue />
     </Binding>
     <Binding BypassCascadingTriggers="True">
-      <Trigger Source="Interface;;Helios.DCSInterfaceFile;DCS F4U-1D" Name="Engine.Cowl Flaps Lever.changed" />
-      <Action Target="Visual;Monitor 2.R1 Panel.Lever panel.Three Way Toggle Switch 1;Helios.Base.ThreeWayToggleSwitch;Three Way Toggle Switch 1" Name="set.position" />
-      <TriggerValue />
-    </Binding>
-    <Binding BypassCascadingTriggers="True">
-      <Trigger Source="Interface;;Helios.DCSInterfaceFile;DCS F4U-1D" Name="Engine.Main Fuel Tank Air Pressure Valve.changed" />
-      <Action Target="Visual;Monitor 2.R1 Panel.tank air pressure vAlve;Helios.Base.ToggleSwitch;tank air pressure vAlve" Name="set.position" />
-      <TriggerValue />
-    </Binding>
-    <Binding BypassCascadingTriggers="True">
-      <Trigger Source="Interface;;Helios.DCSInterfaceFile;DCS F4U-1D" Name="Lights.Reccognition light - Red.changed" />
-      <Action Target="Visual;Monitor 2.R1 Panel.Recognition panel.red;Helios.Base.ThreeWayToggleSwitch;red" Name="set.position" />
-      <TriggerValue />
-    </Binding>
-    <Binding BypassCascadingTriggers="True">
-      <Trigger Source="Interface;;Helios.DCSInterfaceFile;DCS F4U-1D" Name="Lights.Reccognition light - Green.changed" />
-      <Action Target="Visual;Monitor 2.R1 Panel.Recognition panel.green;Helios.Base.ThreeWayToggleSwitch;green" Name="set.position" />
-      <TriggerValue />
-    </Binding>
-    <Binding BypassCascadingTriggers="True">
-      <Trigger Source="Interface;;Helios.DCSInterfaceFile;DCS F4U-1D" Name="Lights.Reccognition light - Amber.changed" />
-      <Action Target="Visual;Monitor 2.R1 Panel.Recognition panel.amber;Helios.Base.ThreeWayToggleSwitch;amber" Name="set.position" />
+      <Trigger Source="Interface;;Helios.DCSInterfaceFile;DCS F4U-1D" Name="Pitot.Altimeter Pressure Set.changed" />
+      <Action Target="Visual;Monitor 2.Altimeter Panel.pressure dial Calibration Filter;Helios.Base.CalibrationFilter;pressure dial Calibration Filter" Name="Input.set.Value" />
       <TriggerValue />
     </Binding>
     <Binding BypassCascadingTriggers="True">
@@ -7492,33 +7495,18 @@
       <TriggerValue />
     </Binding>
     <Binding BypassCascadingTriggers="True">
-      <Trigger Source="Interface;;Helios.DCSInterfaceFile;DCS F4U-1D" Name="Pitot.Altimeter Pressure Set.changed" />
-      <Action Target="Visual;Monitor 2.Altimeter Panel.pressure dial Calibration Filter;Helios.Base.CalibrationFilter;pressure dial Calibration Filter" Name="Input.set.Value" />
-      <TriggerValue />
-    </Binding>
-    <Binding BypassCascadingTriggers="True">
-      <Trigger Source="Interface;;Helios.DCSInterfaceFile;DCS F4U-1D" Name="Instruments.Oil Cooler Door Indicator.changed" />
-      <Action Target="Visual;Monitor 2.R1 Panel.oil cooler gauge;Helios.Base.CustomTape;oil cooler gauge" Name="set.Tape Vertical Offset" />
-      <TriggerValue />
-    </Binding>
-    <Binding BypassCascadingTriggers="True">
-      <Trigger Source="Interface;;Helios.DCSInterfaceFile;DCS F4U-1D" Name="Instruments.Intercooler Door Indicator.changed" />
-      <Action Target="Visual;Monitor 2.R1 Panel.intercooler gauge;Helios.Base.CustomTape;intercooler gauge" Name="set.Tape Vertical Offset" />
-      <TriggerValue />
-    </Binding>
-    <Binding BypassCascadingTriggers="True">
       <Trigger Source="Interface;;Helios.DCSInterfaceFile;DCS F4U-1D" Name="Instruments.Airspeed.changed" />
       <Action Target="Visual;Monitor 2.Airspeed Panel.CustomGauge;Helios.Base.CustomGauge;CustomGauge" Name="set.value" />
       <TriggerValue />
     </Binding>
     <Binding BypassCascadingTriggers="True">
-      <Trigger Source="Interface;;Helios.DCSInterfaceFile;DCS F4U-1D" Name="Instruments.RPM Dial.changed" />
-      <Action Target="Visual;Monitor 2.RPM Panel.dial;Helios.Base.CustomGauge;dial" Name="set.value" />
+      <Trigger Source="Interface;;Helios.DCSInterfaceFile;DCS F4U-1D" Name="Instruments.Slip Ball.changed" />
+      <Action Target="Visual;Monitor 2.Slip Turn Panel.CustomGauge;Helios.Base.CustomGauge;CustomGauge" Name="set.value" />
       <TriggerValue />
     </Binding>
     <Binding BypassCascadingTriggers="True">
-      <Trigger Source="Interface;;Helios.DCSInterfaceFile;DCS F4U-1D" Name="Instruments.RPM Needle.changed" />
-      <Action Target="Visual;Monitor 2.RPM Panel.needle;Helios.Base.CustomGauge;needle" Name="set.value" />
+      <Trigger Source="Interface;;Helios.DCSInterfaceFile;DCS F4U-1D" Name="Instruments.Turn Needle.changed" />
+      <Action Target="Visual;Monitor 2.Slip Turn Panel.CustomGauge 1;Helios.Base.CustomGauge;CustomGauge 1" Name="set.value" />
       <TriggerValue />
     </Binding>
     <Binding BypassCascadingTriggers="True">
@@ -7548,17 +7536,12 @@
     </Binding>
     <Binding BypassCascadingTriggers="True">
       <Trigger Source="Interface;;Helios.DCSInterfaceFile;DCS F4U-1D" Name="Instruments.Slip Ball.changed" />
-      <Action Target="Visual;Monitor 2.Slip Turn Panel.CustomGauge;Helios.Base.CustomGauge;CustomGauge" Name="set.value" />
-      <TriggerValue />
-    </Binding>
-    <Binding BypassCascadingTriggers="True">
-      <Trigger Source="Interface;;Helios.DCSInterfaceFile;DCS F4U-1D" Name="Instruments.Turn Needle.changed" />
-      <Action Target="Visual;Monitor 2.Slip Turn Panel.CustomGauge 1;Helios.Base.CustomGauge;CustomGauge 1" Name="set.value" />
-      <TriggerValue />
-    </Binding>
-    <Binding BypassCascadingTriggers="True">
-      <Trigger Source="Interface;;Helios.DCSInterfaceFile;DCS F4U-1D" Name="Instruments.Slip Ball.changed" />
       <Action Target="Visual;Monitor 2.buble slip gauge;Helios.Base.CustomTape;buble slip gauge" Name="set.Tape Horizontal Offset" />
+      <TriggerValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Interface;;Helios.DCSInterfaceFile;DCS F4U-1D" Name="Instruments.Oil Temperature.changed" />
+      <Action Target="Visual;Monitor 2.Tri-Gauge Panel.CustomGauge 1 1;Helios.Base.CustomGauge;CustomGauge 1 1" Name="set.value" />
       <TriggerValue />
     </Binding>
     <Binding BypassCascadingTriggers="True">
@@ -7572,13 +7555,8 @@
       <TriggerValue />
     </Binding>
     <Binding BypassCascadingTriggers="True">
-      <Trigger Source="Interface;;Helios.DCSInterfaceFile;DCS F4U-1D" Name="Instruments.Oil Temperature.changed" />
-      <Action Target="Visual;Monitor 2.Tri-Gauge Panel.CustomGauge 1 1;Helios.Base.CustomGauge;CustomGauge 1 1" Name="set.value" />
-      <TriggerValue />
-    </Binding>
-    <Binding BypassCascadingTriggers="True">
-      <Trigger Source="Interface;;Helios.DCSInterfaceFile;DCS F4U-1D" Name="Instruments.Gyro Heading.changed" />
-      <Action Target="Visual;Monitor 2.Dir Gyro Panel.headingTape;Helios.Base.CustomTape;headingTape" Name="set.Tape Horizontal Offset" />
+      <Trigger Source="Interface;;Helios.DCSInterfaceFile;DCS F4U-1D" Name="Nav.Directional Gyro Cage.changed" />
+      <Action Target="Visual;Monitor 2.Gyro Cage knob;Helios.Base.RotaryEncoderClickable;Gyro Cage knob" Name="set.physical state" />
       <TriggerValue />
     </Binding>
     <Binding BypassCascadingTriggers="True">
@@ -7592,11 +7570,6 @@
       <TriggerValue />
     </Binding>
     <Binding BypassCascadingTriggers="True">
-      <Trigger Source="Interface;;Helios.DCSInterfaceFile;DCS F4U-1D" Name="Instruments.Gyro Horizon Bank.changed" />
-      <Action Target="Visual;Monitor 2.ADI.bank pointer;Helios.Base.CustomTape;bank pointer" Name="set.Tape Rotation" />
-      <TriggerValue />
-    </Binding>
-    <Binding BypassCascadingTriggers="True">
       <Trigger Source="Interface;;Helios.DCSInterfaceFile;DCS F4U-1D" Name="Nav.Gyro Horizon Cage.changed" />
       <Action Target="Visual;Monitor 2.ADI.flag;Helios.Base.CustomTape;flag" Name="set.Tape Horizontal Offset" />
       <TriggerValue />
@@ -7607,8 +7580,48 @@
       <TriggerValue />
     </Binding>
     <Binding BypassCascadingTriggers="True">
-      <Trigger Source="Interface;;Helios.DCSInterfaceFile;DCS F4U-1D" Name="Nav.Directional Gyro Cage.changed" />
-      <Action Target="Visual;Monitor 2.Dir Gyro Panel.cage flag;Helios.Base.CustomTape;cage flag" Name="set.Tape Vertical Offset" />
+      <Trigger Source="Interface;;Helios.DCSInterfaceFile;DCS F4U-1D" Name="Instruments.Gyro Horizon Bank.changed" />
+      <Action Target="Visual;Monitor 2.ADI.bank pointer;Helios.Base.CustomTape;bank pointer" Name="set.Tape Rotation" />
+      <TriggerValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="False">
+      <Trigger Source="Interface;;Helios.DCSInterfaceFile;DCS F4U-1D" Name="Nav.Horizon Pitch Set.changed" />
+      <Action Target="Visual;Monitor 2.ADI.Pitch adjust knob;Helios.Base.Potentiometer;Pitch adjust knob" Name="set.value" />
+      <TriggerValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Interface;;Helios.DCSInterfaceFile;DCS F4U-1D" Name="Nav.Gyro Horizon Cage.changed" />
+      <Action Target="Visual;Monitor 2.ADI.Horizon Cage knob;Helios.Base.Potentiometer;Horizon Cage knob" Name="set.value" />
+      <TriggerValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Interface;;Helios.DCSInterfaceFile;DCS F4U-1D" Name="Instruments.Chronometer - Minutes.changed" />
+      <Action Target="Visual;Monitor 2.Clock.Chrono minutes;Helios.Base.CustomGauge;Chrono minutes" Name="set.value" />
+      <TriggerValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Interface;;Helios.DCSInterfaceFile;DCS F4U-1D" Name="Instruments.Elapsed Time - Hour.changed" />
+      <Action Target="Visual;Monitor 2.Clock.Elapsed hour;Helios.Base.CustomGauge;Elapsed hour" Name="set.value" />
+      <TriggerValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Interface;;Helios.DCSInterfaceFile;DCS F4U-1D" Name="Instruments.Elapsed Time - Minutes.changed" />
+      <Action Target="Visual;Monitor 2.Clock.Elapsed minute;Helios.Base.CustomGauge;Elapsed minute" Name="set.value" />
+      <TriggerValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Interface;;Helios.DCSInterfaceFile;DCS F4U-1D" Name="Instruments.Date Needle.changed" />
+      <Action Target="Visual;Monitor 2.Clock.Date dial;Helios.Base.CustomGauge;Date dial" Name="set.value" />
+      <TriggerValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Interface;;Helios.DCSInterfaceFile;DCS F4U-1D" Name="Instruments.Clock Currtime Seconds.changed" />
+      <Action Target="Visual;Monitor 2.Clock.curr seconds;Helios.Base.CustomGauge;curr seconds" Name="set.value" />
+      <TriggerValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Interface;;Helios.DCSInterfaceFile;DCS F4U-1D" Name="Instruments.Chronometer - Seconds.changed" />
+      <Action Target="Visual;Monitor 2.Clock.chrono seconds;Helios.Base.CustomGauge;chrono seconds" Name="set.value" />
       <TriggerValue />
     </Binding>
     <Binding BypassCascadingTriggers="True">
@@ -7617,13 +7630,234 @@
       <TriggerValue />
     </Binding>
     <Binding BypassCascadingTriggers="True">
-      <Trigger Source="Interface;;Helios.DCSInterfaceFile;DCS F4U-1D" Name="Clock.Chronometer Start - Stop - Reset.changed" />
-      <Action Target="Visual;Monitor 2.Clock.chromo start stop;Helios.Base.PushButton;chromo start stop" Name="set.physical state" />
+      <Trigger Source="Interface;;Helios.DCSInterfaceFile;DCS F4U-1D" Name="Instruments.Clock Currtime Minutes.changed" />
+      <Action Target="Visual;Monitor 2.Clock.curr min;Helios.Base.CustomGauge;curr min" Name="set.value" />
       <TriggerValue />
     </Binding>
     <Binding BypassCascadingTriggers="True">
       <Trigger Source="Interface;;Helios.DCSInterfaceFile;DCS F4U-1D" Name="Clock.Set Date.changed" />
       <Action Target="Visual;Monitor 2.Clock.set date;Helios.Base.PushButton;set date" Name="set.physical state" />
+      <TriggerValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Interface;;Helios.DCSInterfaceFile;DCS F4U-1D" Name="Clock.Chronometer Start - Stop - Reset.changed" />
+      <Action Target="Visual;Monitor 2.Clock.chromo start stop;Helios.Base.PushButton;chromo start stop" Name="set.physical state" />
+      <TriggerValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Interface;;Helios.DCSInterfaceFile;DCS F4U-1D" Name="Clock.Clock Adjust Switch.changed" />
+      <Action Target="Visual;Monitor 2.Clock.Clickable Rotary Encoder;Helios.Base.RotaryEncoderClickable;Clickable Rotary Encoder" Name="set.physical state" />
+      <LuaScript>if TriggerValue == 3 then return(true) else return(false) end</LuaScript>
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Interface;;Helios.DCSInterfaceFile;DCS F4U-1D" Name="Clock.Clock Adjust Knob.changed" />
+      <Action Target="Visual;Monitor 2.Clock.Clickable Rotary Encoder;Helios.Base.RotaryEncoderClickable;Clickable Rotary Encoder" Name="set.value" />
+      <TriggerValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Interface;;Helios.DCSInterfaceFile;DCS F4U-1D" Name="Misc.Dash Layout - Radar.changed" />
+      <Action Target="Visual;Monitor 2.backup stall warning;Helios.Panel;backup stall warning" Name="set.hidden" />
+      <LuaScript>if TriggerValue &gt; 0.5 then return(false)
+else return(true) end</LuaScript>
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Interface;;Helios.DCSInterfaceFile;DCS F4U-1D" Name="Lamps.Stall Warning Lamp.changed" />
+      <Action Target="Visual;Monitor 2.backup stall warning.stall light;Helios.Base.Indicator;stall light" Name="set.indicator" />
+      <LuaScript>if TriggerValue &gt; 0.5 then return(true)
+else return(false) end</LuaScript>
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Interface;;Helios.DCSInterfaceFile;DCS F4U-1D" Name="Utility.Stall Warning Light Test.changed" />
+      <Action Target="Visual;Monitor 2.backup stall warning.test button;Helios.Base.PushButton;test button" Name="set.physical state" />
+      <TriggerValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Interface;;Helios.DCSInterfaceFile;DCS F4U-1D" Name="Misc.Dash Layout - Radar.changed" />
+      <Action Target="Visual;Monitor 2.radar panel;Helios.Panel;radar panel" Name="set.hidden" />
+      <LuaScript>if TriggerValue &gt; 0.5 then return(false)
+else return(true) end</LuaScript>
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Interface;;Helios.DCSInterfaceFile;DCS F4U-1D" Name="BatBomb.BatBomb Scope Brightness.changed" />
+      <Action Target="Visual;Monitor 2.radar panel.Radar intensity knob;Helios.Base.Potentiometer;Radar intensity knob" Name="set.value" />
+      <TriggerValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Interface;;Helios.DCSInterfaceFile;DCS F4U-1D" Name="Misc.Dash Layout - Radar.changed" />
+      <Action Target="Visual;Monitor 2.radar cover image;Helios.Base.Image;radar cover image" Name="set.hidden" />
+      <LuaScript>if TriggerValue &gt; 0.5 then return(true)
+else return(false) end</LuaScript>
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Interface;;Helios.DCSInterfaceFile;DCS F4U-1D" Name="Nav.Directional Gyro Cage.changed" />
+      <Action Target="Visual;Monitor 2.Dir Gyro Panel.cage flag;Helios.Base.CustomTape;cage flag" Name="set.Tape Vertical Offset" />
+      <TriggerValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Interface;;Helios.DCSInterfaceFile;DCS F4U-1D" Name="Instruments.Gyro Heading.changed" />
+      <Action Target="Visual;Monitor 2.Dir Gyro Panel.headingTape;Helios.Base.CustomTape;headingTape" Name="set.Tape Horizontal Offset" />
+      <TriggerValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Interface;;Helios.DCSInterfaceFile;DCS F4U-1D" Name="Misc.Dash Layout - Radar.changed" />
+      <Action Target="Visual;Monitor 2.dash light decor;Helios.Base.Image;dash light decor" Name="set.hidden" />
+      <LuaScript>if TriggerValue &gt; 0.5 then return(true)
+else return(false) end</LuaScript>
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Interface;;Helios.DCSInterfaceFile;DCS F4U-1D" Name="Misc.Dash Layout - Radar.changed" />
+      <Action Target="Visual;Monitor 2.Dash Option Panel;Helios.Panel;Dash Option Panel" Name="set.hidden" />
+      <LuaScript>if TriggerValue &gt; 0.5 then return(true)
+else return(false) end</LuaScript>
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Interface;;Helios.DCSInterfaceFile;DCS F4U-1D" Name="Lamps.Water Injection Lamp.changed" />
+      <Action Target="Visual;Monitor 2.Dash Option Panel.water inj lamp;Helios.Base.Indicator;water inj lamp" Name="set.indicator" />
+      <LuaScript>if TriggerValue &gt; 0.5 then return(true)
+else return(false) end</LuaScript>
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Interface;;Helios.DCSInterfaceFile;DCS F4U-1D" Name="Lamps.Stall Warning Lamp.changed" />
+      <Action Target="Visual;Monitor 2.Dash Option Panel.stall lamp;Helios.Base.Indicator;stall lamp" Name="set.indicator" />
+      <LuaScript>if TriggerValue &gt; 0.5 then return(true)
+else return(false) end</LuaScript>
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Interface;;Helios.DCSInterfaceFile;DCS F4U-1D" Name="Utility.Stall Warning Light Test.changed" />
+      <Action Target="Visual;Monitor 2.Dash Option Panel.test button;Helios.Base.PushButton;test button" Name="set.physical state" />
+      <TriggerValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Interface;;Helios.DCSInterfaceFile;DCS F4U-1D" Name="Misc.Dash Layout - Radar.changed" />
+      <Action Target="Visual;Monitor 2.batbomb button base;Helios.Base.Image;batbomb button base" Name="set.hidden" />
+      <LuaScript>if TriggerValue &gt; 0.5 then return(false)
+else return(true) end</LuaScript>
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Interface;;Helios.DCSInterfaceFile;DCS F4U-1D" Name="Misc.Dash Layout - Radar.changed" />
+      <Action Target="Visual;Monitor 2.batbomb button;Helios.Base.PushButton;batbomb button" Name="set.hidden" />
+      <LuaScript>if TriggerValue &gt; 0.5 then return(false)
+else return(true) end</LuaScript>
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Interface;;Helios.DCSInterfaceFile;DCS F4U-1D" Name="Lamps.High Blower Light.changed" />
+      <Action Target="Visual;Monitor 2.High blower light;Helios.Base.Indicator;High blower light" Name="set.indicator" />
+      <LuaScript>if TriggerValue &gt; 0.5 then return(true)
+else return(false) end</LuaScript>
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Interface;;Helios.DCSInterfaceFile;DCS F4U-1D" Name="Weapon.Gunsight Light Intensity.changed" />
+      <Action Target="Visual;Monitor 2.gunsight knob encoder;Helios.Base.RotaryEncoder;gunsight knob encoder" Name="set.value" />
+      <TriggerValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Interface;;Helios.DCSInterfaceFile;DCS F4U-1D" Name="Control.Pitch Trim.changed" />
+      <Action Target="Visual;Monitor 2.Indicator panel.Elevator Trim.CustomTape;Helios.Base.CustomTape;CustomTape" Name="set.Tape Horizontal Offset" />
+      <TriggerValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Interface;;Helios.DCSInterfaceFile;DCS F4U-1D" Name="Control.Pitch Trim.changed" />
+      <Action Target="Visual;Monitor 2.Indicator panel.Elevator Trim.CustomTape 1;Helios.Base.CustomTape;CustomTape 1" Name="set.Tape Horizontal Offset" />
+      <TriggerValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Interface;;Helios.DCSInterfaceFile;DCS F4U-1D" Name="Control.Yaw Trim.changed" />
+      <Action Target="Visual;Monitor 2.Indicator panel.RudderTrim.CustomGauge;Helios.Base.CustomGauge;CustomGauge" Name="set.value" />
+      <TriggerValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Interface;;Helios.DCSInterfaceFile;DCS F4U-1D" Name="Control.Yaw Trim.changed" />
+      <Action Target="Visual;Monitor 2.Indicator panel.RudderTrim.Potentiometer;Helios.Base.Potentiometer;Potentiometer" Name="set.value" />
+      <TriggerValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Interface;;Helios.DCSInterfaceFile;DCS F4U-1D" Name="Control.Bank Trim.changed" />
+      <Action Target="Visual;Monitor 2.Indicator panel.Aileron Trim.CustomGauge;Helios.Base.CustomGauge;CustomGauge" Name="set.value" />
+      <TriggerValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Interface;;Helios.DCSInterfaceFile;DCS F4U-1D" Name="Control.Bank Trim.changed" />
+      <Action Target="Visual;Monitor 2.Indicator panel.Aileron Trim.Potentiometer;Helios.Base.Potentiometer;Potentiometer" Name="set.value" />
+      <TriggerValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Interface;;Helios.DCSInterfaceFile;DCS F4U-1D" Name="Control.Pitch Trim.changed" />
+      <Action Target="Visual;Monitor 2.Indicator panel.Calibration Filter 1;Helios.Base.CalibrationFilter;Calibration Filter 1" Name="Input.set.Value" />
+      <TriggerValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Interface;;Helios.DCSInterfaceFile;DCS F4U-1D" Name="Instruments.Landing Gear Tail.changed" />
+      <Action Target="Visual;Monitor 2.Indicator panel.tail wheel gauge;Helios.Base.CustomTape;tail wheel gauge" Name="set.Tape Vertical Offset" />
+      <TriggerValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Interface;;Helios.DCSInterfaceFile;DCS F4U-1D" Name="Instruments.Landing Gear Left.changed" />
+      <Action Target="Visual;Monitor 2.Indicator panel.L gear gauge;Helios.Base.CustomTape;L gear gauge" Name="set.Tape Vertical Offset" />
+      <TriggerValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Interface;;Helios.DCSInterfaceFile;DCS F4U-1D" Name="Instruments.Landing Gear Right.changed" />
+      <Action Target="Visual;Monitor 2.Indicator panel.R gear gauge;Helios.Base.CustomTape;R gear gauge" Name="set.Tape Vertical Offset" />
+      <TriggerValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Interface;;Helios.DCSInterfaceFile;DCS F4U-1D" Name="Instruments.Oil Cooler Door Indicator.changed" />
+      <Action Target="Visual;Monitor 2.Indicator panel.oil cooler gauge;Helios.Base.CustomTape;oil cooler gauge" Name="set.Tape Vertical Offset" />
+      <TriggerValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Interface;;Helios.DCSInterfaceFile;DCS F4U-1D" Name="Instruments.Intercooler Door Indicator.changed" />
+      <Action Target="Visual;Monitor 2.Indicator panel.intercooler gauge;Helios.Base.CustomTape;intercooler gauge" Name="set.Tape Vertical Offset" />
+      <TriggerValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Interface;;Helios.DCSInterfaceFile;DCS F4U-1D" Name="Engine.Throttle.changed" />
+      <Action Target="Visual;Monitor 2.Indicator panel.throttle animation;Helios.Base.CustomTape;throttle animation" Name="set.Tape Vertical Offset" />
+      <TriggerValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Interface;;Helios.DCSInterfaceFile;DCS F4U-1D" Name="Engine.Prop Governor Handle.changed" />
+      <Action Target="Visual;Monitor 2.Indicator panel.Prop rpm animation gauge;Helios.Base.CustomGauge;Prop rpm animation gauge" Name="set.value" />
+      <TriggerValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Interface;;Helios.DCSInterfaceFile;DCS F4U-1D" Name="Engine.Supercharger Lever.changed" />
+      <Action Target="Visual;Monitor 2.Indicator panel.supercharger switch tap;Helios.Base.ThreeWayToggleSwitch;supercharger switch tap" Name="set.position" />
+      <TriggerValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Interface;;Helios.DCSInterfaceFile;DCS F4U-1D" Name="Engine.Mixure Lever.changed" />
+      <Action Target="Visual;Monitor 2.Indicator panel.Mixture Animation;Helios.Base.ThreeWayToggleSwitch;Mixture Animation" Name="set.position" />
+      <TriggerValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Interface;;Helios.DCSInterfaceFile;DCS F4U-1D" Name="Engine.Main Fuel Tank Air Pressure Valve.changed" />
+      <Action Target="Visual;Monitor 2.R1 Panel.tank air pressure vAlve;Helios.Base.ToggleSwitch;tank air pressure vAlve" Name="set.position" />
+      <TriggerValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Interface;;Helios.DCSInterfaceFile;DCS F4U-1D" Name="Instruments.Oil Cooler Door Indicator.changed" />
+      <Action Target="Visual;Monitor 2.R1 Panel.oil cooler gauge;Helios.Base.CustomTape;oil cooler gauge" Name="set.Tape Vertical Offset" />
+      <TriggerValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Interface;;Helios.DCSInterfaceFile;DCS F4U-1D" Name="Instruments.Intercooler Door Indicator.changed" />
+      <Action Target="Visual;Monitor 2.R1 Panel.intercooler gauge;Helios.Base.CustomTape;intercooler gauge" Name="set.Tape Vertical Offset" />
+      <TriggerValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Interface;;Helios.DCSInterfaceFile;DCS F4U-1D" Name="Engine.Oil Cooler Lever.changed" />
+      <Action Target="Visual;Monitor 2.R1 Panel.Lever panel.Three Way Toggle Switch;Helios.Base.ThreeWayToggleSwitch;Three Way Toggle Switch" Name="set.position" />
+      <TriggerValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Interface;;Helios.DCSInterfaceFile;DCS F4U-1D" Name="Engine.Cowl Flaps Lever.changed" />
+      <Action Target="Visual;Monitor 2.R1 Panel.Lever panel.Three Way Toggle Switch 1;Helios.Base.ThreeWayToggleSwitch;Three Way Toggle Switch 1" Name="set.position" />
+      <TriggerValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Interface;;Helios.DCSInterfaceFile;DCS F4U-1D" Name="Engine.Intercooler Lever.changed" />
+      <Action Target="Visual;Monitor 2.R1 Panel.Lever panel.Three Way Toggle Switch 2;Helios.Base.ThreeWayToggleSwitch;Three Way Toggle Switch 2" Name="set.position" />
       <TriggerValue />
     </Binding>
     <Binding BypassCascadingTriggers="True">
@@ -7667,29 +7901,65 @@
       <TriggerValue />
     </Binding>
     <Binding BypassCascadingTriggers="True">
-      <Trigger Source="Interface;;Helios.DCSInterfaceFile;DCS F4U-1D" Name="Electro.Battery Switch.changed" />
-      <Action Target="Visual;Monitor 2.R2 Panel.battery;Helios.Base.ToggleSwitch;battery" Name="set.position" />
+      <Trigger Source="Interface;;Helios.DCSInterfaceFile;DCS F4U-1D" Name="Instruments.Water Pressure.changed" />
+      <Action Target="Visual;Monitor 2.R1 Panel.Fuel Press.CustomGauge;Helios.Base.CustomGauge;CustomGauge" Name="set.value" />
       <TriggerValue />
     </Binding>
     <Binding BypassCascadingTriggers="True">
-      <Trigger Source="Interface;;Helios.DCSInterfaceFile;DCS F4U-1D" Name="Engine.Fuel Pump.changed" />
-      <Action Target="Visual;Monitor 2.R2 Panel.fuel pump;Helios.Base.ToggleSwitch;fuel pump" Name="set.position" />
+      <Trigger Source="Interface;;Helios.DCSInterfaceFile;DCS F4U-1D" Name="Lights.Reccognition light - Red.changed" />
+      <Action Target="Visual;Monitor 2.R1 Panel.Recognition panel.red;Helios.Base.ThreeWayToggleSwitch;red" Name="set.position" />
       <TriggerValue />
     </Binding>
     <Binding BypassCascadingTriggers="True">
-      <Trigger Source="Interface;;Helios.DCSInterfaceFile;DCS F4U-1D" Name="Engine.Primer.changed" />
-      <Action Target="Visual;Monitor 2.R2 Panel.primer;Helios.Base.ToggleSwitch;primer" Name="set.position" />
+      <Trigger Source="Interface;;Helios.DCSInterfaceFile;DCS F4U-1D" Name="Lights.Reccognition light - Green.changed" />
+      <Action Target="Visual;Monitor 2.R1 Panel.Recognition panel.green;Helios.Base.ThreeWayToggleSwitch;green" Name="set.position" />
       <TriggerValue />
     </Binding>
     <Binding BypassCascadingTriggers="True">
-      <Trigger Source="Interface;;Helios.DCSInterfaceFile;DCS F4U-1D" Name="Engine.Starter.changed" />
-      <Action Target="Visual;Monitor 2.R2 Panel.starter sw;Helios.Base.ToggleSwitch;starter sw" Name="set.position" />
+      <Trigger Source="Interface;;Helios.DCSInterfaceFile;DCS F4U-1D" Name="Lights.Reccognition light - Amber.changed" />
+      <Action Target="Visual;Monitor 2.R1 Panel.Recognition panel.amber;Helios.Base.ThreeWayToggleSwitch;amber" Name="set.position" />
       <TriggerValue />
     </Binding>
     <Binding BypassCascadingTriggers="True">
-      <Trigger Source="Interface;;Helios.DCSInterfaceFile;DCS F4U-1D" Name="Engine.Starter Cover.changed" />
-      <Action Target="Visual;Monitor 2.R2 Panel.starter cover;Helios.Base.GuardedSwitch;starter cover" Name="set.guard position" />
+      <Trigger Source="Interface;;Helios.DCSInterfaceFile;DCS F4U-1D" Name="Weapon.Rocket Box Single - Auto.changed" />
+      <Action Target="Visual;Monitor 2.Rocket Panel.single auto sw;Helios.Base.ToggleSwitch;single auto sw" Name="set.position" />
       <TriggerValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Interface;;Helios.DCSInterfaceFile;DCS F4U-1D" Name="Weapon.Rocket Box Arm - Safe.changed" />
+      <Action Target="Visual;Monitor 2.Rocket Panel.rocket arm switch;Helios.Base.ToggleSwitch;rocket arm switch" Name="set.position" />
+      <TriggerValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Interface;;Helios.DCSInterfaceFile;DCS F4U-1D" Name="Weapon.Rocket Box Switch.changed" />
+      <Action Target="Visual;Monitor 2.Rocket Panel.Rocket box switch;Helios.Base.ToggleSwitch;Rocket box switch" Name="set.position" />
+      <TriggerValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Interface;;Helios.DCSInterfaceFile;DCS F4U-1D" Name="Weapon.Rocket Box Switch Cover.changed" />
+      <Action Target="Visual;Monitor 2.Rocket Panel.rocket box guard;Helios.Base.GuardedSwitch;rocket box guard" Name="set.guard position" />
+      <TriggerValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Interface;;Helios.DCSInterfaceFile;DCS F4U-1D" Name="Weapon.Rocket Selector Pull.changed" />
+      <Action Target="Visual;Monitor 2.Rocket Panel.reset knob;Helios.Base.PotentiometerClickable;reset knob" Name="set.physical state" />
+      <TriggerValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Interface;;Helios.DCSInterfaceFile;DCS F4U-1D" Name="Weapon.Rocket Selector Turn.changed" />
+      <Action Target="Visual;Monitor 2.Rocket Panel.reset knob;Helios.Base.PotentiometerClickable;reset knob" Name="set.value" />
+      <TriggerValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Interface;;Helios.DCSInterfaceFile;DCS F4U-1D" Name="Lamps.Rocket Box Lamp.changed" />
+      <Action Target="Visual;Monitor 2.Rocket Panel.indicator light;Helios.Base.Indicator;indicator light" Name="set.indicator" />
+      <LuaScript>if TriggerValue &gt; 0.5 then return(true)
+else return(false) end</LuaScript>
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Interface;;Helios.DCSInterfaceFile;DCS F4U-1D" Name="Weapon.Fire Rocket.pushed" />
+      <Action Target="Visual;Monitor 2.Rocket Panel.SimpleComputationalWire;Helios.Base.SimpleComputationWire;SimpleComputationalWire" Name="set.Numeric addition Value" />
+      <StaticValue>1</StaticValue>
     </Binding>
     <Binding BypassCascadingTriggers="True">
       <Trigger Source="Interface;;Helios.DCSInterfaceFile;DCS F4U-1D" Name="Lights.Exterior Lights.changed" />
@@ -7722,8 +7992,33 @@
       <TriggerValue />
     </Binding>
     <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Interface;;Helios.DCSInterfaceFile;DCS F4U-1D" Name="Electro.Battery Switch.changed" />
+      <Action Target="Visual;Monitor 2.R2 Panel.battery;Helios.Base.ToggleSwitch;battery" Name="set.position" />
+      <TriggerValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Interface;;Helios.DCSInterfaceFile;DCS F4U-1D" Name="Engine.Fuel Pump.changed" />
+      <Action Target="Visual;Monitor 2.R2 Panel.fuel pump;Helios.Base.ToggleSwitch;fuel pump" Name="set.position" />
+      <TriggerValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Interface;;Helios.DCSInterfaceFile;DCS F4U-1D" Name="Engine.Primer.changed" />
+      <Action Target="Visual;Monitor 2.R2 Panel.primer;Helios.Base.ToggleSwitch;primer" Name="set.position" />
+      <TriggerValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
       <Trigger Source="Interface;;Helios.DCSInterfaceFile;DCS F4U-1D" Name="Lights.Cockpit Lights Master.changed" />
       <Action Target="Visual;Monitor 2.R2 Panel.cockpit light;Helios.Base.ToggleSwitch;cockpit light" Name="set.position" />
+      <TriggerValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Interface;;Helios.DCSInterfaceFile;DCS F4U-1D" Name="Engine.Starter.changed" />
+      <Action Target="Visual;Monitor 2.R2 Panel.starter sw;Helios.Base.ToggleSwitch;starter sw" Name="set.position" />
+      <TriggerValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Interface;;Helios.DCSInterfaceFile;DCS F4U-1D" Name="Engine.Starter Cover.changed" />
+      <Action Target="Visual;Monitor 2.R2 Panel.starter cover;Helios.Base.GuardedSwitch;starter cover" Name="set.guard position" />
       <TriggerValue />
     </Binding>
     <Binding BypassCascadingTriggers="True">
@@ -7737,81 +8032,6 @@
       <TriggerValue />
     </Binding>
     <Binding BypassCascadingTriggers="True">
-      <Trigger Source="Interface;;Helios.DCSInterfaceFile;DCS F4U-1D" Name="Control.Arrestor Hook.changed" />
-      <Action Target="Visual;Monitor 2.R2 Panel.Oxy_Hook Panel button.Three Way Toggle Switch;Helios.Base.ThreeWayToggleSwitch;Three Way Toggle Switch" Name="set.position" />
-      <TriggerValue />
-    </Binding>
-    <Binding BypassCascadingTriggers="True">
-      <Trigger Source="Interface;;Helios.DCSInterfaceFile;DCS F4U-1D" Name="Radio.C-38 Receiver A On/Off.changed" />
-      <Action Target="Visual;Monitor 2.Radio Panel.c38 rec a sw;Helios.Base.ToggleSwitch;c38 rec a sw" Name="set.position" />
-      <TriggerValue />
-    </Binding>
-    <Binding BypassCascadingTriggers="True">
-      <Trigger Source="Interface;;Helios.DCSInterfaceFile;DCS F4U-1D" Name="Radio.C-38 Volume.changed" />
-      <Action Target="Visual;Monitor 2.Radio Panel.c38 vol;Helios.Base.Potentiometer;c38 vol" Name="set.value" />
-      <TriggerValue />
-    </Binding>
-    <Binding BypassCascadingTriggers="True">
-      <Trigger Source="Interface;;Helios.DCSInterfaceFile;DCS F4U-1D" Name="Radio.C-30A On/Off Switch.changed" />
-      <Action Target="Visual;Monitor 2.Radio Panel.c30 on off;Helios.Base.ToggleSwitch;c30 on off" Name="set.position" />
-      <TriggerValue />
-    </Binding>
-    <Binding BypassCascadingTriggers="True">
-      <Trigger Source="Interface;;Helios.DCSInterfaceFile;DCS F4U-1D" Name="Radio.C-38 CW/Voice Switch.changed" />
-      <Action Target="Visual;Monitor 2.Radio Panel.c38 cw voice;Helios.Base.RotarySwitch;c38 cw voice" Name="set.position" />
-      <TriggerValue />
-    </Binding>
-    <Binding BypassCascadingTriggers="True">
-      <Trigger Source="Interface;;Helios.DCSInterfaceFile;DCS F4U-1D" Name="Radio.C-38 Receiver C On/Off Switch.changed" />
-      <Action Target="Visual;Monitor 2.Radio Panel.c38 rec c sw;Helios.Base.ToggleSwitch;c38 rec c sw" Name="set.position" />
-      <TriggerValue />
-    </Binding>
-    <Binding BypassCascadingTriggers="True">
-      <Trigger Source="Interface;;Helios.DCSInterfaceFile;DCS F4U-1D" Name="RadioNav.C-38 Sensitivity.changed" />
-      <Action Target="Visual;Monitor 2.Radio Panel.c38 sensitivity;Helios.Base.Potentiometer;c38 sensitivity" Name="set.value" />
-      <TriggerValue />
-    </Binding>
-    <Binding BypassCascadingTriggers="True">
-      <Trigger Source="Interface;;Helios.DCSInterfaceFile;DCS F4U-1D" Name="Radio.C-30 A Voice Switch.changed" />
-      <Action Target="Visual;Monitor 2.Radio Panel.c30 voice;Helios.Base.RotarySwitch;c30 voice" Name="set.position" />
-      <TriggerValue />
-    </Binding>
-    <Binding BypassCascadingTriggers="True">
-      <Trigger Source="Interface;;Helios.DCSInterfaceFile;DCS F4U-1D" Name="Radio.C-30 A Channel.changed" />
-      <Action Target="Visual;Monitor 2.Radio Panel.c30 channel;Helios.Base.RotarySwitch;c30 channel" Name="set.position" />
-      <TriggerValue />
-    </Binding>
-    <Binding BypassCascadingTriggers="True">
-      <Trigger Source="Interface;;Helios.DCSInterfaceFile;DCS F4U-1D" Name="RadioNav.C-38 Channel.changed" />
-      <Action Target="Visual;Monitor 2.Radio Panel.c38 freq handle;Helios.Base.RotarySwitch;c38 freq handle" Name="set.position" />
-      <TriggerValue />
-    </Binding>
-    <Binding BypassCascadingTriggers="True">
-      <Trigger Source="Interface;;Helios.DCSInterfaceFile;DCS F4U-1D" Name="RadioNav.C-38 Channel.changed" />
-      <Action Target="Visual;Monitor 2.Radio Panel.c38 channel;Helios.Base.TextDisplay;c38 channel" Name="set.TextDisplay" />
-      <TriggerValue />
-    </Binding>
-    <Binding BypassCascadingTriggers="True">
-      <Trigger Source="Interface;;Helios.DCSInterfaceFile;DCS F4U-1D" Name="Radio.C-26 CW/Voice Switch.changed" />
-      <Action Target="Visual;Monitor 2.Radio Panel.c26 cw voicw;Helios.Base.RotarySwitch;c26 cw voicw" Name="set.position" />
-      <TriggerValue />
-    </Binding>
-    <Binding BypassCascadingTriggers="True">
-      <Trigger Source="Interface;;Helios.DCSInterfaceFile;DCS F4U-1D" Name="RadioNav.C-26 Sensitivity.changed" />
-      <Action Target="Visual;Monitor 2.Radio Panel.c26 sense;Helios.Base.Potentiometer;c26 sense" Name="set.value" />
-      <TriggerValue />
-    </Binding>
-    <Binding BypassCascadingTriggers="True">
-      <Trigger Source="Interface;;Helios.DCSInterfaceFile;DCS F4U-1D" Name="RadioNav.C-26 Frequency.changed" />
-      <Action Target="Visual;Monitor 2.Radio Panel.c26 freq handle;Helios.Base.Potentiometer;c26 freq handle" Name="set.value" />
-      <TriggerValue />
-    </Binding>
-    <Binding BypassCascadingTriggers="True">
-      <Trigger Source="Interface;;Helios.DCSInterfaceFile;DCS F4U-1D" Name="RadioNav.C-26 Frequency.changed" />
-      <Action Target="Visual;Monitor 2.Radio Panel.c26 freq dial;Helios.Base.Potentiometer;c26 freq dial" Name="set.value" />
-      <TriggerValue />
-    </Binding>
-    <Binding BypassCascadingTriggers="True">
       <Trigger Source="Interface;;Helios.DCSInterfaceFile;DCS F4U-1D" Name="Engine.Starter Cover.changed" />
       <Action Target="Visual;Monitor 2.R2 Panel.emerg gen cover;Helios.Base.GuardedSwitch;emerg gen cover" Name="set.guard position" />
       <TriggerValue />
@@ -7819,6 +8039,21 @@
     <Binding BypassCascadingTriggers="True">
       <Trigger Source="Interface;;Helios.DCSInterfaceFile;DCS F4U-1D" Name="Engine.Starter Cover.changed" />
       <Action Target="Visual;Monitor 2.R2 Panel.emerg radio cover;Helios.Base.GuardedSwitch;emerg radio cover" Name="set.guard position" />
+      <TriggerValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Interface;;Helios.DCSInterfaceFile;DCS F4U-1D" Name="Breakers.Instrument Switch.changed" />
+      <Action Target="Visual;Monitor 2.R2 Panel.cb instrument;Helios.Base.ToggleSwitch;cb instrument" Name="set.position" />
+      <TriggerValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Interface;;Helios.DCSInterfaceFile;DCS F4U-1D" Name="Breakers.Inertia Switch.changed" />
+      <Action Target="Visual;Monitor 2.R2 Panel.cb inertia;Helios.Base.ToggleSwitch;cb inertia" Name="set.position" />
+      <TriggerValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Interface;;Helios.DCSInterfaceFile;DCS F4U-1D" Name="Breakers.Recognition Lights.changed" />
+      <Action Target="Visual;Monitor 2.R2 Panel.cb recog;Helios.Base.ToggleSwitch;cb recog" Name="set.position" />
       <TriggerValue />
     </Binding>
     <Binding BypassCascadingTriggers="True">
@@ -7832,24 +8067,40 @@
       <TriggerValue />
     </Binding>
     <Binding BypassCascadingTriggers="True">
-      <Trigger Source="Interface;;Helios.DCSInterfaceFile;DCS F4U-1D" Name="Breakers.Recognition Lights.changed" />
-      <Action Target="Visual;Monitor 2.R2 Panel.cb recog;Helios.Base.ToggleSwitch;cb recog" Name="set.position" />
-      <TriggerValue />
-    </Binding>
-    <Binding BypassCascadingTriggers="True">
       <Trigger Source="Interface;;Helios.DCSInterfaceFile;DCS F4U-1D" Name="Breakers.Starter.changed" />
       <Action Target="Visual;Monitor 2.R2 Panel.cb starter;Helios.Base.ToggleSwitch;cb starter" Name="set.position" />
       <TriggerValue />
     </Binding>
     <Binding BypassCascadingTriggers="True">
-      <Trigger Source="Interface;;Helios.DCSInterfaceFile;DCS F4U-1D" Name="Breakers.Inertia Switch.changed" />
-      <Action Target="Visual;Monitor 2.R2 Panel.cb inertia;Helios.Base.ToggleSwitch;cb inertia" Name="set.position" />
+      <Trigger Source="Interface;;Helios.DCSInterfaceFile;DCS F4U-1D" Name="Control.Arrestor Hook.changed" />
+      <Action Target="Visual;Monitor 2.R2 Panel.Oxy_Hook Panel button.Three Way Toggle Switch;Helios.Base.ThreeWayToggleSwitch;Three Way Toggle Switch" Name="set.position" />
       <TriggerValue />
     </Binding>
     <Binding BypassCascadingTriggers="True">
-      <Trigger Source="Interface;;Helios.DCSInterfaceFile;DCS F4U-1D" Name="Breakers.Instrument Switch.changed" />
-      <Action Target="Visual;Monitor 2.R2 Panel.cb instrument;Helios.Base.ToggleSwitch;cb instrument" Name="set.position" />
+      <Trigger Source="Interface;;Helios.DCSInterfaceFile;DCS F4U-1D" Name="BatBomb.BAt Bomb Search Mode.changed" />
+      <Action Target="Visual;Monitor 2.batbomb panel.search;Helios.Base.PushButton;search" Name="set.physical state" />
       <TriggerValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Interface;;Helios.DCSInterfaceFile;DCS F4U-1D" Name="BatBomb.Bomb Lock Target.changed" />
+      <Action Target="Visual;Monitor 2.batbomb panel.target lock;Helios.Base.PushButton;target lock" Name="set.physical state" />
+      <TriggerValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Interface;;Helios.DCSInterfaceFile;DCS F4U-1D" Name="BatBomb.BAtBomb On - Off.changed" />
+      <Action Target="Visual;Monitor 2.batbomb panel.radar on off;Helios.Base.RotarySwitch;radar on off" Name="set.position" />
+      <TriggerValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Interface;;Helios.DCSInterfaceFile;DCS F4U-1D" Name="BatBomb.BatBomb Gain.changed" />
+      <Action Target="Visual;Monitor 2.batbomb panel.radar gain;Helios.Base.Potentiometer;radar gain" Name="set.value" />
+      <TriggerValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Interface;;Helios.DCSInterfaceFile;DCS F4U-1D" Name="Lamps.BatBomb Target Alarm.changed" />
+      <Action Target="Visual;Monitor 2.batbomb panel.target alarm ind;Helios.Base.Indicator;target alarm ind" Name="set.indicator" />
+      <LuaScript>if TriggerValue &gt; 0.5 then return(true)
+else return(false) end</LuaScript>
     </Binding>
     <Binding BypassCascadingTriggers="True">
       <Trigger Source="Interface;;Helios.DCSInterfaceFile;DCS F4U-1D" Name="Weapon.Fire Rocket.changed" />
@@ -7858,12 +8109,46 @@
     </Binding>
     <Binding BypassCascadingTriggers="True">
       <Trigger Source="Interface;;Helios.DCSInterfaceFile;DCS F4U-1D" Name="Engine.Magneto Switch.changed" />
+      <Action Target="Visual;Monitor 2.L1 Panel.mag img both;Helios.Base.Image;mag img both" Name="set.hidden" />
+      <LuaScript>if TriggerValue == 4 then return(false)
+else return(true) end</LuaScript>
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Interface;;Helios.DCSInterfaceFile;DCS F4U-1D" Name="Engine.Magneto Switch.changed" />
+      <Action Target="Visual;Monitor 2.L1 Panel.mag img l;Helios.Base.Image;mag img l" Name="set.hidden" />
+      <LuaScript>if TriggerValue == 3 then return(false)
+else return(true) end</LuaScript>
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Interface;;Helios.DCSInterfaceFile;DCS F4U-1D" Name="Engine.Magneto Switch.changed" />
+      <Action Target="Visual;Monitor 2.L1 Panel.mag img R;Helios.Base.Image;mag img R" Name="set.hidden" />
+      <LuaScript>if TriggerValue == 2 then return(false)
+else return(true) end</LuaScript>
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Interface;;Helios.DCSInterfaceFile;DCS F4U-1D" Name="Engine.Magneto Switch.changed" />
+      <Action Target="Visual;Monitor 2.L1 Panel.mag img Off;Helios.Base.Image;mag img Off" Name="set.hidden" />
+      <LuaScript>if TriggerValue == 1 then return(false)
+else return(true) end</LuaScript>
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Interface;;Helios.DCSInterfaceFile;DCS F4U-1D" Name="Engine.Magneto Switch.changed" />
       <Action Target="Visual;Monitor 2.L1 Panel.magneto invis rotary sw;Helios.Base.RotarySwitch;magneto invis rotary sw" Name="set.position" />
       <TriggerValue />
     </Binding>
     <Binding BypassCascadingTriggers="True">
-      <Trigger Source="Interface;;Helios.DCSInterfaceFile;DCS F4U-1D" Name="Weapon.Gun Left Charge - Safe.changed" />
-      <Action Target="Visual;Monitor 2.L1 Panel.left gun charge;Helios.Base.ToggleSwitch;left gun charge" Name="set.position" />
+      <Trigger Source="Interface;;Helios.DCSInterfaceFile;DCS F4U-1D" Name="Instruments.Landing Gear Tail.changed" />
+      <Action Target="Visual;Monitor 2.L1 Panel.tail wheel gauge;Helios.Base.CustomTape;tail wheel gauge" Name="set.Tape Vertical Offset" />
+      <TriggerValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Interface;;Helios.DCSInterfaceFile;DCS F4U-1D" Name="Instruments.Landing Gear Left.changed" />
+      <Action Target="Visual;Monitor 2.L1 Panel.L gear gauge;Helios.Base.CustomTape;L gear gauge" Name="set.Tape Vertical Offset" />
+      <TriggerValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Interface;;Helios.DCSInterfaceFile;DCS F4U-1D" Name="Instruments.Landing Gear Right.changed" />
+      <Action Target="Visual;Monitor 2.L1 Panel.R gear gauge;Helios.Base.CustomTape;R gear gauge" Name="set.Tape Vertical Offset" />
       <TriggerValue />
     </Binding>
     <Binding BypassCascadingTriggers="True">
@@ -7872,18 +8157,54 @@
       <TriggerValue />
     </Binding>
     <Binding BypassCascadingTriggers="True">
-      <Trigger Source="Interface;;Helios.DCSInterfaceFile;DCS F4U-1D" Name="Control.Landing Gear Handle.changed" />
-      <Action Target="Visual;Monitor 2.L1 Panel.gear handle invis switch;Helios.Base.ThreeWayToggleSwitch;gear handle invis switch" Name="set.position" />
-      <TriggerValue />
-    </Binding>
-    <Binding BypassCascadingTriggers="True">
-      <Trigger Source="Interface;;Helios.DCSInterfaceFile;DCS F4U-1D" Name="Control.Flaps.changed" />
-      <Action Target="Visual;Monitor 2.L1 Panel.flaps invis rotary sw;Helios.Base.RotarySwitch;flaps invis rotary sw" Name="set.position" />
+      <Trigger Source="Interface;;Helios.DCSInterfaceFile;DCS F4U-1D" Name="Weapon.Gun Left Charge - Safe.changed" />
+      <Action Target="Visual;Monitor 2.L1 Panel.left gun charge;Helios.Base.ToggleSwitch;left gun charge" Name="set.position" />
       <TriggerValue />
     </Binding>
     <Binding BypassCascadingTriggers="True">
       <Trigger Source="Interface;;Helios.DCSInterfaceFile;DCS F4U-1D" Name="Weapon.Pylon Emergency Manual Release.changed" />
       <Action Target="Visual;Monitor 2.L1 Panel.pylon emerg release;Helios.Base.ToggleSwitch;pylon emerg release" Name="set.position" />
+      <TriggerValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Interface;;Helios.DCSInterfaceFile;DCS F4U-1D" Name="Control.Flaps.changed" />
+      <Action Target="Visual;Monitor 2.L1 Panel.flap img 50;Helios.Base.ImageTranslucent;flap img 50" Name="set.hidden" />
+      <LuaScript>if TriggerValue == 6 then return(false)
+else return(true) end</LuaScript>
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Interface;;Helios.DCSInterfaceFile;DCS F4U-1D" Name="Control.Flaps.changed" />
+      <Action Target="Visual;Monitor 2.L1 Panel.flap img 40;Helios.Base.ImageTranslucent;flap img 40" Name="set.hidden" />
+      <LuaScript>if TriggerValue == 5 then return(false)
+else return(true) end</LuaScript>
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Interface;;Helios.DCSInterfaceFile;DCS F4U-1D" Name="Control.Flaps.changed" />
+      <Action Target="Visual;Monitor 2.L1 Panel.flap img 30;Helios.Base.ImageTranslucent;flap img 30" Name="set.hidden" />
+      <LuaScript>if TriggerValue == 4 then return(false)
+else return(true) end</LuaScript>
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Interface;;Helios.DCSInterfaceFile;DCS F4U-1D" Name="Control.Flaps.changed" />
+      <Action Target="Visual;Monitor 2.L1 Panel.flap img 20;Helios.Base.ImageTranslucent;flap img 20" Name="set.hidden" />
+      <LuaScript>if TriggerValue == 3 then return(false)
+else return(true) end</LuaScript>
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Interface;;Helios.DCSInterfaceFile;DCS F4U-1D" Name="Control.Flaps.changed" />
+      <Action Target="Visual;Monitor 2.L1 Panel.flap img 10;Helios.Base.ImageTranslucent;flap img 10" Name="set.hidden" />
+      <LuaScript>if TriggerValue == 2 then return(false)
+else return(true) end</LuaScript>
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Interface;;Helios.DCSInterfaceFile;DCS F4U-1D" Name="Control.Flaps.changed" />
+      <Action Target="Visual;Monitor 2.L1 Panel.flap img 0;Helios.Base.ImageTranslucent;flap img 0" Name="set.hidden" />
+      <LuaScript>if TriggerValue == 1 then return(false)
+else return(true) end</LuaScript>
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Interface;;Helios.DCSInterfaceFile;DCS F4U-1D" Name="Control.Flaps.changed" />
+      <Action Target="Visual;Monitor 2.L1 Panel.flaps invis rotary sw;Helios.Base.RotarySwitch;flaps invis rotary sw" Name="set.position" />
       <TriggerValue />
     </Binding>
     <Binding BypassCascadingTriggers="True">
@@ -7902,8 +8223,8 @@
       <TriggerValue />
     </Binding>
     <Binding BypassCascadingTriggers="True">
-      <Trigger Source="Interface;;Helios.DCSInterfaceFile;DCS F4U-1D" Name="Breakers.Fire Guns Left Outer.changed" />
-      <Action Target="Visual;Monitor 2.L1 Panel.cb left out gun;Helios.Base.ToggleSwitch;cb left out gun" Name="set.position" />
+      <Trigger Source="Interface;;Helios.DCSInterfaceFile;DCS F4U-1D" Name="Breakers.Fire Guns Left Inner.changed" />
+      <Action Target="Visual;Monitor 2.L1 Panel.cb left inner gun;Helios.Base.ToggleSwitch;cb left inner gun" Name="set.position" />
       <TriggerValue />
     </Binding>
     <Binding BypassCascadingTriggers="True">
@@ -7912,8 +8233,13 @@
       <TriggerValue />
     </Binding>
     <Binding BypassCascadingTriggers="True">
-      <Trigger Source="Interface;;Helios.DCSInterfaceFile;DCS F4U-1D" Name="Breakers.Fire Guns Left Inner.changed" />
-      <Action Target="Visual;Monitor 2.L1 Panel.cb left inner gun;Helios.Base.ToggleSwitch;cb left inner gun" Name="set.position" />
+      <Trigger Source="Interface;;Helios.DCSInterfaceFile;DCS F4U-1D" Name="Breakers.Fire Guns Left Outer.changed" />
+      <Action Target="Visual;Monitor 2.L1 Panel.cb left out gun;Helios.Base.ToggleSwitch;cb left out gun" Name="set.position" />
+      <TriggerValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Interface;;Helios.DCSInterfaceFile;DCS F4U-1D" Name="Breakers.Water Pump.changed" />
+      <Action Target="Visual;Monitor 2.L1 Panel.cb water pump;Helios.Base.ToggleSwitch;cb water pump" Name="set.position" />
       <TriggerValue />
     </Binding>
     <Binding BypassCascadingTriggers="True">
@@ -7932,26 +8258,6 @@
       <TriggerValue />
     </Binding>
     <Binding BypassCascadingTriggers="True">
-      <Trigger Source="Interface;;Helios.DCSInterfaceFile;DCS F4U-1D" Name="Breakers.Water Pump.changed" />
-      <Action Target="Visual;Monitor 2.L1 Panel.cb water pump;Helios.Base.ToggleSwitch;cb water pump" Name="set.position" />
-      <TriggerValue />
-    </Binding>
-    <Binding BypassCascadingTriggers="True">
-      <Trigger Source="Interface;;Helios.DCSInterfaceFile;DCS F4U-1D" Name="Breakers.Left Bomb Release.changed" />
-      <Action Target="Visual;Monitor 2.L1 Panel.cb lh bomb;Helios.Base.ToggleSwitch;cb lh bomb" Name="set.position" />
-      <TriggerValue />
-    </Binding>
-    <Binding BypassCascadingTriggers="True">
-      <Trigger Source="Interface;;Helios.DCSInterfaceFile;DCS F4U-1D" Name="Breakers.Right Bomb Release.changed" />
-      <Action Target="Visual;Monitor 2.L1 Panel.cb rh bomb;Helios.Base.ToggleSwitch;cb rh bomb" Name="set.position" />
-      <TriggerValue />
-    </Binding>
-    <Binding BypassCascadingTriggers="True">
-      <Trigger Source="Interface;;Helios.DCSInterfaceFile;DCS F4U-1D" Name="Breakers.Bomb Arming.changed" />
-      <Action Target="Visual;Monitor 2.L1 Panel.cb bomb arm;Helios.Base.ToggleSwitch;cb bomb arm" Name="set.position" />
-      <TriggerValue />
-    </Binding>
-    <Binding BypassCascadingTriggers="True">
       <Trigger Source="Interface;;Helios.DCSInterfaceFile;DCS F4U-1D" Name="Breakers.Center Pylon Release.changed" />
       <Action Target="Visual;Monitor 2.L1 Panel.cb pylon;Helios.Base.ToggleSwitch;cb pylon" Name="set.position" />
       <TriggerValue />
@@ -7967,13 +8273,86 @@
       <TriggerValue />
     </Binding>
     <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Interface;;Helios.DCSInterfaceFile;DCS F4U-1D" Name="Breakers.Left Bomb Release.changed" />
+      <Action Target="Visual;Monitor 2.L1 Panel.cb lh bomb;Helios.Base.ToggleSwitch;cb lh bomb" Name="set.position" />
+      <TriggerValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Interface;;Helios.DCSInterfaceFile;DCS F4U-1D" Name="Breakers.Bomb Arming.changed" />
+      <Action Target="Visual;Monitor 2.L1 Panel.cb bomb arm;Helios.Base.ToggleSwitch;cb bomb arm" Name="set.position" />
+      <TriggerValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Interface;;Helios.DCSInterfaceFile;DCS F4U-1D" Name="Breakers.Right Bomb Release.changed" />
+      <Action Target="Visual;Monitor 2.L1 Panel.cb rh bomb;Helios.Base.ToggleSwitch;cb rh bomb" Name="set.position" />
+      <TriggerValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Interface;;Helios.DCSInterfaceFile;DCS F4U-1D" Name="Engine.Water Injection.changed" />
+      <Action Target="Visual;Monitor 2.L1 Panel.water injection;Helios.Base.ToggleSwitch;water injection" Name="set.position" />
+      <TriggerValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
       <Trigger Source="Interface;;Helios.DCSInterfaceFile;DCS F4U-1D" Name="Breakers.Switch Gun Heater.changed" />
       <Action Target="Visual;Monitor 2.L1 Panel.cb sw;Helios.Base.ToggleSwitch;cb sw" Name="set.position" />
       <TriggerValue />
     </Binding>
     <Binding BypassCascadingTriggers="True">
-      <Trigger Source="Interface;;Helios.DCSInterfaceFile;DCS F4U-1D" Name="Control.Wing Lock.changed" />
-      <Action Target="Visual;Monitor 2.L2 Panel.Wing Fold Panel.Wing Lock;Helios.Base.ToggleSwitch;Wing Lock" Name="set.position" />
+      <Trigger Source="Interface;;Helios.DCSInterfaceFile;DCS F4U-1D" Name="Control.Landing Gear Handle.changed" />
+      <Action Target="Visual;Monitor 2.L1 Panel.gear image 3;Helios.Base.ImageTranslucent;gear image 3" Name="set.hidden" />
+      <LuaScript>if TriggerValue == 3 then return(false)
+else return(true) end</LuaScript>
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Interface;;Helios.DCSInterfaceFile;DCS F4U-1D" Name="Control.Landing Gear Handle.changed" />
+      <Action Target="Visual;Monitor 2.L1 Panel.gear image 2;Helios.Base.ImageTranslucent;gear image 2" Name="set.hidden" />
+      <LuaScript>if TriggerValue == 2 then return(false)
+else return(true) end</LuaScript>
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Interface;;Helios.DCSInterfaceFile;DCS F4U-1D" Name="Control.Landing Gear Handle.changed" />
+      <Action Target="Visual;Monitor 2.L1 Panel.gear image 1;Helios.Base.ImageTranslucent;gear image 1" Name="set.hidden" />
+      <LuaScript>if TriggerValue == 1 then return(false)
+else return(true) end</LuaScript>
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Interface;;Helios.DCSInterfaceFile;DCS F4U-1D" Name="Control.Landing Gear Handle.changed" />
+      <Action Target="Visual;Monitor 2.L1 Panel.gear handle invis switch;Helios.Base.ThreeWayToggleSwitch;gear handle invis switch" Name="set.position" />
+      <TriggerValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Interface;;Helios.DCSInterfaceFile;DCS F4U-1D" Name="Engine.Throttle.changed" />
+      <Action Target="Visual;Monitor 2.L1 Panel.Throttle Panel.throttle animation;Helios.Base.CustomTape;throttle animation" Name="set.Tape Vertical Offset" />
+      <TriggerValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Interface;;Helios.DCSInterfaceFile;DCS F4U-1D" Name="Engine.Prop Governor Handle.changed" />
+      <Action Target="Visual;Monitor 2.L1 Panel.Throttle Panel.Prop rpm animation gauge;Helios.Base.CustomGauge;Prop rpm animation gauge" Name="set.value" />
+      <TriggerValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Interface;;Helios.DCSInterfaceFile;DCS F4U-1D" Name="Engine.Supercharger Lever.changed" />
+      <Action Target="Visual;Monitor 2.L1 Panel.Throttle Panel.supercharger switch tap;Helios.Base.ThreeWayToggleSwitch;supercharger switch tap" Name="set.position" />
+      <TriggerValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Interface;;Helios.DCSInterfaceFile;DCS F4U-1D" Name="Engine.Throttle.changed" />
+      <Action Target="Visual;Monitor 2.L1 Panel.Throttle Panel.throttle linear pot;Helios.Base.PotentiometerWithTranslate;throttle linear pot" Name="set.value Translation Y" />
+      <TriggerValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Interface;;Helios.DCSInterfaceFile;DCS F4U-1D" Name="Engine.Prop Governor Handle.changed" />
+      <Action Target="Visual;Monitor 2.L1 Panel.Throttle Panel.prop linear pot;Helios.Base.PotentiometerWithTranslate;prop linear pot" Name="set.value Translation Y" />
+      <TriggerValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Interface;;Helios.DCSInterfaceFile;DCS F4U-1D" Name="Engine.Mixure Lever.changed" />
+      <Action Target="Visual;Monitor 2.L1 Panel.Throttle Panel.Mixture Lever;Helios.Base.ThreeWayToggleSwitch;Mixture Lever" Name="set.position" />
+      <TriggerValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Interface;;Helios.DCSInterfaceFile;DCS F4U-1D" Name="Control.Pitch Trim.changed" />
+      <Action Target="Visual;Monitor 2.L2 Panel.elevator trim animation;Helios.Base.CustomTape;elevator trim animation" Name="set.Tape Vertical Offset" />
       <TriggerValue />
     </Binding>
     <Binding BypassCascadingTriggers="True">
@@ -7987,18 +8366,18 @@
       <TriggerValue />
     </Binding>
     <Binding BypassCascadingTriggers="True">
-      <Trigger Source="Interface;;Helios.DCSInterfaceFile;DCS F4U-1D" Name="Control.Wing Fold.changed" />
-      <Action Target="Visual;Monitor 2.L2 Panel.Wing Fold Panel.wing fold;Helios.Base.ThreeWayToggleSwitch;wing fold" Name="set.position" />
-      <TriggerValue />
-    </Binding>
-    <Binding BypassCascadingTriggers="True">
-      <Trigger Source="Interface;;Helios.DCSInterfaceFile;DCS F4U-1D" Name="Control.Yaw Trim.changed" />
-      <Action Target="Visual;Monitor 2.L2 Panel.RudderTrim.Potentiometer;Helios.Base.Potentiometer;Potentiometer" Name="set.value" />
+      <Trigger Source="Interface;;Helios.DCSInterfaceFile;DCS F4U-1D" Name="Control.Tail Wheel Lock.changed" />
+      <Action Target="Visual;Monitor 2.L2 Panel.tail wheel lock;Helios.Base.ToggleSwitch;tail wheel lock" Name="set.position" />
       <TriggerValue />
     </Binding>
     <Binding BypassCascadingTriggers="True">
       <Trigger Source="Interface;;Helios.DCSInterfaceFile;DCS F4U-1D" Name="Control.Yaw Trim.changed" />
       <Action Target="Visual;Monitor 2.L2 Panel.RudderTrim.CustomGauge;Helios.Base.CustomGauge;CustomGauge" Name="set.value" />
+      <TriggerValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Interface;;Helios.DCSInterfaceFile;DCS F4U-1D" Name="Control.Yaw Trim.changed" />
+      <Action Target="Visual;Monitor 2.L2 Panel.RudderTrim.Potentiometer;Helios.Base.Potentiometer;Potentiometer" Name="set.value" />
       <TriggerValue />
     </Binding>
     <Binding BypassCascadingTriggers="True">
@@ -8027,13 +8406,8 @@
       <TriggerValue />
     </Binding>
     <Binding BypassCascadingTriggers="True">
-      <Trigger Source="Interface;;Helios.DCSInterfaceFile;DCS F4U-1D" Name="Control.Pitch Trim.changed" />
-      <Action Target="Visual;Monitor 2.L2 Panel.elevator trim animation;Helios.Base.CustomTape;elevator trim animation" Name="set.Tape Vertical Offset" />
-      <TriggerValue />
-    </Binding>
-    <Binding BypassCascadingTriggers="True">
-      <Trigger Source="Interface;;Helios.DCSInterfaceFile;DCS F4U-1D" Name="Control.Tail Wheel Lock.changed" />
-      <Action Target="Visual;Monitor 2.L2 Panel.tail wheel lock;Helios.Base.ToggleSwitch;tail wheel lock" Name="set.position" />
+      <Trigger Source="Interface;;Helios.DCSInterfaceFile;DCS F4U-1D" Name="Weapon.Left Wing Emergency Manual Release.changed" />
+      <Action Target="Visual;Monitor 2.L2 Panel.l wing emerg release;Helios.Base.ToggleSwitch;l wing emerg release" Name="set.position" />
       <TriggerValue />
     </Binding>
     <Binding BypassCascadingTriggers="True">
@@ -8042,126 +8416,13 @@
       <TriggerValue />
     </Binding>
     <Binding BypassCascadingTriggers="True">
-      <Trigger Source="Interface;;Helios.DCSInterfaceFile;DCS F4U-1D" Name="Weapon.Left Wing Emergency Manual Release.changed" />
-      <Action Target="Visual;Monitor 2.L2 Panel.l wing emerg release;Helios.Base.ToggleSwitch;l wing emerg release" Name="set.position" />
+      <Trigger Source="Interface;;Helios.DCSInterfaceFile;DCS F4U-1D" Name="Control.Wing Lock.changed" />
+      <Action Target="Visual;Monitor 2.L2 Panel.Wing Fold Panel.Wing Lock;Helios.Base.ToggleSwitch;Wing Lock" Name="set.position" />
       <TriggerValue />
     </Binding>
     <Binding BypassCascadingTriggers="True">
-      <Trigger Source="Interface;;Helios.DCSInterfaceFile;DCS F4U-1D" Name="Control.Yaw Trim.changed" />
-      <Action Target="Visual;Monitor 2.Indicator panel.RudderTrim.CustomGauge;Helios.Base.CustomGauge;CustomGauge" Name="set.value" />
-      <TriggerValue />
-    </Binding>
-    <Binding BypassCascadingTriggers="True">
-      <Trigger Source="Interface;;Helios.DCSInterfaceFile;DCS F4U-1D" Name="Control.Yaw Trim.changed" />
-      <Action Target="Visual;Monitor 2.Indicator panel.RudderTrim.Potentiometer;Helios.Base.Potentiometer;Potentiometer" Name="set.value" />
-      <TriggerValue />
-    </Binding>
-    <Binding BypassCascadingTriggers="True">
-      <Trigger Source="Interface;;Helios.DCSInterfaceFile;DCS F4U-1D" Name="Control.Bank Trim.changed" />
-      <Action Target="Visual;Monitor 2.Indicator panel.Aileron Trim.CustomGauge;Helios.Base.CustomGauge;CustomGauge" Name="set.value" />
-      <TriggerValue />
-    </Binding>
-    <Binding BypassCascadingTriggers="True">
-      <Trigger Source="Interface;;Helios.DCSInterfaceFile;DCS F4U-1D" Name="Control.Bank Trim.changed" />
-      <Action Target="Visual;Monitor 2.Indicator panel.Aileron Trim.Potentiometer;Helios.Base.Potentiometer;Potentiometer" Name="set.value" />
-      <TriggerValue />
-    </Binding>
-    <Binding BypassCascadingTriggers="True">
-      <Trigger Source="Interface;;Helios.DCSInterfaceFile;DCS F4U-1D" Name="Control.Pitch Trim.changed" />
-      <Action Target="Visual;Monitor 2.Indicator panel.Elevator Trim.CustomTape;Helios.Base.CustomTape;CustomTape" Name="set.Tape Horizontal Offset" />
-      <TriggerValue />
-    </Binding>
-    <Binding BypassCascadingTriggers="True">
-      <Trigger Source="Interface;;Helios.DCSInterfaceFile;DCS F4U-1D" Name="Control.Pitch Trim.changed" />
-      <Action Target="Visual;Monitor 2.Indicator panel.Elevator Trim.CustomTape 1;Helios.Base.CustomTape;CustomTape 1" Name="set.Tape Horizontal Offset" />
-      <TriggerValue />
-    </Binding>
-    <Binding BypassCascadingTriggers="True">
-      <Trigger Source="Interface;;Helios.DCSInterfaceFile;DCS F4U-1D" Name="Control.Pitch Trim.changed" />
-      <Action Target="Visual;Monitor 2.Indicator panel.Calibration Filter 1;Helios.Base.CalibrationFilter;Calibration Filter 1" Name="Input.set.Value" />
-      <TriggerValue />
-    </Binding>
-    <Binding BypassCascadingTriggers="True">
-      <Trigger Source="Interface;;Helios.DCSInterfaceFile;DCS F4U-1D" Name="Instruments.Landing Gear Tail.changed" />
-      <Action Target="Visual;Monitor 2.L1 Panel.tail wheel gauge;Helios.Base.CustomTape;tail wheel gauge" Name="set.Tape Vertical Offset" />
-      <TriggerValue />
-    </Binding>
-    <Binding BypassCascadingTriggers="True">
-      <Trigger Source="Interface;;Helios.DCSInterfaceFile;DCS F4U-1D" Name="Instruments.Landing Gear Left.changed" />
-      <Action Target="Visual;Monitor 2.L1 Panel.L gear gauge;Helios.Base.CustomTape;L gear gauge" Name="set.Tape Vertical Offset" />
-      <TriggerValue />
-    </Binding>
-    <Binding BypassCascadingTriggers="True">
-      <Trigger Source="Interface;;Helios.DCSInterfaceFile;DCS F4U-1D" Name="Instruments.Landing Gear Right.changed" />
-      <Action Target="Visual;Monitor 2.L1 Panel.R gear gauge;Helios.Base.CustomTape;R gear gauge" Name="set.Tape Vertical Offset" />
-      <TriggerValue />
-    </Binding>
-    <Binding BypassCascadingTriggers="True">
-      <Trigger Source="Interface;;Helios.DCSInterfaceFile;DCS F4U-1D" Name="Instruments.Landing Gear Tail.changed" />
-      <Action Target="Visual;Monitor 2.Indicator panel.tail wheel gauge;Helios.Base.CustomTape;tail wheel gauge" Name="set.Tape Vertical Offset" />
-      <TriggerValue />
-    </Binding>
-    <Binding BypassCascadingTriggers="True">
-      <Trigger Source="Interface;;Helios.DCSInterfaceFile;DCS F4U-1D" Name="Instruments.Landing Gear Left.changed" />
-      <Action Target="Visual;Monitor 2.Indicator panel.L gear gauge;Helios.Base.CustomTape;L gear gauge" Name="set.Tape Vertical Offset" />
-      <TriggerValue />
-    </Binding>
-    <Binding BypassCascadingTriggers="True">
-      <Trigger Source="Interface;;Helios.DCSInterfaceFile;DCS F4U-1D" Name="Instruments.Landing Gear Right.changed" />
-      <Action Target="Visual;Monitor 2.Indicator panel.R gear gauge;Helios.Base.CustomTape;R gear gauge" Name="set.Tape Vertical Offset" />
-      <TriggerValue />
-    </Binding>
-    <Binding BypassCascadingTriggers="True">
-      <Trigger Source="Interface;;Helios.DCSInterfaceFile;DCS F4U-1D" Name="Instruments.Oil Cooler Door Indicator.changed" />
-      <Action Target="Visual;Monitor 2.Indicator panel.oil cooler gauge;Helios.Base.CustomTape;oil cooler gauge" Name="set.Tape Vertical Offset" />
-      <TriggerValue />
-    </Binding>
-    <Binding BypassCascadingTriggers="True">
-      <Trigger Source="Interface;;Helios.DCSInterfaceFile;DCS F4U-1D" Name="Instruments.Intercooler Door Indicator.changed" />
-      <Action Target="Visual;Monitor 2.Indicator panel.intercooler gauge;Helios.Base.CustomTape;intercooler gauge" Name="set.Tape Vertical Offset" />
-      <TriggerValue />
-    </Binding>
-    <Binding BypassCascadingTriggers="True">
-      <Trigger Source="Interface;;Helios.DCSInterfaceFile;DCS F4U-1D" Name="BatBomb.BAt Bomb Search Mode.changed" />
-      <Action Target="Visual;Monitor 2.batbomb panel.search;Helios.Base.PushButton;search" Name="set.physical state" />
-      <TriggerValue />
-    </Binding>
-    <Binding BypassCascadingTriggers="True">
-      <Trigger Source="Interface;;Helios.DCSInterfaceFile;DCS F4U-1D" Name="BatBomb.Bomb Lock Target.changed" />
-      <Action Target="Visual;Monitor 2.batbomb panel.target lock;Helios.Base.PushButton;target lock" Name="set.physical state" />
-      <TriggerValue />
-    </Binding>
-    <Binding BypassCascadingTriggers="True">
-      <Trigger Source="Interface;;Helios.DCSInterfaceFile;DCS F4U-1D" Name="BatBomb.BAtBomb On - Off.changed" />
-      <Action Target="Visual;Monitor 2.batbomb panel.radar on off;Helios.Base.RotarySwitch;radar on off" Name="set.position" />
-      <TriggerValue />
-    </Binding>
-    <Binding BypassCascadingTriggers="True">
-      <Trigger Source="Interface;;Helios.DCSInterfaceFile;DCS F4U-1D" Name="BatBomb.BatBomb Gain.changed" />
-      <Action Target="Visual;Monitor 2.batbomb panel.radar gain;Helios.Base.Potentiometer;radar gain" Name="set.value" />
-      <TriggerValue />
-    </Binding>
-    <Binding BypassCascadingTriggers="True">
-      <Trigger Source="Interface;;Helios.DCSInterfaceFile;DCS F4U-1D" Name="Lamps.High Blower Light.changed" />
-      <Action Target="Visual;Monitor 2.High blower light;Helios.Base.Indicator;High blower light" Name="set.indicator" />
-      <LuaScript>if TriggerValue &gt; 0.5 then return(true)
-else return(false) end</LuaScript>
-    </Binding>
-    <Binding BypassCascadingTriggers="True">
-      <Trigger Source="Interface;;Helios.DCSInterfaceFile;DCS F4U-1D" Name="Lamps.Rocket Box Lamp.changed" />
-      <Action Target="Visual;Monitor 2.Rocket Panel.indicator light;Helios.Base.Indicator;indicator light" Name="set.indicator" />
-      <LuaScript>if TriggerValue &gt; 0.5 then return(true)
-else return(false) end</LuaScript>
-    </Binding>
-    <Binding BypassCascadingTriggers="True">
-      <Trigger Source="Interface;;Helios.DCSInterfaceFile;DCS F4U-1D" Name="Lamps.BatBomb Target Alarm.changed" />
-      <Action Target="Visual;Monitor 2.batbomb panel.target alarm ind;Helios.Base.Indicator;target alarm ind" Name="set.indicator" />
-      <LuaScript>if TriggerValue &gt; 0.5 then return(true)
-else return(false) end</LuaScript>
-    </Binding>
-    <Binding BypassCascadingTriggers="True">
-      <Trigger Source="Interface;;Helios.DCSInterfaceFile;DCS F4U-1D" Name="RadioNav.C-38 Noise level.changed" />
-      <Action Target="Visual;Monitor 2.Radio Panel.noise invis linear pot;Helios.Base.PotentiometerWithTranslate;noise invis linear pot" Name="set.value Translation X" />
+      <Trigger Source="Interface;;Helios.DCSInterfaceFile;DCS F4U-1D" Name="Control.Wing Fold.changed" />
+      <Action Target="Visual;Monitor 2.L2 Panel.Wing Fold Panel.wing fold;Helios.Base.ThreeWayToggleSwitch;wing fold" Name="set.position" />
       <TriggerValue />
     </Binding>
     <Binding BypassCascadingTriggers="True">
@@ -8170,296 +8431,78 @@ else return(false) end</LuaScript>
       <TriggerValue />
     </Binding>
     <Binding BypassCascadingTriggers="True">
-      <Trigger Source="Interface;;Helios.DCSInterfaceFile;DCS F4U-1D" Name="Weapon.Fire Rocket.pushed" />
-      <Action Target="Visual;Monitor 2.Rocket Panel.SimpleComputationalWire;Helios.Base.SimpleComputationWire;SimpleComputationalWire" Name="set.Numeric addition Value" />
-      <StaticValue>1</StaticValue>
-    </Binding>
-    <Binding BypassCascadingTriggers="True">
-      <Trigger Source="Interface;;Helios.DCSInterfaceFile;DCS F4U-1D" Name="Weapon.Gunsight Light Intensity.changed" />
-      <Action Target="Visual;Monitor 2.gunsight knob encoder;Helios.Base.RotaryEncoder;gunsight knob encoder" Name="set.value" />
+      <Trigger Source="Interface;;Helios.DCSInterfaceFile;DCS F4U-1D" Name="RadioNav.C-38 Channel.changed" />
+      <Action Target="Visual;Monitor 2.Radio Panel.c38 channel;Helios.Base.TextDisplay;c38 channel" Name="set.TextDisplay" />
       <TriggerValue />
     </Binding>
     <Binding BypassCascadingTriggers="True">
-      <Trigger Source="Interface;;Helios.DCSInterfaceFile;DCS F4U-1D" Name="BatBomb.BatBomb Scope Brightness.changed" />
-      <Action Target="Visual;Monitor 2.radar panel.Radar intensity knob;Helios.Base.Potentiometer;Radar intensity knob" Name="set.value" />
+      <Trigger Source="Interface;;Helios.DCSInterfaceFile;DCS F4U-1D" Name="Radio.C-38 Receiver A On/Off.changed" />
+      <Action Target="Visual;Monitor 2.Radio Panel.c38 rec a sw;Helios.Base.ToggleSwitch;c38 rec a sw" Name="set.position" />
       <TriggerValue />
     </Binding>
     <Binding BypassCascadingTriggers="True">
-      <Trigger Source="Interface;;Helios.DCSInterfaceFile;DCS F4U-1D" Name="Misc.Dash Layout - Radar.changed" />
-      <Action Target="Visual;Monitor 2.radar panel;Helios.Panel;radar panel" Name="set.hidden" />
-      <LuaScript>if TriggerValue &gt; 0.5 then return(false)
-else return(true) end</LuaScript>
-    </Binding>
-    <Binding BypassCascadingTriggers="True">
-      <Trigger Source="Interface;;Helios.DCSInterfaceFile;DCS F4U-1D" Name="Misc.Dash Layout - Radar.changed" />
-      <Action Target="Visual;Monitor 2.radar cover image;Helios.Base.Image;radar cover image" Name="set.hidden" />
-      <LuaScript>if TriggerValue &gt; 0.5 then return(true)
-else return(false) end</LuaScript>
-    </Binding>
-    <Binding BypassCascadingTriggers="True">
-      <Trigger Source="Interface;;Helios.DCSInterfaceFile;DCS F4U-1D" Name="Misc.Dash Layout - Radar.changed" />
-      <Action Target="Visual;Monitor 2.batbomb button;Helios.Base.PushButton;batbomb button" Name="set.hidden" />
-      <LuaScript>if TriggerValue &gt; 0.5 then return(false)
-else return(true) end</LuaScript>
-    </Binding>
-    <Binding BypassCascadingTriggers="True">
-      <Trigger Source="Interface;;Helios.DCSInterfaceFile;DCS F4U-1D" Name="Misc.Dash Layout - Radar.changed" />
-      <Action Target="Visual;Monitor 2.batbomb button base;Helios.Base.Image;batbomb button base" Name="set.hidden" />
-      <LuaScript>if TriggerValue &gt; 0.5 then return(false)
-else return(true) end</LuaScript>
-    </Binding>
-    <Binding BypassCascadingTriggers="True">
-      <Trigger Source="Interface;;Helios.DCSInterfaceFile;DCS F4U-1D" Name="Lamps.Stall Warning Lamp.changed" />
-      <Action Target="Visual;Monitor 2.Dash Option Panel.stall lamp;Helios.Base.Indicator;stall lamp" Name="set.indicator" />
-      <LuaScript>if TriggerValue &gt; 0.5 then return(true)
-else return(false) end</LuaScript>
-    </Binding>
-    <Binding BypassCascadingTriggers="True">
-      <Trigger Source="Interface;;Helios.DCSInterfaceFile;DCS F4U-1D" Name="Lamps.Water Injection Lamp.changed" />
-      <Action Target="Visual;Monitor 2.Dash Option Panel.water inj lamp;Helios.Base.Indicator;water inj lamp" Name="set.indicator" />
-      <LuaScript>if TriggerValue &gt; 0.5 then return(true)
-else return(false) end</LuaScript>
-    </Binding>
-    <Binding BypassCascadingTriggers="True">
-      <Trigger Source="Interface;;Helios.DCSInterfaceFile;DCS F4U-1D" Name="Utility.Stall Warning Light Test.changed" />
-      <Action Target="Visual;Monitor 2.Dash Option Panel.test button;Helios.Base.PushButton;test button" Name="set.physical state" />
+      <Trigger Source="Interface;;Helios.DCSInterfaceFile;DCS F4U-1D" Name="Radio.C-38 Volume.changed" />
+      <Action Target="Visual;Monitor 2.Radio Panel.c38 vol;Helios.Base.Potentiometer;c38 vol" Name="set.value" />
       <TriggerValue />
     </Binding>
     <Binding BypassCascadingTriggers="True">
-      <Trigger Source="Interface;;Helios.DCSInterfaceFile;DCS F4U-1D" Name="Utility.Stall Warning Light Test.changed" />
-      <Action Target="Visual;Monitor 2.backup stall warning.test button;Helios.Base.PushButton;test button" Name="set.physical state" />
+      <Trigger Source="Interface;;Helios.DCSInterfaceFile;DCS F4U-1D" Name="Radio.C-38 CW/Voice Switch.changed" />
+      <Action Target="Visual;Monitor 2.Radio Panel.c38 cw voice;Helios.Base.RotarySwitch;c38 cw voice" Name="set.position" />
       <TriggerValue />
     </Binding>
     <Binding BypassCascadingTriggers="True">
-      <Trigger Source="Interface;;Helios.DCSInterfaceFile;DCS F4U-1D" Name="Lamps.Stall Warning Lamp.changed" />
-      <Action Target="Visual;Monitor 2.backup stall warning.stall light;Helios.Base.Indicator;stall light" Name="set.indicator" />
-      <LuaScript>if TriggerValue &gt; 0.5 then return(true)
-else return(false) end</LuaScript>
-    </Binding>
-    <Binding BypassCascadingTriggers="True">
-      <Trigger Source="Interface;;Helios.DCSInterfaceFile;DCS F4U-1D" Name="Misc.Dash Layout - Radar.changed" />
-      <Action Target="Visual;Monitor 2.backup stall warning;Helios.Panel;backup stall warning" Name="set.hidden" />
-      <LuaScript>if TriggerValue &gt; 0.5 then return(false)
-else return(true) end</LuaScript>
-    </Binding>
-    <Binding BypassCascadingTriggers="True">
-      <Trigger Source="Interface;;Helios.DCSInterfaceFile;DCS F4U-1D" Name="Misc.Dash Layout - Radar.changed" />
-      <Action Target="Visual;Monitor 2.Dash Option Panel;Helios.Panel;Dash Option Panel" Name="set.hidden" />
-      <LuaScript>if TriggerValue &gt; 0.5 then return(true)
-else return(false) end</LuaScript>
-    </Binding>
-    <Binding BypassCascadingTriggers="True">
-      <Trigger Source="Interface;;Helios.DCSInterfaceFile;DCS F4U-1D" Name="Misc.Dash Layout - Radar.changed" />
-      <Action Target="Visual;Monitor 2.dash light decor;Helios.Base.Image;dash light decor" Name="set.hidden" />
-      <LuaScript>if TriggerValue &gt; 0.5 then return(true)
-else return(false) end</LuaScript>
-    </Binding>
-    <Binding BypassCascadingTriggers="True">
-      <Trigger Source="Interface;;Helios.DCSInterfaceFile;DCS F4U-1D" Name="Instruments.Clock Currtime Minutes.changed" />
-      <Action Target="Visual;Monitor 2.Clock.curr min;Helios.Base.CustomGauge;curr min" Name="set.value" />
+      <Trigger Source="Interface;;Helios.DCSInterfaceFile;DCS F4U-1D" Name="RadioNav.C-38 Sensitivity.changed" />
+      <Action Target="Visual;Monitor 2.Radio Panel.c38 sensitivity;Helios.Base.Potentiometer;c38 sensitivity" Name="set.value" />
       <TriggerValue />
     </Binding>
     <Binding BypassCascadingTriggers="True">
-      <Trigger Source="Interface;;Helios.DCSInterfaceFile;DCS F4U-1D" Name="Instruments.Clock Currtime Seconds.changed" />
-      <Action Target="Visual;Monitor 2.Clock.curr seconds;Helios.Base.CustomGauge;curr seconds" Name="set.value" />
+      <Trigger Source="Interface;;Helios.DCSInterfaceFile;DCS F4U-1D" Name="Radio.C-30 A Voice Switch.changed" />
+      <Action Target="Visual;Monitor 2.Radio Panel.c30 voice;Helios.Base.RotarySwitch;c30 voice" Name="set.position" />
       <TriggerValue />
     </Binding>
     <Binding BypassCascadingTriggers="True">
-      <Trigger Source="Interface;;Helios.DCSInterfaceFile;DCS F4U-1D" Name="Instruments.Elapsed Time - Hour.changed" />
-      <Action Target="Visual;Monitor 2.Clock.Elapsed hour;Helios.Base.CustomGauge;Elapsed hour" Name="set.value" />
+      <Trigger Source="Interface;;Helios.DCSInterfaceFile;DCS F4U-1D" Name="Radio.C-30 A Channel.changed" />
+      <Action Target="Visual;Monitor 2.Radio Panel.c30 channel;Helios.Base.RotarySwitch;c30 channel" Name="set.position" />
       <TriggerValue />
     </Binding>
     <Binding BypassCascadingTriggers="True">
-      <Trigger Source="Interface;;Helios.DCSInterfaceFile;DCS F4U-1D" Name="Instruments.Chronometer - Minutes.changed" />
-      <Action Target="Visual;Monitor 2.Clock.Chrono minutes;Helios.Base.CustomGauge;Chrono minutes" Name="set.value" />
+      <Trigger Source="Interface;;Helios.DCSInterfaceFile;DCS F4U-1D" Name="Radio.C-30A On/Off Switch.changed" />
+      <Action Target="Visual;Monitor 2.Radio Panel.c30 on off;Helios.Base.ToggleSwitch;c30 on off" Name="set.position" />
       <TriggerValue />
     </Binding>
     <Binding BypassCascadingTriggers="True">
-      <Trigger Source="Interface;;Helios.DCSInterfaceFile;DCS F4U-1D" Name="Instruments.Date Needle.changed" />
-      <Action Target="Visual;Monitor 2.Clock.Date dial;Helios.Base.CustomGauge;Date dial" Name="set.value" />
+      <Trigger Source="Interface;;Helios.DCSInterfaceFile;DCS F4U-1D" Name="RadioNav.C-38 Channel.changed" />
+      <Action Target="Visual;Monitor 2.Radio Panel.c38 freq handle;Helios.Base.RotarySwitch;c38 freq handle" Name="set.position" />
       <TriggerValue />
     </Binding>
     <Binding BypassCascadingTriggers="True">
-      <Trigger Source="Interface;;Helios.DCSInterfaceFile;DCS F4U-1D" Name="Instruments.Chronometer - Seconds.changed" />
-      <Action Target="Visual;Monitor 2.Clock.chrono seconds;Helios.Base.CustomGauge;chrono seconds" Name="set.value" />
+      <Trigger Source="Interface;;Helios.DCSInterfaceFile;DCS F4U-1D" Name="RadioNav.C-26 Frequency.changed" />
+      <Action Target="Visual;Monitor 2.Radio Panel.c26 freq dial;Helios.Base.Potentiometer;c26 freq dial" Name="set.value" />
       <TriggerValue />
     </Binding>
     <Binding BypassCascadingTriggers="True">
-      <Trigger Source="Interface;;Helios.DCSInterfaceFile;DCS F4U-1D" Name="Instruments.Elapsed Time - Minutes.changed" />
-      <Action Target="Visual;Monitor 2.Clock.Elapsed minute;Helios.Base.CustomGauge;Elapsed minute" Name="set.value" />
-      <TriggerValue />
-    </Binding>
-    <Binding BypassCascadingTriggers="False">
-      <Trigger Source="Interface;;Helios.DCSInterfaceFile;DCS F4U-1D" Name="Nav.Horizon Pitch Set.changed" />
-      <Action Target="Visual;Monitor 2.ADI.Pitch adjust knob;Helios.Base.Potentiometer;Pitch adjust knob" Name="set.value" />
+      <Trigger Source="Interface;;Helios.DCSInterfaceFile;DCS F4U-1D" Name="RadioNav.C-26 Frequency.changed" />
+      <Action Target="Visual;Monitor 2.Radio Panel.c26 freq handle;Helios.Base.Potentiometer;c26 freq handle" Name="set.value" />
       <TriggerValue />
     </Binding>
     <Binding BypassCascadingTriggers="True">
-      <Trigger Source="Interface;;Helios.DCSInterfaceFile;DCS F4U-1D" Name="Nav.Gyro Horizon Cage.changed" />
-      <Action Target="Visual;Monitor 2.ADI.Horizon Cage knob;Helios.Base.Potentiometer;Horizon Cage knob" Name="set.value" />
+      <Trigger Source="Interface;;Helios.DCSInterfaceFile;DCS F4U-1D" Name="Radio.C-26 CW/Voice Switch.changed" />
+      <Action Target="Visual;Monitor 2.Radio Panel.c26 cw voicw;Helios.Base.RotarySwitch;c26 cw voicw" Name="set.position" />
       <TriggerValue />
     </Binding>
     <Binding BypassCascadingTriggers="True">
-      <Trigger Source="Interface;;Helios.DCSInterfaceFile;DCS F4U-1D" Name="Control.Landing Gear Handle.changed" />
-      <Action Target="Visual;Monitor 2.L1 Panel.gear image 1;Helios.Base.ImageTranslucent;gear image 1" Name="set.hidden" />
-      <LuaScript>if TriggerValue == 1 then return(false)
-else return(true) end</LuaScript>
-    </Binding>
-    <Binding BypassCascadingTriggers="True">
-      <Trigger Source="Interface;;Helios.DCSInterfaceFile;DCS F4U-1D" Name="Control.Landing Gear Handle.changed" />
-      <Action Target="Visual;Monitor 2.L1 Panel.gear image 2;Helios.Base.ImageTranslucent;gear image 2" Name="set.hidden" />
-      <LuaScript>if TriggerValue == 2 then return(false)
-else return(true) end</LuaScript>
-    </Binding>
-    <Binding BypassCascadingTriggers="True">
-      <Trigger Source="Interface;;Helios.DCSInterfaceFile;DCS F4U-1D" Name="Control.Landing Gear Handle.changed" />
-      <Action Target="Visual;Monitor 2.L1 Panel.gear image 3;Helios.Base.ImageTranslucent;gear image 3" Name="set.hidden" />
-      <LuaScript>if TriggerValue == 3 then return(false)
-else return(true) end</LuaScript>
-    </Binding>
-    <Binding BypassCascadingTriggers="True">
-      <Trigger Source="Interface;;Helios.DCSInterfaceFile;DCS F4U-1D" Name="Engine.Magneto Switch.changed" />
-      <Action Target="Visual;Monitor 2.L1 Panel.mag img Off;Helios.Base.Image;mag img Off" Name="set.hidden" />
-      <LuaScript>if TriggerValue == 1 then return(false)
-else return(true) end</LuaScript>
-    </Binding>
-    <Binding BypassCascadingTriggers="True">
-      <Trigger Source="Interface;;Helios.DCSInterfaceFile;DCS F4U-1D" Name="Engine.Magneto Switch.changed" />
-      <Action Target="Visual;Monitor 2.L1 Panel.mag img l;Helios.Base.Image;mag img l" Name="set.hidden" />
-      <LuaScript>if TriggerValue == 3 then return(false)
-else return(true) end</LuaScript>
-    </Binding>
-    <Binding BypassCascadingTriggers="True">
-      <Trigger Source="Interface;;Helios.DCSInterfaceFile;DCS F4U-1D" Name="Engine.Magneto Switch.changed" />
-      <Action Target="Visual;Monitor 2.L1 Panel.mag img both;Helios.Base.Image;mag img both" Name="set.hidden" />
-      <LuaScript>if TriggerValue == 4 then return(false)
-else return(true) end</LuaScript>
-    </Binding>
-    <Binding BypassCascadingTriggers="True">
-      <Trigger Source="Interface;;Helios.DCSInterfaceFile;DCS F4U-1D" Name="Engine.Magneto Switch.changed" />
-      <Action Target="Visual;Monitor 2.L1 Panel.mag img R;Helios.Base.Image;mag img R" Name="set.hidden" />
-      <LuaScript>if TriggerValue == 2 then return(false)
-else return(true) end</LuaScript>
-    </Binding>
-    <Binding BypassCascadingTriggers="True">
-      <Trigger Source="Interface;;Helios.DCSInterfaceFile;DCS F4U-1D" Name="Control.Flaps.changed" />
-      <Action Target="Visual;Monitor 2.L1 Panel.flap img 0;Helios.Base.ImageTranslucent;flap img 0" Name="set.hidden" />
-      <LuaScript>if TriggerValue == 1 then return(false)
-else return(true) end</LuaScript>
-    </Binding>
-    <Binding BypassCascadingTriggers="True">
-      <Trigger Source="Interface;;Helios.DCSInterfaceFile;DCS F4U-1D" Name="Control.Flaps.changed" />
-      <Action Target="Visual;Monitor 2.L1 Panel.flap img 10;Helios.Base.ImageTranslucent;flap img 10" Name="set.hidden" />
-      <LuaScript>if TriggerValue == 2 then return(false)
-else return(true) end</LuaScript>
-    </Binding>
-    <Binding BypassCascadingTriggers="True">
-      <Trigger Source="Interface;;Helios.DCSInterfaceFile;DCS F4U-1D" Name="Control.Flaps.changed" />
-      <Action Target="Visual;Monitor 2.L1 Panel.flap img 20;Helios.Base.ImageTranslucent;flap img 20" Name="set.hidden" />
-      <LuaScript>if TriggerValue == 3 then return(false)
-else return(true) end</LuaScript>
-    </Binding>
-    <Binding BypassCascadingTriggers="True">
-      <Trigger Source="Interface;;Helios.DCSInterfaceFile;DCS F4U-1D" Name="Control.Flaps.changed" />
-      <Action Target="Visual;Monitor 2.L1 Panel.flap img 30;Helios.Base.ImageTranslucent;flap img 30" Name="set.hidden" />
-      <LuaScript>if TriggerValue == 4 then return(false)
-else return(true) end</LuaScript>
-    </Binding>
-    <Binding BypassCascadingTriggers="True">
-      <Trigger Source="Interface;;Helios.DCSInterfaceFile;DCS F4U-1D" Name="Control.Flaps.changed" />
-      <Action Target="Visual;Monitor 2.L1 Panel.flap img 40;Helios.Base.ImageTranslucent;flap img 40" Name="set.hidden" />
-      <LuaScript>if TriggerValue == 5 then return(false)
-else return(true) end</LuaScript>
-    </Binding>
-    <Binding BypassCascadingTriggers="True">
-      <Trigger Source="Interface;;Helios.DCSInterfaceFile;DCS F4U-1D" Name="Control.Flaps.changed" />
-      <Action Target="Visual;Monitor 2.L1 Panel.flap img 50;Helios.Base.ImageTranslucent;flap img 50" Name="set.hidden" />
-      <LuaScript>if TriggerValue == 6 then return(false)
-else return(true) end</LuaScript>
-    </Binding>
-    <Binding BypassCascadingTriggers="True">
-      <Trigger Source="Interface;;Helios.DCSInterfaceFile;DCS F4U-1D" Name="Nav.Directional Gyro Cage.changed" />
-      <Action Target="Visual;Monitor 2.Gyro Cage knob;Helios.Base.RotaryEncoderClickable;Gyro Cage knob" Name="set.physical state" />
+      <Trigger Source="Interface;;Helios.DCSInterfaceFile;DCS F4U-1D" Name="RadioNav.C-26 Sensitivity.changed" />
+      <Action Target="Visual;Monitor 2.Radio Panel.c26 sense;Helios.Base.Potentiometer;c26 sense" Name="set.value" />
       <TriggerValue />
     </Binding>
     <Binding BypassCascadingTriggers="True">
-      <Trigger Source="Interface;;Helios.DCSInterfaceFile;DCS F4U-1D" Name="Lights.Chartboard Lights.changed" />
-      <Action Target="Visual;Monitor 2.R2 Panel.chartboard light;Helios.Base.RotaryEncoder;chartboard light" Name="set.value" />
-      <TriggerValue />
-    </Binding>
-    <Binding BypassCascadingTriggers="True">
-      <Trigger Source="Interface;;Helios.DCSInterfaceFile;DCS F4U-1D" Name="Lights.Left Panel Lights.changed" />
-      <Action Target="Visual;Monitor 2.R2 Panel.left panel light;Helios.Base.RotaryEncoder;left panel light" Name="set.value" />
-      <TriggerValue />
-    </Binding>
-    <Binding BypassCascadingTriggers="True">
-      <Trigger Source="Interface;;Helios.DCSInterfaceFile;DCS F4U-1D" Name="Lights.Right Panel Lights.changed" />
-      <Action Target="Visual;Monitor 2.R2 Panel.right panel light;Helios.Base.RotaryEncoder;right panel light" Name="set.value" />
-      <TriggerValue />
-    </Binding>
-    <Binding BypassCascadingTriggers="True">
-      <Trigger Source="Interface;;Helios.DCSInterfaceFile;DCS F4U-1D" Name="Lights.Left Instrument Board Lights.changed" />
-      <Action Target="Visual;Monitor 2.R2 Panel.left instr light;Helios.Base.RotaryEncoder;left instr light" Name="set.value" />
-      <TriggerValue />
-    </Binding>
-    <Binding BypassCascadingTriggers="True">
-      <Trigger Source="Interface;;Helios.DCSInterfaceFile;DCS F4U-1D" Name="Lights.Right Instrument Board Lights.changed" />
-      <Action Target="Visual;Monitor 2.R2 Panel.rt instr light;Helios.Base.RotaryEncoder;rt instr light" Name="set.value" />
+      <Trigger Source="Interface;;Helios.DCSInterfaceFile;DCS F4U-1D" Name="RadioNav.C-38 Noise level.changed" />
+      <Action Target="Visual;Monitor 2.Radio Panel.noise invis linear pot;Helios.Base.PotentiometerWithTranslate;noise invis linear pot" Name="set.value Translation X" />
       <TriggerValue />
     </Binding>
     <Binding BypassCascadingTriggers="True">
       <Trigger Source="Interface;;Helios.DCSInterfaceFile;DCS F4U-1D" Name="RadioNav.C-38 Pitch.changed" />
       <Action Target="Visual;Monitor 2.Radio Panel.Rotary Encoder;Helios.Base.RotaryEncoder;Rotary Encoder" Name="set.value" />
-      <TriggerValue />
-    </Binding>
-    <Binding BypassCascadingTriggers="True">
-      <Trigger Source="Interface;;Helios.DCSInterfaceFile;DCS F4U-1D" Name="Engine.Water Injection.changed" />
-      <Action Target="Visual;Monitor 2.L1 Panel.water injection;Helios.Base.ToggleSwitch;water injection" Name="set.position" />
-      <TriggerValue />
-    </Binding>
-    <Binding BypassCascadingTriggers="True">
-      <Trigger Source="Interface;;Helios.DCSInterfaceFile;DCS F4U-1D" Name="Instruments.Water Pressure.changed" />
-      <Action Target="Visual;Monitor 2.R1 Panel.Fuel Press.CustomGauge;Helios.Base.CustomGauge;CustomGauge" Name="set.value" />
-      <TriggerValue />
-    </Binding>
-    <Binding BypassCascadingTriggers="True">
-      <Trigger Source="Interface;;Helios.DCSInterfaceFile;DCS F4U-1D" Name="Engine.Supercharger Lever.changed" />
-      <Action Target="Visual;Monitor 2.L1 Panel.Throttle Panel.supercharger switch tap;Helios.Base.ThreeWayToggleSwitch;supercharger switch tap" Name="set.position" />
-      <TriggerValue />
-    </Binding>
-    <Binding BypassCascadingTriggers="True">
-      <Trigger Source="Interface;;Helios.DCSInterfaceFile;DCS F4U-1D" Name="Engine.Throttle.changed" />
-      <Action Target="Visual;Monitor 2.L1 Panel.Throttle Panel.throttle linear pot;Helios.Base.PotentiometerWithTranslate;throttle linear pot" Name="set.value Translation Y" />
-      <TriggerValue />
-    </Binding>
-    <Binding BypassCascadingTriggers="True">
-      <Trigger Source="Interface;;Helios.DCSInterfaceFile;DCS F4U-1D" Name="Engine.Throttle.changed" />
-      <Action Target="Visual;Monitor 2.L1 Panel.Throttle Panel.throttle animation;Helios.Base.CustomTape;throttle animation" Name="set.Tape Vertical Offset" />
-      <TriggerValue />
-    </Binding>
-    <Binding BypassCascadingTriggers="True">
-      <Trigger Source="Interface;;Helios.DCSInterfaceFile;DCS F4U-1D" Name="Engine.Prop Governor Handle.changed" />
-      <Action Target="Visual;Monitor 2.L1 Panel.Throttle Panel.Prop rpm animation gauge;Helios.Base.CustomGauge;Prop rpm animation gauge" Name="set.value" />
-      <TriggerValue />
-    </Binding>
-    <Binding BypassCascadingTriggers="True">
-      <Trigger Source="Interface;;Helios.DCSInterfaceFile;DCS F4U-1D" Name="Engine.Prop Governor Handle.changed" />
-      <Action Target="Visual;Monitor 2.L1 Panel.Throttle Panel.prop linear pot;Helios.Base.PotentiometerWithTranslate;prop linear pot" Name="set.value Translation Y" />
-      <TriggerValue />
-    </Binding>
-    <Binding BypassCascadingTriggers="True">
-      <Trigger Source="Interface;;Helios.DCSInterfaceFile;DCS F4U-1D" Name="Engine.Throttle.changed" />
-      <Action Target="Visual;Monitor 2.Indicator panel.throttle animation;Helios.Base.CustomTape;throttle animation" Name="set.Tape Vertical Offset" />
-      <TriggerValue />
-    </Binding>
-    <Binding BypassCascadingTriggers="True">
-      <Trigger Source="Interface;;Helios.DCSInterfaceFile;DCS F4U-1D" Name="Engine.Prop Governor Handle.changed" />
-      <Action Target="Visual;Monitor 2.Indicator panel.Prop rpm animation gauge;Helios.Base.CustomGauge;Prop rpm animation gauge" Name="set.value" />
-      <TriggerValue />
-    </Binding>
-    <Binding BypassCascadingTriggers="True">
-      <Trigger Source="Interface;;Helios.DCSInterfaceFile;DCS F4U-1D" Name="Engine.Supercharger Lever.changed" />
-      <Action Target="Visual;Monitor 2.Indicator panel.supercharger switch tap;Helios.Base.ThreeWayToggleSwitch;supercharger switch tap" Name="set.position" />
       <TriggerValue />
     </Binding>
     <Binding BypassCascadingTriggers="True">
@@ -8493,13 +8536,28 @@ else return(true) end</LuaScript>
       <TriggerValue />
     </Binding>
     <Binding BypassCascadingTriggers="True">
-      <Trigger Source="Interface;;Helios.DCSInterfaceFile;DCS F4U-1D" Name="Engine.Mixure Lever.changed" />
-      <Action Target="Visual;Monitor 2.Indicator panel.Mixture Animation;Helios.Base.ThreeWayToggleSwitch;Mixture Animation" Name="set.position" />
+      <Trigger Source="Interface;;Helios.DCSInterfaceFile;DCS F4U-1D" Name="Lights.Chartboard Lights.changed" />
+      <Action Target="Visual;Monitor 2.R2 Panel.Potentiometer;Helios.Base.Potentiometer;Potentiometer" Name="set.value" />
       <TriggerValue />
     </Binding>
     <Binding BypassCascadingTriggers="True">
-      <Trigger Source="Interface;;Helios.DCSInterfaceFile;DCS F4U-1D" Name="Engine.Mixure Lever.changed" />
-      <Action Target="Visual;Monitor 2.L1 Panel.Throttle Panel.Mixture Lever;Helios.Base.ThreeWayToggleSwitch;Mixture Lever" Name="set.position" />
+      <Trigger Source="Interface;;Helios.DCSInterfaceFile;DCS F4U-1D" Name="Lights.Left Panel Lights.changed" />
+      <Action Target="Visual;Monitor 2.R2 Panel.Potentiometer 1;Helios.Base.Potentiometer;Potentiometer 1" Name="set.value" />
+      <TriggerValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Interface;;Helios.DCSInterfaceFile;DCS F4U-1D" Name="Lights.Right Panel Lights.changed" />
+      <Action Target="Visual;Monitor 2.R2 Panel.Potentiometer 1 1;Helios.Base.Potentiometer;Potentiometer 1 1" Name="set.value" />
+      <TriggerValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Interface;;Helios.DCSInterfaceFile;DCS F4U-1D" Name="Lights.Left Instrument Board Lights.changed" />
+      <Action Target="Visual;Monitor 2.R2 Panel.Potentiometer 2;Helios.Base.Potentiometer;Potentiometer 2" Name="set.value" />
+      <TriggerValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Interface;;Helios.DCSInterfaceFile;DCS F4U-1D" Name="Lights.Right Instrument Board Lights.changed" />
+      <Action Target="Visual;Monitor 2.R2 Panel.Potentiometer 2 1;Helios.Base.Potentiometer;Potentiometer 2 1" Name="set.value" />
       <TriggerValue />
     </Binding>
     <Binding BypassCascadingTriggers="True">
@@ -8648,6 +8706,26 @@ else return(true) end</LuaScript>
       <StaticValue />
     </Binding>
     <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Visual;Monitor 2.Clock.Clickable Rotary Encoder;Helios.Base.RotaryEncoderClickable;Clickable Rotary Encoder" Name="button closed" />
+      <Action Target="Interface;;Helios.DCSInterfaceFile;DCS F4U-1D" Name="Clock.set.Clock Adjust Switch" />
+      <StaticValue>3</StaticValue>
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Visual;Monitor 2.Clock.Clickable Rotary Encoder;Helios.Base.RotaryEncoderClickable;Clickable Rotary Encoder" Name="button open" />
+      <Action Target="Interface;;Helios.DCSInterfaceFile;DCS F4U-1D" Name="Clock.set.Clock Adjust Switch" />
+      <StaticValue>2</StaticValue>
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Visual;Monitor 2.Clock.Clickable Rotary Encoder;Helios.Base.RotaryEncoderClickable;Clickable Rotary Encoder" Name="encoder.incremented" />
+      <Action Target="Interface;;Helios.DCSInterfaceFile;DCS F4U-1D" Name="Clock.increment.Clock Adjust Knob" />
+      <TriggerValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Visual;Monitor 2.Clock.Clickable Rotary Encoder;Helios.Base.RotaryEncoderClickable;Clickable Rotary Encoder" Name="encoder.decremented" />
+      <Action Target="Interface;;Helios.DCSInterfaceFile;DCS F4U-1D" Name="Clock.decrement.Clock Adjust Knob" />
+      <TriggerValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
       <Trigger Source="Visual;Monitor 2.backup stall warning.test button;Helios.Base.PushButton;test button" Name="closed" />
       <Action Target="Interface;;Helios.DCSInterfaceFile;DCS F4U-1D" Name="Utility.push.Stall Warning Light Test" />
       <StaticValue />
@@ -8719,11 +8797,6 @@ else return(true) end</LuaScript>
     </Binding>
     <Binding BypassCascadingTriggers="True">
       <Trigger Source="Visual;Monitor 2.R2 button;Helios.Base.PushButton;R2 button" Name="closed" />
-      <Action Target="Visual;Monitor 2.R1 Button;Helios.Base.PushButton;R1 Button" Name="set.physical state" />
-      <StaticValue>false</StaticValue>
-    </Binding>
-    <Binding BypassCascadingTriggers="True">
-      <Trigger Source="Visual;Monitor 2.R2 button;Helios.Base.PushButton;R2 button" Name="closed" />
       <Action Target="Visual;Monitor 2.R2 Panel;Helios.Panel;R2 Panel" Name="set.hidden" />
       <StaticValue>false</StaticValue>
     </Binding>
@@ -8755,6 +8828,11 @@ else return(true) end</LuaScript>
     <Binding BypassCascadingTriggers="True">
       <Trigger Source="Visual;Monitor 2.R2 button;Helios.Base.PushButton;R2 button" Name="closed" />
       <Action Target="Visual;Monitor 2.radio button;Helios.Base.PushButton;radio button" Name="set.physical state" />
+      <StaticValue>false</StaticValue>
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Visual;Monitor 2.R2 button;Helios.Base.PushButton;R2 button" Name="closed" />
+      <Action Target="Visual;Monitor 2.R1 Button;Helios.Base.PushButton;R1 Button" Name="set.physical state" />
       <StaticValue>false</StaticValue>
     </Binding>
     <Binding BypassCascadingTriggers="True">
@@ -8829,11 +8907,6 @@ else return(true) end</LuaScript>
     </Binding>
     <Binding BypassCascadingTriggers="True">
       <Trigger Source="Visual;Monitor 2.L1 button;Helios.Base.PushButton;L1 button" Name="closed" />
-      <Action Target="Visual;Monitor 2.L2 button;Helios.Base.PushButton;L2 button" Name="set.physical state" />
-      <StaticValue>false</StaticValue>
-    </Binding>
-    <Binding BypassCascadingTriggers="True">
-      <Trigger Source="Visual;Monitor 2.L1 button;Helios.Base.PushButton;L1 button" Name="closed" />
       <Action Target="Visual;Monitor 2.Radio Panel;Helios.Panel;Radio Panel" Name="set.hidden" />
       <StaticValue>true</StaticValue>
     </Binding>
@@ -8868,6 +8941,11 @@ else return(true) end</LuaScript>
       <StaticValue>false</StaticValue>
     </Binding>
     <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Visual;Monitor 2.L1 button;Helios.Base.PushButton;L1 button" Name="closed" />
+      <Action Target="Visual;Monitor 2.L2 button;Helios.Base.PushButton;L2 button" Name="set.physical state" />
+      <StaticValue>false</StaticValue>
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
       <Trigger Source="Visual;Monitor 2.Keys button;Helios.Base.PushButton;Keys button" Name="closed" />
       <Action Target="Visual;Monitor 2.Keys Panel;Helios.Panel;Keys Panel" Name="set.hidden" />
       <StaticValue>false</StaticValue>
@@ -8886,16 +8964,6 @@ else return(true) end</LuaScript>
       <Trigger Source="Visual;Monitor 2.radio button;Helios.Base.PushButton;radio button" Name="open" />
       <Action Target="Visual;Monitor 2.Radio Panel;Helios.Panel;Radio Panel" Name="set.hidden" />
       <StaticValue>true</StaticValue>
-    </Binding>
-    <Binding BypassCascadingTriggers="True">
-      <Trigger Source="Visual;Monitor 2.radio button;Helios.Base.PushButton;radio button" Name="closed" />
-      <Action Target="Visual;Monitor 2.R2 button;Helios.Base.PushButton;R2 button" Name="set.physical state" />
-      <StaticValue>false</StaticValue>
-    </Binding>
-    <Binding BypassCascadingTriggers="True">
-      <Trigger Source="Visual;Monitor 2.radio button;Helios.Base.PushButton;radio button" Name="closed" />
-      <Action Target="Visual;Monitor 2.R1 Button;Helios.Base.PushButton;R1 Button" Name="set.physical state" />
-      <StaticValue>false</StaticValue>
     </Binding>
     <Binding BypassCascadingTriggers="True">
       <Trigger Source="Visual;Monitor 2.radio button;Helios.Base.PushButton;radio button" Name="closed" />
@@ -8919,6 +8987,21 @@ else return(true) end</LuaScript>
     </Binding>
     <Binding BypassCascadingTriggers="True">
       <Trigger Source="Visual;Monitor 2.radio button;Helios.Base.PushButton;radio button" Name="closed" />
+      <Action Target="Visual;Monitor 2.L1 Panel.Throttle Panel;Helios.Panel;Throttle Panel" Name="set.hidden" />
+      <StaticValue>true</StaticValue>
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Visual;Monitor 2.radio button;Helios.Base.PushButton;radio button" Name="closed" />
+      <Action Target="Visual;Monitor 2.R1 Button;Helios.Base.PushButton;R1 Button" Name="set.physical state" />
+      <StaticValue>false</StaticValue>
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Visual;Monitor 2.radio button;Helios.Base.PushButton;radio button" Name="closed" />
+      <Action Target="Visual;Monitor 2.R2 button;Helios.Base.PushButton;R2 button" Name="set.physical state" />
+      <StaticValue>false</StaticValue>
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Visual;Monitor 2.radio button;Helios.Base.PushButton;radio button" Name="closed" />
       <Action Target="Visual;Monitor 2.L2 button;Helios.Base.PushButton;L2 button" Name="set.physical state" />
       <StaticValue>false</StaticValue>
     </Binding>
@@ -8926,11 +9009,6 @@ else return(true) end</LuaScript>
       <Trigger Source="Visual;Monitor 2.radio button;Helios.Base.PushButton;radio button" Name="closed" />
       <Action Target="Visual;Monitor 2.L1 button;Helios.Base.PushButton;L1 button" Name="set.physical state" />
       <StaticValue>false</StaticValue>
-    </Binding>
-    <Binding BypassCascadingTriggers="True">
-      <Trigger Source="Visual;Monitor 2.radio button;Helios.Base.PushButton;radio button" Name="closed" />
-      <Action Target="Visual;Monitor 2.L1 Panel.Throttle Panel;Helios.Panel;Throttle Panel" Name="set.hidden" />
-      <StaticValue>true</StaticValue>
     </Binding>
     <Binding BypassCascadingTriggers="True">
       <Trigger Source="Visual;Monitor 2.Ind button;Helios.Base.PushButton;Ind button" Name="closed" />
@@ -8949,16 +9027,6 @@ else return(true) end</LuaScript>
     </Binding>
     <Binding BypassCascadingTriggers="True">
       <Trigger Source="Visual;Monitor 2.batbomb button;Helios.Base.PushButton;batbomb button" Name="closed" />
-      <Action Target="Visual;Monitor 2.L2 button;Helios.Base.PushButton;L2 button" Name="set.physical state" />
-      <StaticValue>false</StaticValue>
-    </Binding>
-    <Binding BypassCascadingTriggers="True">
-      <Trigger Source="Visual;Monitor 2.batbomb button;Helios.Base.PushButton;batbomb button" Name="closed" />
-      <Action Target="Visual;Monitor 2.L1 button;Helios.Base.PushButton;L1 button" Name="set.physical state" />
-      <StaticValue>false</StaticValue>
-    </Binding>
-    <Binding BypassCascadingTriggers="True">
-      <Trigger Source="Visual;Monitor 2.batbomb button;Helios.Base.PushButton;batbomb button" Name="closed" />
       <Action Target="Visual;Monitor 2.L2 Panel;Helios.Panel;L2 Panel" Name="set.hidden" />
       <StaticValue>true</StaticValue>
     </Binding>
@@ -8971,6 +9039,16 @@ else return(true) end</LuaScript>
       <Trigger Source="Visual;Monitor 2.batbomb button;Helios.Base.PushButton;batbomb button" Name="closed" />
       <Action Target="Visual;Monitor 2.L1 Panel.Throttle Panel;Helios.Panel;Throttle Panel" Name="set.hidden" />
       <StaticValue>true</StaticValue>
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Visual;Monitor 2.batbomb button;Helios.Base.PushButton;batbomb button" Name="closed" />
+      <Action Target="Visual;Monitor 2.L2 button;Helios.Base.PushButton;L2 button" Name="set.physical state" />
+      <StaticValue>false</StaticValue>
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Visual;Monitor 2.batbomb button;Helios.Base.PushButton;batbomb button" Name="closed" />
+      <Action Target="Visual;Monitor 2.L1 button;Helios.Base.PushButton;L1 button" Name="set.physical state" />
+      <StaticValue>false</StaticValue>
     </Binding>
     <Binding BypassCascadingTriggers="True">
       <Trigger Source="Visual;Monitor 2.gunsight knob encoder;Helios.Base.RotaryEncoder;gunsight knob encoder" Name="encoder.incremented" />
@@ -9044,22 +9122,17 @@ else return(true) end</LuaScript>
     </Binding>
     <Binding BypassCascadingTriggers="True">
       <Trigger Source="Visual;Monitor 2.Rocket Panel Button;Helios.Base.PushButton;Rocket Panel Button" Name="closed" />
-      <Action Target="Visual;Monitor 2.R2 button;Helios.Base.PushButton;R2 button" Name="set.physical state" />
+      <Action Target="Visual;Monitor 2.R1 Button;Helios.Base.PushButton;R1 Button" Name="set.physical state" />
       <StaticValue>false</StaticValue>
     </Binding>
     <Binding BypassCascadingTriggers="True">
       <Trigger Source="Visual;Monitor 2.Rocket Panel Button;Helios.Base.PushButton;Rocket Panel Button" Name="closed" />
-      <Action Target="Visual;Monitor 2.R1 Button;Helios.Base.PushButton;R1 Button" Name="set.physical state" />
+      <Action Target="Visual;Monitor 2.R2 button;Helios.Base.PushButton;R2 button" Name="set.physical state" />
       <StaticValue>false</StaticValue>
     </Binding>
     <Binding BypassCascadingTriggers="True">
       <Trigger Source="Visual;Monitor 2.Indicator panel.RudderTrim.Potentiometer;Helios.Base.Potentiometer;Potentiometer" Name="value.changed" />
       <Action Target="Interface;;Helios.DCSInterfaceFile;DCS F4U-1D" Name="Control.set.Yaw Trim" />
-      <TriggerValue />
-    </Binding>
-    <Binding BypassCascadingTriggers="True">
-      <Trigger Source="Visual;Monitor 2.Indicator panel.RudderTrim.Potentiometer;Helios.Base.Potentiometer;Potentiometer" Name="value.changed" />
-      <Action Target="Visual;Monitor 2.Indicator panel.RudderTrim.CustomGauge;Helios.Base.CustomGauge;CustomGauge" Name="set.value" />
       <TriggerValue />
     </Binding>
     <Binding BypassCascadingTriggers="True">
@@ -9073,13 +9146,13 @@ else return(true) end</LuaScript>
       <TriggerValue />
     </Binding>
     <Binding BypassCascadingTriggers="True">
-      <Trigger Source="Visual;Monitor 2.Indicator panel.Aileron Trim.Potentiometer;Helios.Base.Potentiometer;Potentiometer" Name="value.changed" />
-      <Action Target="Interface;;Helios.DCSInterfaceFile;DCS F4U-1D" Name="Control.set.Bank Trim" />
+      <Trigger Source="Visual;Monitor 2.Indicator panel.RudderTrim.Potentiometer;Helios.Base.Potentiometer;Potentiometer" Name="value.changed" />
+      <Action Target="Visual;Monitor 2.Indicator panel.RudderTrim.CustomGauge;Helios.Base.CustomGauge;CustomGauge" Name="set.value" />
       <TriggerValue />
     </Binding>
     <Binding BypassCascadingTriggers="True">
       <Trigger Source="Visual;Monitor 2.Indicator panel.Aileron Trim.Potentiometer;Helios.Base.Potentiometer;Potentiometer" Name="value.changed" />
-      <Action Target="Visual;Monitor 2.Indicator panel.Aileron Trim.CustomGauge;Helios.Base.CustomGauge;CustomGauge" Name="set.value" />
+      <Action Target="Interface;;Helios.DCSInterfaceFile;DCS F4U-1D" Name="Control.set.Bank Trim" />
       <TriggerValue />
     </Binding>
     <Binding BypassCascadingTriggers="True">
@@ -9090,6 +9163,11 @@ else return(true) end</LuaScript>
     <Binding BypassCascadingTriggers="True">
       <Trigger Source="Visual;Monitor 2.Indicator panel.Aileron Trim.Potentiometer;Helios.Base.Potentiometer;Potentiometer" Name="value.changed" />
       <Action Target="Visual;Monitor 2.L2 Panel.Aileron Trim.CustomGauge;Helios.Base.CustomGauge;CustomGauge" Name="set.value" />
+      <TriggerValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Visual;Monitor 2.Indicator panel.Aileron Trim.Potentiometer;Helios.Base.Potentiometer;Potentiometer" Name="value.changed" />
+      <Action Target="Visual;Monitor 2.Indicator panel.Aileron Trim.CustomGauge;Helios.Base.CustomGauge;CustomGauge" Name="set.value" />
       <TriggerValue />
     </Binding>
     <Binding BypassCascadingTriggers="True">
@@ -9298,56 +9376,6 @@ else return(true) end</LuaScript>
       <TriggerValue />
     </Binding>
     <Binding BypassCascadingTriggers="True">
-      <Trigger Source="Visual;Monitor 2.R2 Panel.chartboard light;Helios.Base.RotaryEncoder;chartboard light" Name="encoder.incremented" />
-      <Action Target="Interface;;Helios.DCSInterfaceFile;DCS F4U-1D" Name="Lights.increment.Chartboard Lights" />
-      <TriggerValue />
-    </Binding>
-    <Binding BypassCascadingTriggers="True">
-      <Trigger Source="Visual;Monitor 2.R2 Panel.chartboard light;Helios.Base.RotaryEncoder;chartboard light" Name="encoder.decremented" />
-      <Action Target="Interface;;Helios.DCSInterfaceFile;DCS F4U-1D" Name="Lights.decrement.Chartboard Lights" />
-      <TriggerValue />
-    </Binding>
-    <Binding BypassCascadingTriggers="True">
-      <Trigger Source="Visual;Monitor 2.R2 Panel.left panel light;Helios.Base.RotaryEncoder;left panel light" Name="encoder.incremented" />
-      <Action Target="Interface;;Helios.DCSInterfaceFile;DCS F4U-1D" Name="Lights.increment.Left Panel Lights" />
-      <TriggerValue />
-    </Binding>
-    <Binding BypassCascadingTriggers="True">
-      <Trigger Source="Visual;Monitor 2.R2 Panel.left panel light;Helios.Base.RotaryEncoder;left panel light" Name="encoder.decremented" />
-      <Action Target="Interface;;Helios.DCSInterfaceFile;DCS F4U-1D" Name="Lights.decrement.Left Panel Lights" />
-      <TriggerValue />
-    </Binding>
-    <Binding BypassCascadingTriggers="True">
-      <Trigger Source="Visual;Monitor 2.R2 Panel.right panel light;Helios.Base.RotaryEncoder;right panel light" Name="encoder.incremented" />
-      <Action Target="Interface;;Helios.DCSInterfaceFile;DCS F4U-1D" Name="Lights.increment.Right Panel Lights" />
-      <TriggerValue />
-    </Binding>
-    <Binding BypassCascadingTriggers="True">
-      <Trigger Source="Visual;Monitor 2.R2 Panel.right panel light;Helios.Base.RotaryEncoder;right panel light" Name="encoder.decremented" />
-      <Action Target="Interface;;Helios.DCSInterfaceFile;DCS F4U-1D" Name="Lights.decrement.Right Panel Lights" />
-      <TriggerValue />
-    </Binding>
-    <Binding BypassCascadingTriggers="True">
-      <Trigger Source="Visual;Monitor 2.R2 Panel.left instr light;Helios.Base.RotaryEncoder;left instr light" Name="encoder.incremented" />
-      <Action Target="Interface;;Helios.DCSInterfaceFile;DCS F4U-1D" Name="Lights.increment.Left Instrument Board Lights" />
-      <TriggerValue />
-    </Binding>
-    <Binding BypassCascadingTriggers="True">
-      <Trigger Source="Visual;Monitor 2.R2 Panel.left instr light;Helios.Base.RotaryEncoder;left instr light" Name="encoder.decremented" />
-      <Action Target="Interface;;Helios.DCSInterfaceFile;DCS F4U-1D" Name="Lights.decrement.Left Instrument Board Lights" />
-      <TriggerValue />
-    </Binding>
-    <Binding BypassCascadingTriggers="True">
-      <Trigger Source="Visual;Monitor 2.R2 Panel.rt instr light;Helios.Base.RotaryEncoder;rt instr light" Name="encoder.incremented" />
-      <Action Target="Interface;;Helios.DCSInterfaceFile;DCS F4U-1D" Name="Lights.increment.Right Instrument Board Lights" />
-      <TriggerValue />
-    </Binding>
-    <Binding BypassCascadingTriggers="True">
-      <Trigger Source="Visual;Monitor 2.R2 Panel.rt instr light;Helios.Base.RotaryEncoder;rt instr light" Name="encoder.decremented" />
-      <Action Target="Interface;;Helios.DCSInterfaceFile;DCS F4U-1D" Name="Lights.decrement.Right Instrument Board Lights" />
-      <TriggerValue />
-    </Binding>
-    <Binding BypassCascadingTriggers="True">
       <Trigger Source="Visual;Monitor 2.R2 Panel.cb instrument;Helios.Base.ToggleSwitch;cb instrument" Name="position.changed" />
       <Action Target="Interface;;Helios.DCSInterfaceFile;DCS F4U-1D" Name="Breakers.set.Instrument Switch" />
       <TriggerValue />
@@ -9380,6 +9408,31 @@ else return(true) end</LuaScript>
     <Binding BypassCascadingTriggers="True">
       <Trigger Source="Visual;Monitor 2.R2 Panel.Oxy_Hook Panel button.Three Way Toggle Switch;Helios.Base.ThreeWayToggleSwitch;Three Way Toggle Switch" Name="position.changed" />
       <Action Target="Interface;;Helios.DCSInterfaceFile;DCS F4U-1D" Name="Control.set.Arrestor Hook" />
+      <TriggerValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Visual;Monitor 2.R2 Panel.Potentiometer;Helios.Base.Potentiometer;Potentiometer" Name="value.changed" />
+      <Action Target="Interface;;Helios.DCSInterfaceFile;DCS F4U-1D" Name="Lights.set.Chartboard Lights" />
+      <TriggerValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Visual;Monitor 2.R2 Panel.Potentiometer 1;Helios.Base.Potentiometer;Potentiometer 1" Name="value.changed" />
+      <Action Target="Interface;;Helios.DCSInterfaceFile;DCS F4U-1D" Name="Lights.set.Left Panel Lights" />
+      <TriggerValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Visual;Monitor 2.R2 Panel.Potentiometer 1 1;Helios.Base.Potentiometer;Potentiometer 1 1" Name="value.changed" />
+      <Action Target="Interface;;Helios.DCSInterfaceFile;DCS F4U-1D" Name="Lights.set.Right Panel Lights" />
+      <TriggerValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Visual;Monitor 2.R2 Panel.Potentiometer 2;Helios.Base.Potentiometer;Potentiometer 2" Name="value.changed" />
+      <Action Target="Interface;;Helios.DCSInterfaceFile;DCS F4U-1D" Name="Lights.set.Left Instrument Board Lights" />
+      <TriggerValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Visual;Monitor 2.R2 Panel.Potentiometer 2 1;Helios.Base.Potentiometer;Potentiometer 2 1" Name="value.changed" />
+      <Action Target="Interface;;Helios.DCSInterfaceFile;DCS F4U-1D" Name="Lights.set.Right Instrument Board Lights" />
       <TriggerValue />
     </Binding>
     <Binding BypassCascadingTriggers="True">
@@ -9433,23 +9486,13 @@ else return(true) end</LuaScript>
       <TriggerValue />
     </Binding>
     <Binding BypassCascadingTriggers="True">
-      <Trigger Source="Visual;Monitor 2.L1 Panel.magneto invis rotary sw;Helios.Base.RotarySwitch;magneto invis rotary sw" Name="position 1.entered" />
-      <Action Target="Visual;Monitor 2.L1 Panel.mag img Off;Helios.Base.Image;mag img Off" Name="set.hidden" />
+      <Trigger Source="Visual;Monitor 2.L1 Panel.magneto invis rotary sw;Helios.Base.RotarySwitch;magneto invis rotary sw" Name="position 4.entered" />
+      <Action Target="Visual;Monitor 2.L1 Panel.mag img both;Helios.Base.Image;mag img both" Name="set.hidden" />
       <StaticValue>false</StaticValue>
     </Binding>
     <Binding BypassCascadingTriggers="True">
-      <Trigger Source="Visual;Monitor 2.L1 Panel.magneto invis rotary sw;Helios.Base.RotarySwitch;magneto invis rotary sw" Name="position 1.exited" />
-      <Action Target="Visual;Monitor 2.L1 Panel.mag img Off;Helios.Base.Image;mag img Off" Name="set.hidden" />
-      <StaticValue>true</StaticValue>
-    </Binding>
-    <Binding BypassCascadingTriggers="True">
-      <Trigger Source="Visual;Monitor 2.L1 Panel.magneto invis rotary sw;Helios.Base.RotarySwitch;magneto invis rotary sw" Name="position 2.entered" />
-      <Action Target="Visual;Monitor 2.L1 Panel.mag img R;Helios.Base.Image;mag img R" Name="set.hidden" />
-      <StaticValue>false</StaticValue>
-    </Binding>
-    <Binding BypassCascadingTriggers="True">
-      <Trigger Source="Visual;Monitor 2.L1 Panel.magneto invis rotary sw;Helios.Base.RotarySwitch;magneto invis rotary sw" Name="position 2.exited" />
-      <Action Target="Visual;Monitor 2.L1 Panel.mag img R;Helios.Base.Image;mag img R" Name="set.hidden" />
+      <Trigger Source="Visual;Monitor 2.L1 Panel.magneto invis rotary sw;Helios.Base.RotarySwitch;magneto invis rotary sw" Name="position 4.exited" />
+      <Action Target="Visual;Monitor 2.L1 Panel.mag img both;Helios.Base.Image;mag img both" Name="set.hidden" />
       <StaticValue>true</StaticValue>
     </Binding>
     <Binding BypassCascadingTriggers="True">
@@ -9463,13 +9506,23 @@ else return(true) end</LuaScript>
       <StaticValue>true</StaticValue>
     </Binding>
     <Binding BypassCascadingTriggers="True">
-      <Trigger Source="Visual;Monitor 2.L1 Panel.magneto invis rotary sw;Helios.Base.RotarySwitch;magneto invis rotary sw" Name="position 4.entered" />
-      <Action Target="Visual;Monitor 2.L1 Panel.mag img both;Helios.Base.Image;mag img both" Name="set.hidden" />
+      <Trigger Source="Visual;Monitor 2.L1 Panel.magneto invis rotary sw;Helios.Base.RotarySwitch;magneto invis rotary sw" Name="position 2.entered" />
+      <Action Target="Visual;Monitor 2.L1 Panel.mag img R;Helios.Base.Image;mag img R" Name="set.hidden" />
       <StaticValue>false</StaticValue>
     </Binding>
     <Binding BypassCascadingTriggers="True">
-      <Trigger Source="Visual;Monitor 2.L1 Panel.magneto invis rotary sw;Helios.Base.RotarySwitch;magneto invis rotary sw" Name="position 4.exited" />
-      <Action Target="Visual;Monitor 2.L1 Panel.mag img both;Helios.Base.Image;mag img both" Name="set.hidden" />
+      <Trigger Source="Visual;Monitor 2.L1 Panel.magneto invis rotary sw;Helios.Base.RotarySwitch;magneto invis rotary sw" Name="position 2.exited" />
+      <Action Target="Visual;Monitor 2.L1 Panel.mag img R;Helios.Base.Image;mag img R" Name="set.hidden" />
+      <StaticValue>true</StaticValue>
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Visual;Monitor 2.L1 Panel.magneto invis rotary sw;Helios.Base.RotarySwitch;magneto invis rotary sw" Name="position 1.entered" />
+      <Action Target="Visual;Monitor 2.L1 Panel.mag img Off;Helios.Base.Image;mag img Off" Name="set.hidden" />
+      <StaticValue>false</StaticValue>
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Visual;Monitor 2.L1 Panel.magneto invis rotary sw;Helios.Base.RotarySwitch;magneto invis rotary sw" Name="position 1.exited" />
+      <Action Target="Visual;Monitor 2.L1 Panel.mag img Off;Helios.Base.Image;mag img Off" Name="set.hidden" />
       <StaticValue>true</StaticValue>
     </Binding>
     <Binding BypassCascadingTriggers="True">
@@ -9493,43 +9546,13 @@ else return(true) end</LuaScript>
       <TriggerValue />
     </Binding>
     <Binding BypassCascadingTriggers="True">
-      <Trigger Source="Visual;Monitor 2.L1 Panel.flaps invis rotary sw;Helios.Base.RotarySwitch;flaps invis rotary sw" Name="position 1.entered" />
-      <Action Target="Visual;Monitor 2.L1 Panel.flap img 0;Helios.Base.ImageTranslucent;flap img 0" Name="set.hidden" />
+      <Trigger Source="Visual;Monitor 2.L1 Panel.flaps invis rotary sw;Helios.Base.RotarySwitch;flaps invis rotary sw" Name="position 6.entered" />
+      <Action Target="Visual;Monitor 2.L1 Panel.flap img 50;Helios.Base.ImageTranslucent;flap img 50" Name="set.hidden" />
       <StaticValue>false</StaticValue>
     </Binding>
     <Binding BypassCascadingTriggers="True">
-      <Trigger Source="Visual;Monitor 2.L1 Panel.flaps invis rotary sw;Helios.Base.RotarySwitch;flaps invis rotary sw" Name="position 1.exited" />
-      <Action Target="Visual;Monitor 2.L1 Panel.flap img 0;Helios.Base.ImageTranslucent;flap img 0" Name="set.hidden" />
-      <StaticValue>true</StaticValue>
-    </Binding>
-    <Binding BypassCascadingTriggers="True">
-      <Trigger Source="Visual;Monitor 2.L1 Panel.flaps invis rotary sw;Helios.Base.RotarySwitch;flaps invis rotary sw" Name="position 2.entered" />
-      <Action Target="Visual;Monitor 2.L1 Panel.flap img 10;Helios.Base.ImageTranslucent;flap img 10" Name="set.hidden" />
-      <StaticValue>false</StaticValue>
-    </Binding>
-    <Binding BypassCascadingTriggers="True">
-      <Trigger Source="Visual;Monitor 2.L1 Panel.flaps invis rotary sw;Helios.Base.RotarySwitch;flaps invis rotary sw" Name="position 2.exited" />
-      <Action Target="Visual;Monitor 2.L1 Panel.flap img 10;Helios.Base.ImageTranslucent;flap img 10" Name="set.hidden" />
-      <StaticValue>true</StaticValue>
-    </Binding>
-    <Binding BypassCascadingTriggers="True">
-      <Trigger Source="Visual;Monitor 2.L1 Panel.flaps invis rotary sw;Helios.Base.RotarySwitch;flaps invis rotary sw" Name="position 3.entered" />
-      <Action Target="Visual;Monitor 2.L1 Panel.flap img 20;Helios.Base.ImageTranslucent;flap img 20" Name="set.hidden" />
-      <StaticValue>false</StaticValue>
-    </Binding>
-    <Binding BypassCascadingTriggers="True">
-      <Trigger Source="Visual;Monitor 2.L1 Panel.flaps invis rotary sw;Helios.Base.RotarySwitch;flaps invis rotary sw" Name="position 3.exited" />
-      <Action Target="Visual;Monitor 2.L1 Panel.flap img 20;Helios.Base.ImageTranslucent;flap img 20" Name="set.hidden" />
-      <StaticValue>true</StaticValue>
-    </Binding>
-    <Binding BypassCascadingTriggers="True">
-      <Trigger Source="Visual;Monitor 2.L1 Panel.flaps invis rotary sw;Helios.Base.RotarySwitch;flaps invis rotary sw" Name="position 4.entered" />
-      <Action Target="Visual;Monitor 2.L1 Panel.flap img 30;Helios.Base.ImageTranslucent;flap img 30" Name="set.hidden" />
-      <StaticValue>false</StaticValue>
-    </Binding>
-    <Binding BypassCascadingTriggers="True">
-      <Trigger Source="Visual;Monitor 2.L1 Panel.flaps invis rotary sw;Helios.Base.RotarySwitch;flaps invis rotary sw" Name="position 4.exited" />
-      <Action Target="Visual;Monitor 2.L1 Panel.flap img 30;Helios.Base.ImageTranslucent;flap img 30" Name="set.hidden" />
+      <Trigger Source="Visual;Monitor 2.L1 Panel.flaps invis rotary sw;Helios.Base.RotarySwitch;flaps invis rotary sw" Name="position 6.exited" />
+      <Action Target="Visual;Monitor 2.L1 Panel.flap img 50;Helios.Base.ImageTranslucent;flap img 50" Name="set.hidden" />
       <StaticValue>true</StaticValue>
     </Binding>
     <Binding BypassCascadingTriggers="True">
@@ -9543,13 +9566,43 @@ else return(true) end</LuaScript>
       <StaticValue>true</StaticValue>
     </Binding>
     <Binding BypassCascadingTriggers="True">
-      <Trigger Source="Visual;Monitor 2.L1 Panel.flaps invis rotary sw;Helios.Base.RotarySwitch;flaps invis rotary sw" Name="position 6.entered" />
-      <Action Target="Visual;Monitor 2.L1 Panel.flap img 50;Helios.Base.ImageTranslucent;flap img 50" Name="set.hidden" />
+      <Trigger Source="Visual;Monitor 2.L1 Panel.flaps invis rotary sw;Helios.Base.RotarySwitch;flaps invis rotary sw" Name="position 4.entered" />
+      <Action Target="Visual;Monitor 2.L1 Panel.flap img 30;Helios.Base.ImageTranslucent;flap img 30" Name="set.hidden" />
       <StaticValue>false</StaticValue>
     </Binding>
     <Binding BypassCascadingTriggers="True">
-      <Trigger Source="Visual;Monitor 2.L1 Panel.flaps invis rotary sw;Helios.Base.RotarySwitch;flaps invis rotary sw" Name="position 6.exited" />
-      <Action Target="Visual;Monitor 2.L1 Panel.flap img 50;Helios.Base.ImageTranslucent;flap img 50" Name="set.hidden" />
+      <Trigger Source="Visual;Monitor 2.L1 Panel.flaps invis rotary sw;Helios.Base.RotarySwitch;flaps invis rotary sw" Name="position 4.exited" />
+      <Action Target="Visual;Monitor 2.L1 Panel.flap img 30;Helios.Base.ImageTranslucent;flap img 30" Name="set.hidden" />
+      <StaticValue>true</StaticValue>
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Visual;Monitor 2.L1 Panel.flaps invis rotary sw;Helios.Base.RotarySwitch;flaps invis rotary sw" Name="position 3.entered" />
+      <Action Target="Visual;Monitor 2.L1 Panel.flap img 20;Helios.Base.ImageTranslucent;flap img 20" Name="set.hidden" />
+      <StaticValue>false</StaticValue>
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Visual;Monitor 2.L1 Panel.flaps invis rotary sw;Helios.Base.RotarySwitch;flaps invis rotary sw" Name="position 3.exited" />
+      <Action Target="Visual;Monitor 2.L1 Panel.flap img 20;Helios.Base.ImageTranslucent;flap img 20" Name="set.hidden" />
+      <StaticValue>true</StaticValue>
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Visual;Monitor 2.L1 Panel.flaps invis rotary sw;Helios.Base.RotarySwitch;flaps invis rotary sw" Name="position 2.entered" />
+      <Action Target="Visual;Monitor 2.L1 Panel.flap img 10;Helios.Base.ImageTranslucent;flap img 10" Name="set.hidden" />
+      <StaticValue>false</StaticValue>
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Visual;Monitor 2.L1 Panel.flaps invis rotary sw;Helios.Base.RotarySwitch;flaps invis rotary sw" Name="position 2.exited" />
+      <Action Target="Visual;Monitor 2.L1 Panel.flap img 10;Helios.Base.ImageTranslucent;flap img 10" Name="set.hidden" />
+      <StaticValue>true</StaticValue>
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Visual;Monitor 2.L1 Panel.flaps invis rotary sw;Helios.Base.RotarySwitch;flaps invis rotary sw" Name="position 1.entered" />
+      <Action Target="Visual;Monitor 2.L1 Panel.flap img 0;Helios.Base.ImageTranslucent;flap img 0" Name="set.hidden" />
+      <StaticValue>false</StaticValue>
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Visual;Monitor 2.L1 Panel.flaps invis rotary sw;Helios.Base.RotarySwitch;flaps invis rotary sw" Name="position 1.exited" />
+      <Action Target="Visual;Monitor 2.L1 Panel.flap img 0;Helios.Base.ImageTranslucent;flap img 0" Name="set.hidden" />
       <StaticValue>true</StaticValue>
     </Binding>
     <Binding BypassCascadingTriggers="True">
@@ -9648,13 +9701,13 @@ else return(true) end</LuaScript>
       <TriggerValue />
     </Binding>
     <Binding BypassCascadingTriggers="True">
-      <Trigger Source="Visual;Monitor 2.L1 Panel.gear handle invis switch;Helios.Base.ThreeWayToggleSwitch;gear handle invis switch" Name="position one.entered" />
-      <Action Target="Visual;Monitor 2.L1 Panel.gear image 1;Helios.Base.ImageTranslucent;gear image 1" Name="set.hidden" />
+      <Trigger Source="Visual;Monitor 2.L1 Panel.gear handle invis switch;Helios.Base.ThreeWayToggleSwitch;gear handle invis switch" Name="position three.entered" />
+      <Action Target="Visual;Monitor 2.L1 Panel.gear image 3;Helios.Base.ImageTranslucent;gear image 3" Name="set.hidden" />
       <StaticValue>false</StaticValue>
     </Binding>
     <Binding BypassCascadingTriggers="True">
-      <Trigger Source="Visual;Monitor 2.L1 Panel.gear handle invis switch;Helios.Base.ThreeWayToggleSwitch;gear handle invis switch" Name="position one.exited" />
-      <Action Target="Visual;Monitor 2.L1 Panel.gear image 1;Helios.Base.ImageTranslucent;gear image 1" Name="set.hidden" />
+      <Trigger Source="Visual;Monitor 2.L1 Panel.gear handle invis switch;Helios.Base.ThreeWayToggleSwitch;gear handle invis switch" Name="position three.exited" />
+      <Action Target="Visual;Monitor 2.L1 Panel.gear image 3;Helios.Base.ImageTranslucent;gear image 3" Name="set.hidden" />
       <StaticValue>true</StaticValue>
     </Binding>
     <Binding BypassCascadingTriggers="True">
@@ -9668,13 +9721,13 @@ else return(true) end</LuaScript>
       <StaticValue>true</StaticValue>
     </Binding>
     <Binding BypassCascadingTriggers="True">
-      <Trigger Source="Visual;Monitor 2.L1 Panel.gear handle invis switch;Helios.Base.ThreeWayToggleSwitch;gear handle invis switch" Name="position three.entered" />
-      <Action Target="Visual;Monitor 2.L1 Panel.gear image 3;Helios.Base.ImageTranslucent;gear image 3" Name="set.hidden" />
+      <Trigger Source="Visual;Monitor 2.L1 Panel.gear handle invis switch;Helios.Base.ThreeWayToggleSwitch;gear handle invis switch" Name="position one.entered" />
+      <Action Target="Visual;Monitor 2.L1 Panel.gear image 1;Helios.Base.ImageTranslucent;gear image 1" Name="set.hidden" />
       <StaticValue>false</StaticValue>
     </Binding>
     <Binding BypassCascadingTriggers="True">
-      <Trigger Source="Visual;Monitor 2.L1 Panel.gear handle invis switch;Helios.Base.ThreeWayToggleSwitch;gear handle invis switch" Name="position three.exited" />
-      <Action Target="Visual;Monitor 2.L1 Panel.gear image 3;Helios.Base.ImageTranslucent;gear image 3" Name="set.hidden" />
+      <Trigger Source="Visual;Monitor 2.L1 Panel.gear handle invis switch;Helios.Base.ThreeWayToggleSwitch;gear handle invis switch" Name="position one.exited" />
+      <Action Target="Visual;Monitor 2.L1 Panel.gear image 1;Helios.Base.ImageTranslucent;gear image 1" Name="set.hidden" />
       <StaticValue>true</StaticValue>
     </Binding>
     <Binding BypassCascadingTriggers="False">
@@ -9724,11 +9777,6 @@ else return(true) end</LuaScript>
     </Binding>
     <Binding BypassCascadingTriggers="True">
       <Trigger Source="Visual;Monitor 2.L2 Panel.RudderTrim.Potentiometer;Helios.Base.Potentiometer;Potentiometer" Name="value.changed" />
-      <Action Target="Visual;Monitor 2.L2 Panel.RudderTrim.CustomGauge;Helios.Base.CustomGauge;CustomGauge" Name="set.value" />
-      <TriggerValue />
-    </Binding>
-    <Binding BypassCascadingTriggers="True">
-      <Trigger Source="Visual;Monitor 2.L2 Panel.RudderTrim.Potentiometer;Helios.Base.Potentiometer;Potentiometer" Name="value.changed" />
       <Action Target="Visual;Monitor 2.Indicator panel.RudderTrim.CustomGauge;Helios.Base.CustomGauge;CustomGauge" Name="set.value" />
       <TriggerValue />
     </Binding>
@@ -9738,13 +9786,13 @@ else return(true) end</LuaScript>
       <TriggerValue />
     </Binding>
     <Binding BypassCascadingTriggers="True">
-      <Trigger Source="Visual;Monitor 2.L2 Panel.Aileron Trim.Potentiometer;Helios.Base.Potentiometer;Potentiometer" Name="value.changed" />
-      <Action Target="Interface;;Helios.DCSInterfaceFile;DCS F4U-1D" Name="Control.set.Bank Trim" />
+      <Trigger Source="Visual;Monitor 2.L2 Panel.RudderTrim.Potentiometer;Helios.Base.Potentiometer;Potentiometer" Name="value.changed" />
+      <Action Target="Visual;Monitor 2.L2 Panel.RudderTrim.CustomGauge;Helios.Base.CustomGauge;CustomGauge" Name="set.value" />
       <TriggerValue />
     </Binding>
     <Binding BypassCascadingTriggers="True">
       <Trigger Source="Visual;Monitor 2.L2 Panel.Aileron Trim.Potentiometer;Helios.Base.Potentiometer;Potentiometer" Name="value.changed" />
-      <Action Target="Visual;Monitor 2.L2 Panel.Aileron Trim.CustomGauge;Helios.Base.CustomGauge;CustomGauge" Name="set.value" />
+      <Action Target="Interface;;Helios.DCSInterfaceFile;DCS F4U-1D" Name="Control.set.Bank Trim" />
       <TriggerValue />
     </Binding>
     <Binding BypassCascadingTriggers="True">
@@ -9755,6 +9803,11 @@ else return(true) end</LuaScript>
     <Binding BypassCascadingTriggers="True">
       <Trigger Source="Visual;Monitor 2.L2 Panel.Aileron Trim.Potentiometer;Helios.Base.Potentiometer;Potentiometer" Name="value.changed" />
       <Action Target="Visual;Monitor 2.Indicator panel.Aileron Trim.Potentiometer;Helios.Base.Potentiometer;Potentiometer" Name="set.value" />
+      <TriggerValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Visual;Monitor 2.L2 Panel.Aileron Trim.Potentiometer;Helios.Base.Potentiometer;Potentiometer" Name="value.changed" />
+      <Action Target="Visual;Monitor 2.L2 Panel.Aileron Trim.CustomGauge;Helios.Base.CustomGauge;CustomGauge" Name="set.value" />
       <TriggerValue />
     </Binding>
     <Binding BypassCascadingTriggers="True">
@@ -9769,17 +9822,7 @@ else return(true) end</LuaScript>
     </Binding>
     <Binding BypassCascadingTriggers="True">
       <Trigger Source="Visual;Monitor 2.L2 Panel.Calibration Filter;Helios.Base.CalibrationFilter;Calibration Filter" Name="Output.Value.changed" />
-      <Action Target="Visual;Monitor 2.L2 Panel.Elevator Trim.CustomTape;Helios.Base.CustomTape;CustomTape" Name="set.Tape Horizontal Offset" />
-      <TriggerValue />
-    </Binding>
-    <Binding BypassCascadingTriggers="True">
-      <Trigger Source="Visual;Monitor 2.L2 Panel.Calibration Filter;Helios.Base.CalibrationFilter;Calibration Filter" Name="Output.Value.changed" />
-      <Action Target="Visual;Monitor 2.L2 Panel.Elevator Trim.CustomTape 1;Helios.Base.CustomTape;CustomTape 1" Name="set.Tape Horizontal Offset" />
-      <TriggerValue />
-    </Binding>
-    <Binding BypassCascadingTriggers="True">
-      <Trigger Source="Visual;Monitor 2.L2 Panel.Calibration Filter;Helios.Base.CalibrationFilter;Calibration Filter" Name="Output.Value.changed" />
-      <Action Target="Visual;Monitor 2.L2 Panel.elevator trim animation;Helios.Base.CustomTape;elevator trim animation" Name="set.Tape Vertical Offset" />
+      <Action Target="Visual;Monitor 2.Indicator panel.Elevator Trim.CustomTape;Helios.Base.CustomTape;CustomTape" Name="set.Tape Horizontal Offset" />
       <TriggerValue />
     </Binding>
     <Binding BypassCascadingTriggers="True">
@@ -9789,7 +9832,17 @@ else return(true) end</LuaScript>
     </Binding>
     <Binding BypassCascadingTriggers="True">
       <Trigger Source="Visual;Monitor 2.L2 Panel.Calibration Filter;Helios.Base.CalibrationFilter;Calibration Filter" Name="Output.Value.changed" />
-      <Action Target="Visual;Monitor 2.Indicator panel.Elevator Trim.CustomTape;Helios.Base.CustomTape;CustomTape" Name="set.Tape Horizontal Offset" />
+      <Action Target="Visual;Monitor 2.L2 Panel.elevator trim animation;Helios.Base.CustomTape;elevator trim animation" Name="set.Tape Vertical Offset" />
+      <TriggerValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Visual;Monitor 2.L2 Panel.Calibration Filter;Helios.Base.CalibrationFilter;Calibration Filter" Name="Output.Value.changed" />
+      <Action Target="Visual;Monitor 2.L2 Panel.Elevator Trim.CustomTape;Helios.Base.CustomTape;CustomTape" Name="set.Tape Horizontal Offset" />
+      <TriggerValue />
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Visual;Monitor 2.L2 Panel.Calibration Filter;Helios.Base.CalibrationFilter;Calibration Filter" Name="Output.Value.changed" />
+      <Action Target="Visual;Monitor 2.L2 Panel.Elevator Trim.CustomTape 1;Helios.Base.CustomTape;CustomTape 1" Name="set.Tape Horizontal Offset" />
       <TriggerValue />
     </Binding>
     <Binding BypassCascadingTriggers="True">
@@ -9838,11 +9891,6 @@ else return(true) end</LuaScript>
       <TriggerValue />
     </Binding>
     <Binding BypassCascadingTriggers="True">
-      <Trigger Source="Visual;Monitor 2.Radio Panel.c38 rec c sw;Helios.Base.ToggleSwitch;c38 rec c sw" Name="position.changed" />
-      <Action Target="Interface;;Helios.DCSInterfaceFile;DCS F4U-1D" Name="Radio.release.C-38 Receiver C On/Off Switch" />
-      <StaticValue />
-    </Binding>
-    <Binding BypassCascadingTriggers="True">
       <Trigger Source="Visual;Monitor 2.Radio Panel.c38 sensitivity;Helios.Base.Potentiometer;c38 sensitivity" Name="value.changed" />
       <Action Target="Interface;;Helios.DCSInterfaceFile;DCS F4U-1D" Name="RadioNav.set.C-38 Sensitivity" />
       <TriggerValue />
@@ -9874,12 +9922,12 @@ else return(true) end</LuaScript>
     </Binding>
     <Binding BypassCascadingTriggers="True">
       <Trigger Source="Visual;Monitor 2.Radio Panel.c26 freq handle;Helios.Base.Potentiometer;c26 freq handle" Name="value.changed" />
-      <Action Target="Visual;Monitor 2.Radio Panel.c26 freq dial;Helios.Base.Potentiometer;c26 freq dial" Name="set.value" />
+      <Action Target="Interface;;Helios.DCSInterfaceFile;DCS F4U-1D" Name="RadioNav.set.C-26 Frequency" />
       <TriggerValue />
     </Binding>
     <Binding BypassCascadingTriggers="True">
       <Trigger Source="Visual;Monitor 2.Radio Panel.c26 freq handle;Helios.Base.Potentiometer;c26 freq handle" Name="value.changed" />
-      <Action Target="Interface;;Helios.DCSInterfaceFile;DCS F4U-1D" Name="RadioNav.set.C-26 Frequency" />
+      <Action Target="Visual;Monitor 2.Radio Panel.c26 freq dial;Helios.Base.Potentiometer;c26 freq dial" Name="set.value" />
       <TriggerValue />
     </Binding>
     <Binding BypassCascadingTriggers="True">
@@ -10033,11 +10081,6 @@ else return(true) end</LuaScript>
       <StaticValue>1</StaticValue>
     </Binding>
     <Binding BypassCascadingTriggers="True">
-      <Trigger Source="Visual;Monitor 2.Splash Screen.SimpleComputationalWire;Helios.Base.SimpleComputationWire;SimpleComputationalWire" Name="Upper/Lower threshold breach.changed" />
-      <Action Target="Visual;Monitor 2.Splash Screen.Metronome;Helios.Special.Metronome;Metronome" Name="Metronome.set.Enable" />
-      <StaticValue>false</StaticValue>
-    </Binding>
-    <Binding BypassCascadingTriggers="True">
       <Trigger Source="Visual;Monitor 2.Splash Screen.SimpleComputationalWire;Helios.Base.SimpleComputationWire;SimpleComputationalWire" Name="Numeric Signal.changed" />
       <Action Target="Visual;Monitor 2.Splash Screen.Splash Screen;Helios.Base.Text;Splash Screen" Name="set.Text" />
       <LuaScript>return(string.sub("~_Author~",0,TriggerValue))</LuaScript>
@@ -10058,6 +10101,16 @@ else return(true) end</LuaScript>
       <StaticValue>1</StaticValue>
     </Binding>
     <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Visual;Monitor 2.Splash Screen.SimpleComputationalWire;Helios.Base.SimpleComputationWire;SimpleComputationalWire" Name="Upper/Lower threshold breach.changed" />
+      <Action Target="Visual;Monitor 2.Splash Screen.Metronome;Helios.Special.Metronome;Metronome" Name="Metronome.set.Enable" />
+      <StaticValue>false</StaticValue>
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Visual;Monitor 2.Splash Screen.trigger panel;Helios.Panel.Timer;trigger panel" Name="hidden" />
+      <Action Target="Visual;Monitor 2.Splash Screen.Metronome 2;Helios.Special.Metronome;Metronome 2" Name="Metronome.set.Default Interval" />
+      <StaticValue>.01</StaticValue>
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
       <Trigger Source="Visual;Monitor 2.Splash Screen.trigger panel;Helios.Panel.Timer;trigger panel" Name="hidden" />
       <Action Target="Visual;Monitor 2.Splash Screen.Metronome;Helios.Special.Metronome;Metronome" Name="Metronome.set.Enable" />
       <StaticValue>true</StaticValue>
@@ -10073,24 +10126,19 @@ else return(true) end</LuaScript>
       <StaticValue>1.0</StaticValue>
     </Binding>
     <Binding BypassCascadingTriggers="True">
-      <Trigger Source="Visual;Monitor 2.Splash Screen.trigger panel;Helios.Panel.Timer;trigger panel" Name="hidden" />
-      <Action Target="Visual;Monitor 2.Splash Screen.Metronome 2;Helios.Special.Metronome;Metronome 2" Name="Metronome.set.Default Interval" />
-      <StaticValue>.01</StaticValue>
-    </Binding>
-    <Binding BypassCascadingTriggers="True">
       <Trigger Source="Visual;Monitor 2.Splash Screen.Metronome 1;Helios.Special.Metronome;Metronome 1" Name="Metronome Tick" />
       <Action Target="Visual;Monitor 2.Splash Screen.SimpleComputationalWire 1;Helios.Base.SimpleComputationWire;SimpleComputationalWire 1" Name="set.Numeric addition Value" />
       <StaticValue>1</StaticValue>
     </Binding>
     <Binding BypassCascadingTriggers="True">
-      <Trigger Source="Visual;Monitor 2.Splash Screen.SimpleComputationalWire 1;Helios.Base.SimpleComputationWire;SimpleComputationalWire 1" Name="Upper/Lower threshold breach.changed" />
-      <Action Target="Visual;Monitor 2.Splash Screen.Metronome 1;Helios.Special.Metronome;Metronome 1" Name="Metronome.set.Enable" />
-      <StaticValue>false</StaticValue>
-    </Binding>
-    <Binding BypassCascadingTriggers="True">
       <Trigger Source="Visual;Monitor 2.Splash Screen.SimpleComputationalWire 1;Helios.Base.SimpleComputationWire;SimpleComputationalWire 1" Name="Numeric Signal.changed" />
       <Action Target="Visual;Monitor 2.Splash Screen.Splash Screen 1;Helios.Base.Text;Splash Screen 1" Name="set.Text" />
       <LuaScript>return(string.sub(" _ProfileVersionNumber  _BuildDate",0,TriggerValue))</LuaScript>
+    </Binding>
+    <Binding BypassCascadingTriggers="True">
+      <Trigger Source="Visual;Monitor 2.Splash Screen.SimpleComputationalWire 1;Helios.Base.SimpleComputationWire;SimpleComputationalWire 1" Name="Upper/Lower threshold breach.changed" />
+      <Action Target="Visual;Monitor 2.Splash Screen.Metronome 1;Helios.Special.Metronome;Metronome 1" Name="Metronome.set.Enable" />
+      <StaticValue>false</StaticValue>
     </Binding>
     <Binding BypassCascadingTriggers="True">
       <Trigger Source="Visual;Monitor 2.Splash Screen.Metronome 2;Helios.Special.Metronome;Metronome 2" Name="Metronome Tick" />
